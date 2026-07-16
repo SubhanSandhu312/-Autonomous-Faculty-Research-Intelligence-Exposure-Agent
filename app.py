@@ -1,0 +1,122 @@
+import streamlit as st
+import chromadb
+import subprocess
+import sys
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+CHROMA_DIR = "chroma_db"
+COLLECTION_NAME = "publications"
+OPENROUTER_MODEL = "openrouter/free"
+MAX_RELEVANT_DISTANCE = 1.5
+
+st.set_page_config(page_title="Faculty Research Portal", layout="wide")
+
+
+@st.cache_resource
+def get_collection():
+    client = chromadb.PersistentClient(path=CHROMA_DIR)
+    return client.get_collection(COLLECTION_NAME)
+
+
+def generate_answer(question, context_chunks):
+    api_key = os.environ.get("OPENROUTER_API_KEY")
+    if not api_key:
+        return None
+
+    from openai import OpenAI
+    client = OpenAI(base_url="https://openrouter.ai/api/v1", api_key=api_key)
+    context_text = "\n\n".join(context_chunks)
+
+    response = client.chat.completions.create(
+        model=OPENROUTER_MODEL,
+        messages=[
+            {"role": "system", "content": "Answer using only the provided research paper excerpts. Mention paper titles you used. If the excerpts don't answer the question, say so."},
+            {"role": "user", "content": f"Context:\n{context_text}\n\nQuestion: {question}"}
+        ]
+    )
+    return response.choices[0].message.content
+
+
+try:
+    collection = get_collection()
+except Exception:
+    st.info("No data found yet. Running the pipeline to fetch and build it — this can take a few minutes.")
+    with st.spinner("Fetching papers and building the database..."):
+        try:
+            subprocess.run([sys.executable, "code.py"], check=True)
+        except subprocess.CalledProcessError:
+            st.error("code.py failed to run. Check your terminal for the error.")
+            st.stop()
+    collection = get_collection()
+
+st.title("Faculty Research Portal")
+
+tab_ask, tab_browse = st.tabs(["Ask", "Browse Papers"])
+
+with tab_ask:
+    question = st.text_input("Ask a question about the professor's research")
+
+    if question:
+        results = collection.query(query_texts=[question], n_results=5)
+        documents = results["documents"][0]
+        metadatas = results["metadatas"][0]
+        distances = results["distances"][0]
+
+        if not distances or min(distances) > MAX_RELEVANT_DISTANCE:
+            st.write("No closely related papers found for that question.")
+        else:
+            answer = generate_answer(question, documents)
+
+            if answer:
+                st.subheader("Answer")
+                st.write(answer)
+            else:
+                st.caption("Set OPENROUTER_API_KEY to generate a written answer. Showing matching papers below.")
+
+            st.subheader("Related Papers")
+            for meta in metadatas:
+                with st.expander(f"{meta['title']} ({meta['year']}) — {meta['citations']} citations"):
+                    st.write(f"Authors: {meta['authors']}")
+                    st.write(f"Source: {meta['source']}")
+                    if meta.get("pdf_url"):
+                        st.markdown(f"[View PDF]({meta['pdf_url']})")
+
+with tab_browse:
+    all_data = collection.get()
+    papers = all_data["metadatas"]
+
+    col1, col2 = st.columns([1, 2])
+    with col1:
+        sources = sorted(set(p["source"] for p in papers))
+        selected_source = st.selectbox("Source", ["All"] + sources)
+    with col2:
+        search_text = st.text_input("Search by title")
+
+    filtered = papers
+    if selected_source != "All":
+        filtered = [p for p in filtered if p["source"] == selected_source]
+    if search_text:
+        filtered = [p for p in filtered if search_text.lower() in p["title"].lower()]
+
+    filtered = sorted(filtered, key=lambda p: p.get("citations", 0), reverse=True)
+
+    st.write(f"{len(filtered)} papers")
+
+    for paper in filtered:
+        label = f"{paper['title']} ({paper['year']}) — {paper['citations']} citations"
+        if paper.get("is_new_paper"):
+            label += "  •  New"
+        if paper.get("citation_alert"):
+            label += "  •  Citation increase"
+
+        with st.expander(label):
+            st.write(f"Authors: {paper['authors']}")
+            st.write(f"Venue: {paper.get('venue', '')}")
+            st.write(f"Source: {paper['source']}")
+            if paper.get("doi"):
+                st.write(f"DOI: {paper['doi']}")
+            if paper.get("pdf_url"):
+                st.markdown(f"[View PDF]({paper['pdf_url']})")

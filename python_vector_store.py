@@ -108,5 +108,4 @@ if __name__ == "__main__":
     build_collection()
     print("\nTest query:")
     query_publications("deep learning research")
-
     

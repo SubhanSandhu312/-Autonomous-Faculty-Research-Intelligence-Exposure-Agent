@@ -6,14 +6,17 @@ import time
 import hashlib
 import datetime
 from scholarly import scholarly
+    
+from python_vector_store import build_collection, query_publications
+
 
 CONTACT_EMAIL = "your_email@example.com"
 AUTHOR_NAME = "Asifullah Khan"
 SCHOLAR_PROFILE_URL = "https://scholar.google.com/citations?user=C8uhO88AAAAJ&hl=en"
 MAX_OPENALEX_WORKS = 100
 MAX_SEMANTIC_SCHOLAR_PAPERS = 100
-MAX_ARXIV_RESULTS = 20
-MAX_SCHOLARLY_PAPERS = 50
+MAX_ARXIV_RESULTS = 100
+MAX_SCHOLARLY_PAPERS = 100
 CITATION_ALERT_THRESHOLD = 5
 DATA_PATH = "data/professor.json"
 
@@ -559,3 +562,12 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+
+
+print("Updating ChromaDB...")
+build_collection()
+
+print("\nTesting retrieval...")
+query_publications("deep learning research")
