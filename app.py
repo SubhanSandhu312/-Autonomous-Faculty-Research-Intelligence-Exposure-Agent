@@ -3,6 +3,7 @@ import chromadb
 import subprocess
 import sys
 import os
+import json
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -11,8 +12,17 @@ CHROMA_DIR = "chroma_db"
 COLLECTION_NAME = "publications"
 OPENROUTER_MODEL = "openrouter/free"
 MAX_RELEVANT_DISTANCE = 1.5
+DATA_PATH = "data/professor.json"
 
 st.set_page_config(page_title="Faculty Research Portal", layout="wide")
+
+
+def load_data_file():
+    try:
+        with open(DATA_PATH, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError):
+        return {}
 
 
 @st.cache_resource
@@ -54,6 +64,22 @@ except Exception:
 
 st.title("Faculty Research Portal")
 
+data_file = load_data_file()
+profile = data_file.get("profile", {})
+
+if profile:
+    with st.container(border=True):
+        st.subheader(profile.get("name") or "Unknown Researcher")
+        if profile.get("affiliation"):
+            st.write(profile["affiliation"])
+        if profile.get("orcid"):
+            st.write(f"ORCID: {profile['orcid']}")
+        if profile.get("homepage"):
+            st.markdown(f"[Homepage]({profile['homepage']})")
+        interests = profile.get("research_interests")
+        if interests:
+            st.write("Research interests: " + ", ".join(interests))
+
 tab_ask, tab_browse = st.tabs(["Ask", "Browse Papers"])
 
 with tab_ask:
@@ -78,9 +104,13 @@ with tab_ask:
 
             st.subheader("Related Papers")
             for meta in metadatas:
-                with st.expander(f"{meta['title']} ({meta['year']}) — {meta['citations']} citations"):
+                with st.expander(meta["title"]):
                     st.write(f"Authors: {meta['authors']}")
                     st.write(f"Source: {meta['source']}")
+                    if meta.get("doi"):
+                        doi = meta["doi"]
+                        doi_url = doi if doi.startswith("http") else f"https://doi.org/{doi}"
+                        st.markdown(f"[DOI: {doi}]({doi_url})")
                     if meta.get("pdf_url"):
                         st.markdown(f"[View PDF]({meta['pdf_url']})")
 
@@ -106,7 +136,7 @@ with tab_browse:
     st.write(f"{len(filtered)} papers")
 
     for paper in filtered:
-        label = f"{paper['title']} ({paper['year']}) — {paper['citations']} citations"
+        label = paper["title"]
         if paper.get("is_new_paper"):
             label += "  •  New"
         if paper.get("citation_alert"):
@@ -117,6 +147,8 @@ with tab_browse:
             st.write(f"Venue: {paper.get('venue', '')}")
             st.write(f"Source: {paper['source']}")
             if paper.get("doi"):
-                st.write(f"DOI: {paper['doi']}")
+                doi = paper["doi"]
+                doi_url = doi if doi.startswith("http") else f"https://doi.org/{doi}"
+                st.markdown(f"[DOI: {doi}]({doi_url})")
             if paper.get("pdf_url"):
                 st.markdown(f"[View PDF]({paper['pdf_url']})")
