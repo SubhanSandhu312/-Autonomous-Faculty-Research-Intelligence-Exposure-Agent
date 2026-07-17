@@ -8,3 +8,89 @@
 [2026-07-16 15:00:12] Starting scheduled run...
 [2026-07-16 15:00:23] Run finished successfully.
 [2026-07-16 15:00:23] Next scheduled run: 2026-07-16 15:02:23.851397
+[2026-07-16 15:21:41] TEST MODE: running every 2 minute(s).
+[2026-07-16 15:21:41] Next scheduled run: 2026-07-16 15:23:41.611110
+[2026-07-16 15:21:41] Starting scheduled run...
+[2026-07-16 15:21:53] Run finished successfully.
+[2026-07-16 15:23:53] Starting scheduled run...
+[2026-07-16 15:31:12] TEST MODE: running every 2 minute(s).
+[2026-07-16 15:31:12] Next scheduled run: 2026-07-16 15:33:12.609682
+[2026-07-16 15:31:12] Starting scheduled run...
+[2026-07-16 15:31:18] Run finished successfully.
+[2026-07-16 15:33:18] Starting scheduled run...
+[2026-07-16 15:37:15] Run finished successfully.
+[2026-07-16 15:37:15] Next scheduled run: 2026-07-16 15:39:15.162310
+[2026-07-16 15:39:15] Starting scheduled run...
+[2026-07-16 15:42:23] Run finished successfully.
+[2026-07-16 15:42:23] Next scheduled run: 2026-07-16 15:44:23.362807
+[2026-07-16 15:44:23] Starting scheduled run...
+[2026-07-16 15:44:29] Run finished successfully.
+[2026-07-16 15:44:29] Next scheduled run: 2026-07-16 15:46:29.221878
+[2026-07-16 15:46:29] Starting scheduled run...
+[2026-07-16 15:46:35] Run finished successfully.
+[2026-07-16 15:46:35] Next scheduled run: 2026-07-16 15:48:35.172572
+[2026-07-16 15:48:35] Starting scheduled run...
+[2026-07-16 15:48:41] Run finished successfully.
+[2026-07-16 15:48:41] 20 new paper(s), 0 citation increase(s) found.
+[2026-07-16 15:48:41] Next scheduled run: 2026-07-16 15:50:41.699737
+[2026-07-17 09:18:34] Scheduler started. Will run every monday at 09:00.
+[2026-07-17 09:18:34] Next scheduled run: 2026-07-20 09:00:00
+[2026-07-17 09:18:34] Starting scheduled run...
+[2026-07-17 09:18:44] Run finished successfully.
+[2026-07-17 09:18:44] 21 new paper(s), 0 citation increase(s) found.
+[2026-07-17 09:31:28] TEST MODE: running every 2 minute(s).
+[2026-07-17 09:31:28] Next scheduled run: 2026-07-17 09:33:28.297127
+[2026-07-17 09:31:28] Starting scheduled run...
+[2026-07-17 09:31:35] Run finished successfully.
+[2026-07-17 09:33:35] Starting scheduled run...
+[2026-07-17 09:33:43] Run finished successfully.
+[2026-07-17 09:33:43] Next scheduled run: 2026-07-17 09:35:43.575301
+[2026-07-17 09:35:43] Starting scheduled run...
+[2026-07-17 09:35:52] Run finished successfully.
+[2026-07-17 09:35:52] Next scheduled run: 2026-07-17 09:37:52.028266
+[2026-07-17 12:04:03] TEST MODE: running every 2 minute(s).
+[2026-07-17 12:04:03] Next scheduled run: 2026-07-17 12:06:03.031303
+[2026-07-17 12:04:03] Starting scheduled run...
+[2026-07-17 12:04:04] Run finished successfully.
+[2026-07-17 12:04:29] TEST MODE: running every 2 minute(s).
+[2026-07-17 12:04:29] Next scheduled run: 2026-07-17 12:06:29.373092
+[2026-07-17 12:04:29] Starting scheduled run...
+[2026-07-17 12:04:30] Run finished successfully.
+[2026-07-17 14:01:23] TEST MODE: running every 2 minute(s).
+[2026-07-17 14:01:23] Next scheduled run: 2026-07-17 14:03:23.711356
+[2026-07-17 14:01:23] Starting scheduled run...
+[2026-07-17 14:01:24] Run finished successfully.
+[2026-07-17 14:06:17] TEST MODE: running every 2 minute(s).
+[2026-07-17 14:06:17] Next scheduled run: 2026-07-17 14:08:17.155499
+[2026-07-17 14:06:17] Starting scheduled run...
+[2026-07-17 14:06:17] Run failed: Command '['C:\\Users\\Subhan\\AppData\\Local\\Programs\\Python\\Python314\\python.exe', 'code.py']' returned non-zero exit status 1.
+[2026-07-17 14:06:34] TEST MODE: running every 2 minute(s).
+[2026-07-17 14:06:34] Next scheduled run: 2026-07-17 14:08:34.759332
+[2026-07-17 14:06:34] Starting scheduled run...
+[2026-07-17 14:06:35] Run finished successfully.
+[2026-07-17 14:08:35] Starting scheduled run...
+[2026-07-17 14:08:36] Run finished successfully.
+[2026-07-17 14:08:36] Next scheduled run: 2026-07-17 14:10:36.771965
+[2026-07-17 14:09:24] TEST MODE: running every 2 minute(s).
+[2026-07-17 14:09:24] Next scheduled run: 2026-07-17 14:11:24.833993
+[2026-07-17 14:09:24] Starting scheduled run...
+[2026-07-17 14:09:25] Run finished successfully.
+[2026-07-17 14:11:25] Starting scheduled run...
+[2026-07-17 14:11:27] Run finished successfully.
+[2026-07-17 14:11:27] Next scheduled run: 2026-07-17 14:13:27.080655
+[2026-07-17 14:13:27] Starting scheduled run...
+[2026-07-17 14:13:28] Run finished successfully.
+[2026-07-17 14:13:28] Next scheduled run: 2026-07-17 14:15:28.346373
+[2026-07-17 14:15:28] Starting scheduled run...
+[2026-07-17 14:15:29] Run finished successfully.
+[2026-07-17 14:15:29] Next scheduled run: 2026-07-17 14:17:29.537090
+[2026-07-17 14:16:58] TEST MODE: running every 2 minute(s).
+[2026-07-17 14:16:58] Next scheduled run: 2026-07-17 14:18:58.099379
+[2026-07-17 14:16:58] Starting scheduled run...
+[2026-07-17 14:17:36] Run finished successfully.
+[2026-07-17 14:17:36] 96 new paper(s), 0 citation increase(s) found.
+[2026-07-17 14:17:38] Failed to trigger n8n webhook: 404 Client Error: Not Found for url: https://subhanazhar312.app.n8n.cloud/webhook-test/citation-alerts
+[2026-07-17 14:18:13] TEST MODE: running every 2 minute(s).
+[2026-07-17 14:18:13] Next scheduled run: 2026-07-17 14:20:13.546090
+[2026-07-17 14:18:13] Starting scheduled run...
+[2026-07-17 14:18:37] Run finished successfully.

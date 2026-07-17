@@ -5,6 +5,7 @@ import sys
 import os
 import json
 from dotenv import load_dotenv
+import auth
 
 load_dotenv()
 
@@ -15,6 +16,49 @@ MAX_RELEVANT_DISTANCE = 1.5
 DATA_PATH = "data/professor.json"
 
 st.set_page_config(page_title="Faculty Research Portal", layout="wide")
+
+# --- Login gate: nothing below this loads until the user is authenticated ---
+if "logged_in" not in st.session_state:
+    st.session_state.logged_in = False
+    st.session_state.user_email = None
+
+if not st.session_state.logged_in:
+    st.title("Faculty Research Portal")
+    login_tab, signup_tab = st.tabs(["Log In", "Sign Up"])
+
+    with login_tab:
+        with st.form("login_form"):
+            email = st.text_input("Email")
+            password = st.text_input("Password", type="password")
+            if st.form_submit_button("Log In"):
+                if auth.verify_user(email, password):
+                    st.session_state.logged_in = True
+                    st.session_state.user_email = email.strip().lower()
+                    st.rerun()
+                else:
+                    st.error("Invalid email or password.")
+
+    with signup_tab:
+        with st.form("signup_form"):
+            new_email = st.text_input("Email", key="signup_email")
+            new_password = st.text_input("Password (min 8 characters)", type="password", key="signup_password")
+            confirm_password = st.text_input("Confirm password", type="password", key="signup_confirm")
+            if st.form_submit_button("Sign Up"):
+                if new_password != confirm_password:
+                    st.error("Passwords do not match.")
+                else:
+                    success, message = auth.register_user(new_email, new_password)
+                    (st.success if success else st.error)(message)
+
+    st.stop()
+
+with st.sidebar:
+    st.write(f"Signed in as **{st.session_state.user_email}**")
+    if st.button("Log Out"):
+        st.session_state.logged_in = False
+        st.session_state.user_email = None
+        st.rerun()
+# --- End login gate ---
 
 
 def load_data_file():
@@ -131,6 +175,8 @@ with tab_browse:
     if search_text:
         filtered = [p for p in filtered if search_text.lower() in p["title"].lower()]
 
+    # Sorting still uses citation counts internally (most-cited first),
+    # it's just no longer displayed anywhere.
     filtered = sorted(filtered, key=lambda p: p.get("citations", 0), reverse=True)
 
     st.write(f"{len(filtered)} papers")

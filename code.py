@@ -8,6 +8,7 @@ import datetime
 from scholarly import scholarly
     
 from python_vector_store import build_collection, query_publications
+from n8n_alerts import trigger_n8n_alerts
 
 
 CONTACT_EMAIL = "your_email@example.com"
@@ -538,6 +539,11 @@ def main():
     print_section("MERGED PROFILE", profile)
 
     print_notifications(all_notifications)
+
+    # Fires the n8n webhook (one POST per registered subscriber) as soon
+    # as notifications exist for this run — no need to wait for
+    # scheduler.py's summary step.
+    trigger_n8n_alerts(all_notifications)
 
     strip_identity_fields(openalex_data)
     strip_identity_fields(semantic_data)
