@@ -1,30 +1,45 @@
 """
 n8n_alerts.py
 
-Call trigger_n8n_alerts(all_notifications) from code.py's main(), right
-after all_notifications has been fully assembled (after the scholarly
-fallback block, before or after saving to professor.json).
+Two trigger functions, both posting to the SAME n8n webhook, distinguished
+by an "alert_type" field in the payload so one n8n workflow (Webhook -> AI
+Agent -> Gmail) can handle both. Both payloads include "recipient_name"
+alongside "recipients" so the email can be addressed by name.
 
-all_notifications is the same list code.py already builds — a list of
-dicts shaped like:
-  {"type": "new_paper", "title": "...", ...}
-  {"type": "citation_alert", "title": "...", ...}
+1. trigger_n8n_alerts(all_notifications)
+   {
+     "alert_type": "citation_update",
+     "recipients": "someone@example.com",
+     "recipient_name": "Someone",
+     "new_paper_count": 2,       # true total
+     "citation_alert_count": 1,  # true total
+     "new_papers": ["Title A", "Title B"],       # capped, see MAX_TITLES_PER_EMAIL
+     "citation_alerts": ["Title C"]              # capped
+   }
 
-Sends one webhook POST per subscriber, matching this JSON shape:
-
-{
-  "recipients": "someone@example.com",
-  "new_paper_count": 2,
-  "citation_alert_count": 1,
-  "new_papers": ["Title A", "Title B"],
-  "citation_alerts": ["Title C"]
-}
+2. trigger_cfp_alerts(matched_cfps)
+   {
+     "alert_type": "cfp_alert",
+     "recipients": "someone@example.com",
+     "recipient_name": "Someone",
+     "cfp_count": 2,
+     "cfps": [
+       {"venue": "CVPR", "deadline": "2026-11-15", "matched_topics": ["computer vision"]},
+       ...
+     ]
+   }
 """
 
 import requests
-from auth import get_all_subscriber_emails
+from auth import get_all_subscribers
 
 N8N_WEBHOOK_URL = "https://subhanazhar312.app.n8n.cloud/webhook-test/citation-alerts"
+
+# Caps how many titles get sent per email. Without this, a first run (or
+# any run that finds a large batch of papers) sends dozens/hundreds of
+# titles to the AI Agent, which either blows past max_tokens mid-response
+# (breaking the JSON) or produces an unreadably long email.
+MAX_TITLES_PER_EMAIL = 10
 
 
 def trigger_n8n_alerts(all_notifications):
@@ -35,28 +50,62 @@ def trigger_n8n_alerts(all_notifications):
         print("No new papers or citation alerts — skipping n8n trigger.")
         return
 
-    recipients = get_all_subscriber_emails()
-    if not recipients:
-        print("No subscribers registered — skipping n8n trigger.")
-        return
-    
-    recipients = get_all_subscriber_emails()
-    print(f"DEBUG: recipients found = {recipients}")   # add this line temporarily
-    if not recipients:
+    subscribers = get_all_subscribers()
+    if not subscribers:
         print("No subscribers registered — skipping n8n trigger.")
         return
 
-    for email in recipients:
+    new_papers_capped = new_papers[:MAX_TITLES_PER_EMAIL]
+    citation_alerts_capped = citation_alerts[:MAX_TITLES_PER_EMAIL]
+
+    for subscriber in subscribers:
         payload = {
-            "recipients": email,
+            "alert_type": "citation_update",
+            "recipients": subscriber["email"],
+            "recipient_name": subscriber["name"],
             "new_paper_count": len(new_papers),
             "citation_alert_count": len(citation_alerts),
-            "new_papers": new_papers,
-            "citation_alerts": citation_alerts,
+            "new_papers": new_papers_capped,
+            "citation_alerts": citation_alerts_capped,
         }
         try:
             response = requests.post(N8N_WEBHOOK_URL, json=payload, timeout=15)
             response.raise_for_status()
-            print(f"n8n webhook triggered for {email}")
+            print(f"n8n citation-update webhook triggered for {subscriber['email']}")
         except requests.RequestException as e:
-            print(f"Failed to trigger n8n webhook for {email}: {e}")
+            print(f"Failed to trigger n8n webhook for {subscriber['email']}: {e}")
+
+
+def trigger_cfp_alerts(matched_cfps):
+    if not matched_cfps:
+        print("No matching CFPs found — skipping n8n CFP trigger.")
+        return
+
+    subscribers = get_all_subscribers()
+    if not subscribers:
+        print("No subscribers registered — skipping n8n CFP trigger.")
+        return
+
+    cfps_payload = [
+        {
+            "venue": c["venue"],
+            "deadline": c["deadline"],
+            "matched_topics": c["matched_topics"],
+        }
+        for c in matched_cfps
+    ]
+
+    for subscriber in subscribers:
+        payload = {
+            "alert_type": "cfp_alert",
+            "recipients": subscriber["email"],
+            "recipient_name": subscriber["name"],
+            "cfp_count": len(cfps_payload),
+            "cfps": cfps_payload,
+        }
+        try:
+            response = requests.post(N8N_WEBHOOK_URL, json=payload, timeout=15)
+            response.raise_for_status()
+            print(f"n8n CFP-alert webhook triggered for {subscriber['email']}")
+        except requests.RequestException as e:
+            print(f"Failed to trigger n8n CFP webhook for {subscriber['email']}: {e}")

@@ -4,8 +4,10 @@ import subprocess
 import sys
 import os
 import json
+import datetime
 from dotenv import load_dotenv
 import auth
+import chat_store
 
 load_dotenv()
 
@@ -59,6 +61,31 @@ with st.sidebar:
         st.session_state.logged_in = False
         st.session_state.user_email = None
         st.rerun()
+
+    st.divider()
+
+    if "current_chat_id" not in st.session_state:
+        st.session_state.current_chat_id = None
+
+    if st.button("+ New Chat", use_container_width=True):
+        # Don't persist anything yet — a chat only gets saved (and shows up
+        # in History) once the first message is actually sent. Otherwise
+        # every click leaves an empty "New Chat" stub in the history list.
+        st.session_state.current_chat_id = None
+        st.rerun()
+
+    st.caption("History")
+    user_chats = chat_store.get_user_chats(st.session_state.user_email)
+
+    if not user_chats:
+        st.caption("No conversations yet.")
+    else:
+        for c in user_chats:
+            is_current = c["chat_id"] == st.session_state.current_chat_id
+            label = ("➤ " if is_current else "") + c["title"]
+            if st.button(label, key=f"history_{c['chat_id']}", use_container_width=True):
+                st.session_state.current_chat_id = c["chat_id"]
+                st.rerun()
 # --- End login gate ---
 
 
@@ -76,21 +103,38 @@ def get_collection():
     return client.get_collection(COLLECTION_NAME)
 
 
-def generate_answer(question, context_chunks):
+def generate_answer(question, context_chunks, chat_history=None):
     api_key = os.environ.get("OPENROUTER_API_KEY")
     if not api_key:
         return None
 
     from openai import OpenAI
     client = OpenAI(base_url="https://openrouter.ai/api/v1", api_key=api_key)
-    context_text = "\n\n".join(context_chunks)
+    context_text = "\n\n".join(context_chunks) if context_chunks else "(no paper excerpts retrieved for this question)"
+
+    messages = [
+        {"role": "system", "content": (
+            "You are a research assistant with two jobs, depending on the question:\n"
+            "1. If the question asks about the professor's research (papers, topics, "
+            "findings), answer using ONLY the provided research paper excerpts below. "
+            "Mention paper titles you used. If the excerpts don't cover it, say so.\n"
+            "2. If the question is instead about THIS CONVERSATION itself (e.g. 'what "
+            "did I just ask', 'summarize what we've discussed', 'what was your first "
+            "answer'), answer directly from the conversation history — you do not need "
+            "paper excerpts for this, and there may be none provided."
+        )}
+    ]
+    # Fold in the FULL prior history of this chat (not just the last few
+    # turns) so follow-up questions can resolve against anything said
+    # earlier in this same conversation, not just the most recent exchange.
+    for turn in (chat_history or []):
+        messages.append({"role": turn["role"], "content": turn["content"]})
+
+    messages.append({"role": "user", "content": f"Context:\n{context_text}\n\nQuestion: {question}"})
 
     response = client.chat.completions.create(
         model=OPENROUTER_MODEL,
-        messages=[
-            {"role": "system", "content": "Answer using only the provided research paper excerpts. Mention paper titles you used. If the excerpts don't answer the question, say so."},
-            {"role": "user", "content": f"Context:\n{context_text}\n\nQuestion: {question}"}
-        ]
+        messages=messages
     )
     return response.choices[0].message.content
 
@@ -128,36 +172,92 @@ if profile:
 tab_ask, tab_browse = st.tabs(["Ask", "Browse Papers"])
 
 with tab_ask:
-    question = st.text_input("Ask a question about the professor's research")
+    time_range = st.selectbox(
+        "Time range",
+        ["Any time", "Last 6 months", "Last year", "Last 2 years", "Custom year range"]
+    )
+
+    current_year = datetime.date.today().year
+    where_filter = None
+
+    if time_range == "Last 6 months":
+        # Metadata only carries publication year (see python_vector_store.py's
+        # metadata schema), not a full date, so "last 6 months" is approximated
+        # as the current year. If publication_date is later added to the
+        # metadata, swap this for a real day-level cutoff.
+        where_filter = {"year": {"$gte": current_year}}
+    elif time_range == "Last year":
+        where_filter = {"year": {"$gte": current_year - 1}}
+    elif time_range == "Last 2 years":
+        where_filter = {"year": {"$gte": current_year - 2}}
+    elif time_range == "Custom year range":
+        col_a, col_b = st.columns(2)
+        with col_a:
+            start_year = st.number_input("From year", min_value=1950, max_value=current_year, value=current_year - 1)
+        with col_b:
+            end_year = st.number_input("To year", min_value=1950, max_value=current_year, value=current_year)
+        where_filter = {"$and": [{"year": {"$gte": int(start_year)}}, {"year": {"$lte": int(end_year)}}]}
+
+    # current_chat_id is None for a brand-new, not-yet-saved conversation —
+    # nothing to load yet, that's expected, not an error state.
+    if st.session_state.current_chat_id is None:
+        prior_messages = []
+    else:
+        prior_messages = chat_store.get_chat_messages(st.session_state.user_email, st.session_state.current_chat_id)
+
+    for turn in prior_messages:
+        with st.chat_message(turn["role"]):
+            st.write(turn["content"])
+
+    question = st.chat_input("Ask a question about the professor's research")
 
     if question:
-        results = collection.query(query_texts=[question], n_results=5)
+        # First message of a brand-new chat: create (and thus persist) it
+        # now, not before — this is the point it earns a real title and a
+        # spot in the History list.
+        if st.session_state.current_chat_id is None:
+            st.session_state.current_chat_id = chat_store.create_chat(st.session_state.user_email)
+
+        chat_store.append_message(st.session_state.user_email, st.session_state.current_chat_id, "user", question)
+
+        with st.chat_message("user"):
+            st.write(question)
+
+        query_kwargs = {"query_texts": [question], "n_results": 5}
+        if where_filter:
+            query_kwargs["where"] = where_filter
+
+        results = collection.query(**query_kwargs)
         documents = results["documents"][0]
         metadatas = results["metadatas"][0]
         distances = results["distances"][0]
 
-        if not distances or min(distances) > MAX_RELEVANT_DISTANCE:
-            st.write("No closely related papers found for that question.")
-        else:
-            answer = generate_answer(question, documents)
+        with st.chat_message("assistant"):
+            is_relevant = bool(distances) and min(distances) <= MAX_RELEVANT_DISTANCE
 
-            if answer:
-                st.subheader("Answer")
-                st.write(answer)
-            else:
-                st.caption("Set OPENROUTER_API_KEY to generate a written answer. Showing matching papers below.")
+            # Always call the LLM with the full conversation history — even
+            # when no papers are relevant, e.g. meta-questions like "what
+            # did I just ask" have nothing to do with paper content at all,
+            # but still need an answer grounded in the chat history.
+            answer = generate_answer(question, documents if is_relevant else [], prior_messages)
+            answer_text = answer or "Set OPENROUTER_API_KEY to generate a written answer."
+            st.write(answer_text)
 
-            st.subheader("Related Papers")
-            for meta in metadatas:
-                with st.expander(meta["title"]):
-                    st.write(f"Authors: {meta['authors']}")
-                    st.write(f"Source: {meta['source']}")
-                    if meta.get("doi"):
-                        doi = meta["doi"]
-                        doi_url = doi if doi.startswith("http") else f"https://doi.org/{doi}"
-                        st.markdown(f"[DOI: {doi}]({doi_url})")
-                    if meta.get("pdf_url"):
-                        st.markdown(f"[View PDF]({meta['pdf_url']})")
+            if is_relevant:
+                st.subheader("Related Papers")
+                for meta in metadatas:
+                    with st.expander(meta["title"]):
+                        st.write(f"Authors: {meta['authors']}")
+                        st.write(f"Source: {meta['source']}")
+                        if meta.get("doi"):
+                            doi = meta["doi"]
+                            doi_url = doi if doi.startswith("http") else f"https://doi.org/{doi}"
+                            st.markdown(f"[DOI: {doi}]({doi_url})")
+                        if meta.get("pdf_url"):
+                            st.markdown(f"[View PDF]({meta['pdf_url']})")
+
+        chat_store.append_message(st.session_state.user_email, st.session_state.current_chat_id, "assistant", answer_text)
+        st.rerun()
 
 with tab_browse:
     all_data = collection.get()

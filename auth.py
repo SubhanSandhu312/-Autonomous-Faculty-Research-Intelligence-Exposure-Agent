@@ -32,10 +32,13 @@ def _hash_password(password, salt=None):
     return pw_hash.hex(), salt
 
 
-def register_user(email, password):
+def register_user(email, password, name):
     email = email.strip().lower()
+    name = name.strip()
     if not email or "@" not in email:
         return False, "Enter a valid email address."
+    if not name:
+        return False, "Enter your name."
     if len(password) < 8:
         return False, "Password must be at least 8 characters."
 
@@ -44,7 +47,7 @@ def register_user(email, password):
         return False, "An account with that email already exists."
 
     pw_hash, salt = _hash_password(password)
-    users.append({"email": email, "password_hash": pw_hash, "salt": salt})
+    users.append({"email": email, "name": name, "password_hash": pw_hash, "salt": salt})
     _save_users(users)
     return True, "Account created — you can log in now."
 
@@ -60,6 +63,13 @@ def verify_user(email, password):
 
 
 def get_all_subscriber_emails():
-    """Returns every registered user's email — used by scheduler.py to build
-    the recipient list sent to the n8n webhook for citation alert emails."""
+    """Kept for backward compatibility — some callers just want emails."""
     return [u["email"] for u in _load_users()]
+
+
+def get_all_subscribers():
+    """Returns every registered user's email + name, e.g.
+    [{"email": "a@b.com", "name": "Alice"}, ...]. Users registered before
+    the name field existed will have name == "" — fine, callers should
+    handle a blank name gracefully."""
+    return [{"email": u["email"], "name": u.get("name", "")} for u in _load_users()]
