@@ -4,7 +4,7 @@ import hashlib
 import hmac
 import secrets
 
-USERS_PATH = "data/users.json"
+USERS_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "users.json")
 
 
 def _load_users():

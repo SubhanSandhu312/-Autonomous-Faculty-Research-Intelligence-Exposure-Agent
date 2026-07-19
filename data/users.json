@@ -1,7 +1,8 @@
 [
   {
     "email": "subhansandhu312@gmail.com",
-    "password_hash": "8290bede52644efa794767b04107b19c593cdf5f20b1e207e1b6216d2d491fba",
-    "salt": "9173047f42dc4f0eaa84764a596aaa5d"
+    "name": "Subhan Azhar",
+    "password_hash": "774c96ed48c64143570e343e06198b9b655210b4bded9c51ccbf59831d0ea482",
+    "salt": "63fa07b473e272807b12c86f204fbd4c"
   }
 ]

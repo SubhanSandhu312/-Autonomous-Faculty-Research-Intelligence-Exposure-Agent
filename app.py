@@ -40,6 +40,7 @@ if not st.session_state.logged_in:
 
     with signup_tab:
         with st.form("signup_form"):
+            new_name = st.text_input("Name", key="signup_name")
             new_email = st.text_input("Email", key="signup_email")
             new_password = st.text_input("Password (min 8 characters)", type="password", key="signup_password")
             confirm_password = st.text_input("Confirm password", type="password", key="signup_confirm")
@@ -47,7 +48,7 @@ if not st.session_state.logged_in:
                 if new_password != confirm_password:
                     st.error("Passwords do not match.")
                 else:
-                    success, message = auth.register_user(new_email, new_password)
+                    success, message = auth.register_user(new_email, new_password, new_name)
                     (st.success if success else st.error)(message)
 
     st.stop()

@@ -6,12 +6,15 @@ import time
 import hashlib
 import datetime
 from scholarly import scholarly
+from dotenv import load_dotenv
     
 from python_vector_store import build_collection, query_publications
 from n8n_alerts import trigger_n8n_alerts
 
+load_dotenv()
 
-CONTACT_EMAIL = "your_email@example.com"
+CONTACT_EMAIL = os.environ.get("OPENALEX_EMAIL", "your_email@example.com")
+SEMANTIC_SCHOLAR_API_KEY = os.environ.get("SEMANTIC_SCHOLAR_API_KEY")
 AUTHOR_NAME = "Asifullah Khan"
 SCHOLAR_PROFILE_URL = "https://scholar.google.com/citations?user=C8uhO88AAAAJ&hl=en"
 MAX_OPENALEX_WORKS = 100
@@ -134,6 +137,7 @@ def get_openalex_data(author_name, max_works=100):
 
 
 def get_semantic_scholar_data(author_name, max_papers=100):
+    headers = {"x-api-key": SEMANTIC_SCHOLAR_API_KEY} if SEMANTIC_SCHOLAR_API_KEY else {}
     try:
         search = requests.get(
             "https://api.semanticscholar.org/graph/v1/author/search",
@@ -141,6 +145,7 @@ def get_semantic_scholar_data(author_name, max_papers=100):
                 "query": author_name,
                 "fields": "name,affiliations,paperCount,citationCount,hIndex,homepage,externalIds"
             },
+            headers=headers,
             timeout=15
         )
         search.raise_for_status()
@@ -167,6 +172,7 @@ def get_semantic_scholar_data(author_name, max_papers=100):
         papers_resp = requests.get(
             f"https://api.semanticscholar.org/graph/v1/author/{author_id}/papers",
             params={"fields": fields, "limit": max_papers},
+            headers=headers,
             timeout=15
         )
         papers_resp.raise_for_status()

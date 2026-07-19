@@ -39,6 +39,12 @@ def trigger_n8n_alerts(all_notifications):
     if not recipients:
         print("No subscribers registered — skipping n8n trigger.")
         return
+    
+    recipients = get_all_subscriber_emails()
+    print(f"DEBUG: recipients found = {recipients}")   # add this line temporarily
+    if not recipients:
+        print("No subscribers registered — skipping n8n trigger.")
+        return
 
     for email in recipients:
         payload = {

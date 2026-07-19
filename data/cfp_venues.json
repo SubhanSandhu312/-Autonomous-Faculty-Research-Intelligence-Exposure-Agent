@@ -1,0 +1,20 @@
+[
+  {
+    "name": "CVPR 2027",
+    "keywords": ["Computer Vision", "Deep Learning", "Image Processing", "Convolutional Neural Networks"],
+    "deadline": "2026-11-15",
+    "link": "https://cvpr.thecvf.com"
+  },
+  {
+    "name": "NeurIPS 2026",
+    "keywords": ["Machine Learning", "Artificial Intelligence", "Neural Networks"],
+    "deadline": "2026-05-15",
+    "link": "https://neurips.cc"
+  },
+  {
+    "name": "MICCAI 2027",
+    "keywords": ["Medical Imaging", "Image Segmentation", "Biomedical Engineering"],
+    "deadline": "2027-03-01",
+    "link": "https://miccai.org"
+  }
+]
