@@ -94,3 +94,10 @@
 [2026-07-17 14:18:13] Next scheduled run: 2026-07-17 14:20:13.546090
 [2026-07-17 14:18:13] Starting scheduled run...
 [2026-07-17 14:18:37] Run finished successfully.
+[2026-07-19 22:35:39] TEST MODE: running every 2 minute(s).
+[2026-07-19 22:35:39] Next scheduled run: 2026-07-19 22:37:39.217330
+[2026-07-19 22:35:39] Starting scheduled run...
+[2026-07-19 22:36:27] Run finished successfully.
+[2026-07-19 22:36:27] 136 new paper(s), 0 citation increase(s) found.
+[2026-07-19 22:36:29] Failed to trigger n8n webhook: 404 Client Error: Not Found for url: https://subhanazhar312.app.n8n.cloud/webhook-test/citation-alerts
+[2026-07-19 22:38:29] Starting scheduled run...

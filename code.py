@@ -7,22 +7,22 @@ import hashlib
 import datetime
 from scholarly import scholarly
 from dotenv import load_dotenv
-    
+
 from python_vector_store import build_collection, query_publications
-from n8n_alerts import trigger_n8n_alerts
+from n8n_alerts import trigger_n8n_alerts, trigger_cfp_alerts
+from cfp_alerts import get_matched_cfps
+import professors
 
 load_dotenv()
 
 CONTACT_EMAIL = os.environ.get("OPENALEX_EMAIL", "your_email@example.com")
 SEMANTIC_SCHOLAR_API_KEY = os.environ.get("SEMANTIC_SCHOLAR_API_KEY")
-AUTHOR_NAME = "Asifullah Khan"
-SCHOLAR_PROFILE_URL = "https://scholar.google.com/citations?user=C8uhO88AAAAJ&hl=en"
+
 MAX_OPENALEX_WORKS = 100
 MAX_SEMANTIC_SCHOLAR_PAPERS = 100
 MAX_ARXIV_RESULTS = 100
 MAX_SCHOLARLY_PAPERS = 100
 CITATION_ALERT_THRESHOLD = 5
-DATA_PATH = "data/professor.json"
 
 
 def reconstruct_abstract(inverted_index):
@@ -106,6 +106,10 @@ def get_openalex_data(author_name, max_works=100):
                     "abstract": reconstruct_abstract(w.get("abstract_inverted_index")),
                     "fields_of_study": fields_of_study,
                     "pdf_url": pdf_url,
+                    # OpenAlex's own work page -- always present, so it's a
+                    # reliable fallback link for the rare paper that has
+                    # neither a doi nor an open-access pdf.
+                    "link": w.get("id"),
                     "references_count": len(references),
                     "references": references[:20]
                 })
@@ -163,7 +167,7 @@ def get_semantic_scholar_data(author_name, max_papers=100):
     print(f"SUCCESS: Semantic Scholar matched author '{author['name']}' ({author_id})")
 
     fields = ",".join([
-        "title", "year", "publicationDate", "citationCount", "abstract", "tldr",
+        "paperId", "title", "year", "publicationDate", "citationCount", "abstract", "tldr",
         "authors", "fieldsOfStudy", "s2FieldsOfStudy", "openAccessPdf",
         "externalIds", "venue", "references.title", "references.year"
     ])
@@ -186,6 +190,11 @@ def get_semantic_scholar_data(author_name, max_papers=100):
         authors = [a.get("name") for a in (p.get("authors") or [])]
         fields_of_study = p.get("fieldsOfStudy") or []
         pdf_url = (p.get("openAccessPdf") or {}).get("url")
+        # externalIds was already being requested from the API but its DOI
+        # was never actually read into the paper dict -- every paper had a
+        # blank doi field even when Semantic Scholar had one.
+        paper_doi = (p.get("externalIds") or {}).get("DOI")
+        paper_id = p.get("paperId")
         references = [
             {"title": r.get("title"), "year": r.get("year")}
             for r in (p.get("references") or [])[:20]
@@ -196,11 +205,16 @@ def get_semantic_scholar_data(author_name, max_papers=100):
             "year": p.get("year"),
             "publication_date": p.get("publicationDate"),
             "citations": p.get("citationCount"),
+            "doi": paper_doi,
             "abstract": p.get("abstract"),
             "tldr": (p.get("tldr") or {}).get("text"),
             "authors": authors,
             "fields_of_study": fields_of_study,
             "pdf_url": pdf_url,
+            # Semantic Scholar's own paper page -- every paper has one, so
+            # it's the last-resort fallback when there's no doi and no
+            # open-access pdf.
+            "link": f"https://www.semanticscholar.org/paper/{paper_id}" if paper_id else None,
             "references_count": len(p.get("references") or []),
             "references": references
         })
@@ -280,12 +294,26 @@ def get_scholar_data(name_or_url, max_papers=50):
     for i, pub in enumerate(author["publications"][:max_papers], start=1):
         try:
             filled = scholarly.fill(pub)
+            pub_year = filled["bib"].get("pub_year")
             papers.append({
                 "title": filled["bib"].get("title"),
-                "year": filled["bib"].get("pub_year"),
+                "year": pub_year,
+                # scholarly never exposes a full publication date, only a
+                # year -- store a year-precision ISO date anyway so every
+                # paper across every source has SOME publication_date to
+                # embed and filter on, instead of this source being the
+                # one gap. It's coarser than OpenAlex/Semantic Scholar's
+                # day-level dates, but still far more useful for RAG
+                # questions like "what did they publish in 2022" than
+                # nothing at all.
+                "publication_date": f"{pub_year}-01-01" if pub_year else None,
                 "citations": filled.get("num_citations"),
                 "authors": filled["bib"].get("author"),
-                "abstract": filled["bib"].get("abstract")
+                "abstract": filled["bib"].get("abstract"),
+                # scholarly usually exposes the publisher/listing page as
+                # pub_url (not always present) -- last-resort link for a
+                # source that never gives a doi or a direct pdf.
+                "link": filled.get("pub_url") or filled.get("eprint_url")
             })
             print(f"  SUCCESS [{i}/{max_papers}]: {filled['bib'].get('title')}")
         except Exception as e:
@@ -425,11 +453,11 @@ def stamp_profile(profile, previous_profile):
     return profile
 
 
-def load_previous_data():
-    if not os.path.exists(DATA_PATH):
+def load_previous_data(data_path):
+    if not os.path.exists(data_path):
         return {}
     try:
-        with open(DATA_PATH, "r", encoding="utf-8") as f:
+        with open(data_path, "r", encoding="utf-8") as f:
             return json.load(f)
     except (json.JSONDecodeError, OSError) as e:
         print(f"WARNING: could not read previous data file, treating as first run: {e}")
@@ -467,9 +495,9 @@ def print_paper(i, p):
     if p.get("last_checked"):
         print(f"     Last checked: {p.get('last_checked')} | Last updated: {p.get('last_updated')}")
     if p.get("is_new_paper"):
-        print(f"     🆕 NEW PAPER")
+        print(f"     NEW PAPER")
     if p.get("citation_alert"):
-        print(f"     🔔 CITATION ALERT (gained {CITATION_ALERT_THRESHOLD}+ citations since last check)")
+        print(f"     CITATION ALERT (gained {CITATION_ALERT_THRESHOLD}+ citations since last check)")
 
 
 def print_section(title, data):
@@ -496,18 +524,30 @@ def print_notifications(notifications):
         print("No new papers or citation spikes since the last run.")
     for n in notifications:
         if n["type"] == "new_paper":
-            print(f"🆕 [{n['source']}] New paper found: '{n['title']}' ({n.get('year')}), {n.get('citations')} citations")
+            print(f"[{n['source']}] New paper found: '{n['title']}' ({n.get('year')}), {n.get('citations')} citations")
         elif n["type"] == "citation_alert":
-            print(f"🔔 [{n['source']}] Citation increase: '{n['title']}' went from "
+            print(f"[{n['source']}] Citation increase: '{n['title']}' went from "
                   f"{n['old_citations']} to {n['new_citations']} citations (+{n['increase']})")
     print("===== END NOTIFICATIONS =====\n")
 
 
-def main():
-    author_name = AUTHOR_NAME
-    scholar_url = SCHOLAR_PROFILE_URL
+def process_professor(professor):
+    """Runs the full fetch -> stamp -> save pipeline for ONE professor.
+    Returns (profile, all_notifications, all_papers_for_cfp_matching).
 
-    previous = load_previous_data()
+    Writes ONLY to that professor's own
+    data/professors/<id>/professor.json. There is no more legacy
+    data/professor.json bridge -- python_vector_store.py now reads every
+    professor's own file directly, so the old single-file compatibility
+    copy is no longer needed."""
+    author_name = professor["name"]
+    scholar_url = professor.get("scholar_url") or ""
+    data_dir = professors.get_professor_data_dir(professor["id"])
+    data_path = os.path.join(data_dir, "professor.json")
+
+    print(f"\n########## Processing professor: {author_name} ##########")
+
+    previous = load_previous_data(data_path)
     all_notifications = []
 
     print("Fetching from OpenAlex...")
@@ -533,7 +573,7 @@ def main():
 
     scholar_data = None
     if not openalex_data and not semantic_data:
-        scholar_data = get_scholar_data(scholar_url, max_papers=MAX_SCHOLARLY_PAPERS)
+        scholar_data = get_scholar_data(scholar_url or author_name, max_papers=MAX_SCHOLARLY_PAPERS)
         scholar_data, notifications = stamp_source(scholar_data, previous.get("scholarly_fallback"), "scholarly")
         all_notifications.extend(notifications)
         print_section("SCHOLARLY (fallback)", scholar_data)
@@ -546,16 +586,19 @@ def main():
 
     print_notifications(all_notifications)
 
-    # Fires the n8n webhook (one POST per registered subscriber) as soon
-    # as notifications exist for this run — no need to wait for
-    # scheduler.py's summary step.
-    trigger_n8n_alerts(all_notifications)
+    all_papers_for_cfp_matching = (
+        (openalex_data or {}).get("papers", [])
+        + (semantic_data or {}).get("papers", [])
+        + (scholar_data or {}).get("papers", [])
+    )
 
     strip_identity_fields(openalex_data)
     strip_identity_fields(semantic_data)
     strip_identity_fields(scholar_data)
 
     combined = {
+        "professor_id": professor["id"],
+        "professor_name": author_name,
         "profile": profile,
         "openalex": openalex_data,
         "semantic_scholar": semantic_data,
@@ -565,21 +608,76 @@ def main():
         "notifications": all_notifications
     }
 
-    os.makedirs("data", exist_ok=True)
-    with open(DATA_PATH, "w", encoding="utf-8") as f:
+    os.makedirs(data_dir, exist_ok=True)
+    with open(data_path, "w", encoding="utf-8") as f:
         json.dump(combined, f, indent=4, ensure_ascii=False)
 
-    print(f"Done! Saved to {DATA_PATH}")
+    print(f"Done with {author_name}! Saved to {data_path}")
+
+    return profile, all_notifications, all_papers_for_cfp_matching
+
+
+def main():
+    all_professors = professors.get_all_professors()
+
+    if not all_professors:
+        print("No professors registered yet -- nothing to fetch. "
+              "Add a professor from the app first.")
+        return
+
+    print(f"Tracking {len(all_professors)} professor(s) across all users.")
+
+    results_by_professor = {}
+
+    for professor in all_professors:
+        profile, notifications, papers_for_cfp = process_professor(professor)
+        results_by_professor[professor["id"]] = {
+            "profile": profile,
+            "notifications": notifications,
+            "papers": papers_for_cfp,
+            "name": professor["name"],
+        }
+
+    # --- Build per-user notification bundles across ALL professors each
+    # user tracks, so someone following 3 professors gets ONE combined
+    # citation-update email and ONE combined CFP email this run, not three
+    # of each. ---
+    user_citation_bundles = {}  # user_email -> [{"professor_name", "new_papers", "citation_alerts"}, ...]
+    user_cfp_bundles = {}       # user_email -> [{"professor_name", "cfps"}, ...]
+
+    for pid, result in results_by_professor.items():
+        subscribers = professors.get_subscribers_for_professor(pid)
+        if not subscribers:
+            continue
+
+        new_papers = [n["title"] for n in result["notifications"] if n["type"] == "new_paper"]
+        citation_alerts = [n["title"] for n in result["notifications"] if n["type"] == "citation_alert"]
+        matched_cfps = get_matched_cfps(result["profile"], result["papers"])
+
+        for user_email in subscribers:
+            if new_papers or citation_alerts:
+                user_citation_bundles.setdefault(user_email, []).append({
+                    "professor_name": result["name"],
+                    "new_papers": new_papers,
+                    "citation_alerts": citation_alerts,
+                })
+            if matched_cfps:
+                user_cfp_bundles.setdefault(user_email, []).append({
+                    "professor_name": result["name"],
+                    "cfps": matched_cfps,
+                })
+
+    trigger_n8n_alerts(user_citation_bundles)
+    trigger_cfp_alerts(user_cfp_bundles)
+
+    print("All professors processed.")
+
+    print("Updating ChromaDB...")
+    build_collection()
+
+    print("\nTesting retrieval...")
+    query_publications("deep learning research")
 
 
 if __name__ == "__main__":
     main()
-
-
-
-
-print("Updating ChromaDB...")
-build_collection()
-
-print("\nTesting retrieval...")
-query_publications("deep learning research")

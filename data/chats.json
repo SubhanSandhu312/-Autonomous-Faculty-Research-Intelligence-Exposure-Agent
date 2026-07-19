@@ -98,5 +98,53 @@
         }
       ]
     }
+  ],
+  "subhanazhar098@gmail.com": [
+    {
+      "chat_id": "66eae87a-2fb4-4c93-bd83-ad4fd93db199",
+      "title": "last 2 years ",
+      "created_at": "2026-07-19T20:00:05",
+      "messages": [
+        {
+          "role": "user",
+          "content": "last 2 years "
+        },
+        {
+          "role": "assistant",
+          "content": "I don't have any research paper excerpts to reference for your question about the last 2 years. The context provided indicates that no paper excerpts were retrieved for this question.\n\nIf you're asking about something specific regarding the last two years in general, I'd be happy to help, but I would need more information about what topic or timeframe you're referring to. Could you clarify what you'd like to know about the last two years?"
+        },
+        {
+          "role": "user",
+          "content": "after 2023"
+        },
+        {
+          "role": "assistant",
+          "content": "I’m not sure what you’re looking for. Could you clarify what you’d like to know about “after 2023”? For example, are you interested in a specific topic (e.g., research findings, a particular event, a timeline, etc.)? Let me know so I can provide a more helpful answer."
+        },
+        {
+          "role": "user",
+          "content": "summarize"
+        },
+        {
+          "role": "assistant",
+          "content": "Here’s a brief summary of what’s happened so far in our exchange:\n\n- **You asked about “the last 2 years.”** I responded that I don’t have any relevant research‑paper excerpts to draw from for that request and asked for more clarification.\n- **You then asked about “after 2023.”** Again, I indicated that I lack relevant paper excerpts and requested further details on what you’d like to know.\n- **You supplied a context note:** “(no paper excerpts retrieved for this question) Question: summarize.” This signals that you’d like a concise recap of the conversation we’ve had up to this point.\n\nSo far, the dialogue has been a back‑and‑forth where you’ve asked for information about recent years, I’ve explained that I don’t have the needed excerpts, and you’ve now asked for a summary of this interaction. If you have a specific topic or timeframe within “after 2023” you’d like to explore further, let me know and I can try to help with any other details you need."
+        }
+      ]
+    },
+    {
+      "chat_id": "d1c2cf41-840c-4be4-bd01-71e599680714",
+      "title": "give me papers of his regarding coputer vision",
+      "created_at": "2026-07-19T19:43:09",
+      "messages": [
+        {
+          "role": "user",
+          "content": "give me papers of his regarding coputer vision"
+        },
+        {
+          "role": "assistant",
+          "content": "Below are the computer‑vision papers that list **Andrew Y. Ng** as an author (excerpts provided in your context):\n\n| # | Paper Title | Main Author(s) |\n|---|-------------|----------------|\n| 1 | **Learning to Grasp Novel Objects Using Vision** | Ashutosh Saxena, Justin Driemeyer, Justin Kearns, Chioma Osondu, **Andrew Y. Ng** |\n| 2 | **The 1st Agriculture‑Vision Challenge: Methods and Results** | Mang Tik Chiu, Xingqian Xu, Kai Wang, Jennifer Hobbs, Naira Hovakimyan, Thomas S. Huang, Honghui Shi, Yunchao Wei, Zilong Huang, Alexander Schwing, Robert Brunner, Ivan Dozier, Wyatt Dozier, Karen Ghandilyan, David Wilson, Hyunseong Park, Junhee Kim, Sungho Kim, Qinghui Liu, Michael C. Kampffmeyer, Robert Jenssen, Arnt B. Salberg, Alexandre Barbosa, Rodrigo Trevisan, Bingchen Zhao, Shaozuo Yu, Siwei Yang, Yin Wang, Hao Sheng, Xiao Chen, Jingyi Su, Ram Rajagopal, **Andrew Y. Ng**, Van Thong Huynh, Soo‑Hyung Kim, In‑Seop Na, Ujjwal Baid, Shubham Innani, Prasad Dutande, Bhakti Baheti, Thin… |\n| 3 | **Depth Estimation Using Monocular and Stereo Cues** | Ashutosh Saxena, Jamie Schulte, **Andrew Y. Ng** |\n| 4 | **Learning Depth from Single Monocular Images** | Ashutosh Saxena, Sung Heon Chung, **Andrew Y. Ng(hwnd)** |\n| 5 | **Automatic Single‑Image 3D Reconstructions of Indoor Manhattan World Scenes** | Erick Delage, Honglak Lee, **Andrew Y. Ng** |\n\nAll of these works are focused on computer‑vision topics such as depth estimation, robotic grasping, and large‑scale scene reconstruction. If you need more details or a specific subset, let me know!"
+        }
+      ]
+    }
   ]
 }

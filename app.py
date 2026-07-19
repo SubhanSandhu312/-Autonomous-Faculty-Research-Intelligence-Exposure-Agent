@@ -8,6 +8,8 @@ import datetime
 from dotenv import load_dotenv
 import auth
 import chat_store
+import professors
+import cfp_alerts
 
 load_dotenv()
 
@@ -15,9 +17,23 @@ CHROMA_DIR = "chroma_db"
 COLLECTION_NAME = "publications"
 OPENROUTER_MODEL = "openrouter/free"
 MAX_RELEVANT_DISTANCE = 1.5
-DATA_PATH = "data/professor.json"
 
 st.set_page_config(page_title="Faculty Research Portal", layout="wide")
+
+
+def add_and_track_professor(user_email, name, scholar_url):
+    """Adds a professor to the global registry (or reuses the existing
+    entry if one already matches this name/Scholar URL) and subscribes
+    this user to it. Returns (professor_id, was_duplicate) so the caller
+    can tell the user whether this reused an existing profile (no
+    re-fetching needed) or created a brand new one."""
+    professor_id = professors.make_professor_id(name, scholar_url)
+    was_duplicate = professors.get_professor(professor_id) is not None
+    professors.add_professor(name, scholar_url)
+    professors.subscribe(user_email, professor_id)
+    return professor_id, was_duplicate
+
+
 
 # --- Login gate: nothing below this loads until the user is authenticated ---
 if "logged_in" not in st.session_state:
@@ -89,10 +105,50 @@ with st.sidebar:
 # --- End login gate ---
 
 
-def load_data_file():
+# --- Onboarding gate: there is no default/hardcoded professor anymore.
+# Every user must add at least one professor before they see Ask/Browse —
+# only after that does it make sense to fetch publications and build the
+# knowledge base. ---
+my_professors = professors.get_user_professors(st.session_state.user_email)
+
+if not my_professors:
+    st.title("Faculty Research Portal")
+    st.subheader("Add your first professor to get started")
+    st.caption(
+        "Once you add a professor, we'll fetch their publications and set "
+        "up the chatbot and paper browser for them. You can add more "
+        "professors any time from the My Professors tab."
+    )
+    with st.form("first_professor_form"):
+        prof_name = st.text_input("Professor Name *")
+        prof_scholar_url = st.text_input("Google Scholar Profile URL")
+        prof_email = st.text_input("Professor Email (optional)")
+        prof_university = st.text_input("University (optional)")
+        if st.form_submit_button("Add & Track"):
+            if not prof_name.strip():
+                st.error("Enter a professor name.")
+            else:
+                _, was_duplicate = add_and_track_professor(
+                    st.session_state.user_email, prof_name, prof_scholar_url
+                )
+                if was_duplicate:
+                    st.success(
+                        f"{prof_name} is already being tracked in the system — "
+                        f"you're now subscribed to their existing profile, no re-fetching needed."
+                    )
+                else:
+                    st.success(f"Added {prof_name}. Fetching their publications now — this can take a few minutes.")
+                st.rerun()
+    st.stop()
+# --- End onboarding gate ---
+
+
+def load_professor_profile(professor_id):
+    data_dir = professors.get_professor_data_dir(professor_id)
+    path = os.path.join(data_dir, "professor.json")
     try:
-        with open(DATA_PATH, "r", encoding="utf-8") as f:
-            return json.load(f)
+        with open(path, "r", encoding="utf-8") as f:
+            return json.load(f).get("profile", {})
     except (FileNotFoundError, json.JSONDecodeError):
         return {}
 
@@ -115,9 +171,11 @@ def generate_answer(question, context_chunks, chat_history=None):
     messages = [
         {"role": "system", "content": (
             "You are a research assistant with two jobs, depending on the question:\n"
-            "1. If the question asks about the professor's research (papers, topics, "
+            "1. If the question asks about a professor's research (papers, topics, "
             "findings), answer using ONLY the provided research paper excerpts below. "
-            "Mention paper titles you used. If the excerpts don't cover it, say so.\n"
+            "Mention paper titles you used, and which professor each came from if more "
+            "than one professor is represented in the excerpts. If the excerpts don't "
+            "cover it, say so.\n"
             "2. If the question is instead about THIS CONVERSATION itself (e.g. 'what "
             "did I just ask', 'summarize what we've discussed', 'what was your first "
             "answer'), answer directly from the conversation history — you do not need "
@@ -149,27 +207,56 @@ except Exception:
         except subprocess.CalledProcessError:
             st.error("code.py failed to run. Check your terminal for the error.")
             st.stop()
+    get_collection.clear()
     collection = get_collection()
 
 st.title("Faculty Research Portal")
 
-data_file = load_data_file()
-profile = data_file.get("profile", {})
+# --- Professor selector: applies to both Ask and Browse Papers below ---
+professor_options = {p["id"]: p["name"] for p in my_professors}
+ALL_LABEL = "All my professors"
+selector_labels = [ALL_LABEL] + list(professor_options.values())
+selected_label = st.selectbox("Professor", selector_labels)
+show_all = selected_label == ALL_LABEL
 
-if profile:
-    with st.container(border=True):
-        st.subheader(profile.get("name") or "Unknown Researcher")
-        if profile.get("affiliation"):
-            st.write(profile["affiliation"])
-        if profile.get("orcid"):
-            st.write(f"ORCID: {profile['orcid']}")
-        if profile.get("homepage"):
-            st.markdown(f"[Homepage]({profile['homepage']})")
-        interests = profile.get("research_interests")
-        if interests:
-            st.write("Research interests: " + ", ".join(interests))
+if show_all:
+    selected_professor_ids = list(professor_options.keys())
+else:
+    selected_professor_ids = [pid for pid, name in professor_options.items() if name == selected_label]
 
-tab_ask, tab_browse = st.tabs(["Ask", "Browse Papers"])
+# Show the profile card only when viewing exactly one professor — a
+# merged profile across several professors wouldn't mean much.
+if len(selected_professor_ids) == 1:
+    profile = load_professor_profile(selected_professor_ids[0])
+    if profile:
+        with st.container(border=True):
+            st.subheader(profile.get("name") or "Unknown Researcher")
+            if profile.get("affiliation"):
+                st.write(profile["affiliation"])
+            if profile.get("orcid"):
+                st.write(f"ORCID: {profile['orcid']}")
+            if profile.get("homepage"):
+                st.markdown(f"[Homepage]({profile['homepage']})")
+            interests = profile.get("research_interests")
+            if interests:
+                st.write("Research interests: " + ", ".join(interests))
+
+            # CFP matches for this professor -- same matching logic used
+            # to decide alert emails (cfp_alerts.py), shown here live so
+            # you don't have to wait for an email to see it.
+            cfp_matches = cfp_alerts.get_upcoming_cfp_matches(profile)
+            if cfp_matches:
+                st.write(f"**Upcoming CFP matches ({len(cfp_matches)})**")
+                for m in cfp_matches:
+                    topics = ", ".join(m["matched_topics"]) if m["matched_topics"] else ""
+                    line = f"- **{m['venue']}** — deadline {m['deadline']} ({m['days_left']} days left)"
+                    if topics:
+                        line += f" — matched: {topics}"
+                    st.markdown(line)
+                    if m.get("link"):
+                        st.markdown(f"  [CFP link]({m['link']})")
+
+tab_ask, tab_browse, tab_professors = st.tabs(["Ask", "Browse Papers", "My Professors"])
 
 with tab_ask:
     time_range = st.selectbox(
@@ -178,25 +265,43 @@ with tab_ask:
     )
 
     current_year = datetime.date.today().year
-    where_filter = None
+    year_filter = None
 
     if time_range == "Last 6 months":
         # Metadata only carries publication year (see python_vector_store.py's
         # metadata schema), not a full date, so "last 6 months" is approximated
         # as the current year. If publication_date is later added to the
         # metadata, swap this for a real day-level cutoff.
-        where_filter = {"year": {"$gte": current_year}}
+        year_filter = {"year": {"$gte": current_year}}
     elif time_range == "Last year":
-        where_filter = {"year": {"$gte": current_year - 1}}
+        year_filter = {"year": {"$gte": current_year - 1}}
     elif time_range == "Last 2 years":
-        where_filter = {"year": {"$gte": current_year - 2}}
+        year_filter = {"year": {"$gte": current_year - 2}}
     elif time_range == "Custom year range":
         col_a, col_b = st.columns(2)
         with col_a:
             start_year = st.number_input("From year", min_value=1950, max_value=current_year, value=current_year - 1)
         with col_b:
             end_year = st.number_input("To year", min_value=1950, max_value=current_year, value=current_year)
-        where_filter = {"$and": [{"year": {"$gte": int(start_year)}}, {"year": {"$lte": int(end_year)}}]}
+        year_filter = {"$and": [{"year": {"$gte": int(start_year)}}, {"year": {"$lte": int(end_year)}}]}
+
+    # Only add a professor clause when a specific subset (not "all") is
+    # selected — Chroma's `where` takes a single top-level operator, so
+    # year + professor filters get combined under one $and when both apply.
+    professor_filter = None
+    if not show_all:
+        if len(selected_professor_ids) == 1:
+            professor_filter = {"professor_id": selected_professor_ids[0]}
+        elif selected_professor_ids:
+            professor_filter = {"professor_id": {"$in": selected_professor_ids}}
+
+    clauses = [c for c in (year_filter, professor_filter) if c]
+    if len(clauses) == 0:
+        where_filter = None
+    elif len(clauses) == 1:
+        where_filter = clauses[0]
+    else:
+        where_filter = {"$and": clauses}
 
     # current_chat_id is None for a brand-new, not-yet-saved conversation —
     # nothing to load yet, that's expected, not an error state.
@@ -246,14 +351,28 @@ with tab_ask:
             if is_relevant:
                 st.subheader("Related Papers")
                 for meta in metadatas:
-                    with st.expander(meta["title"]):
+                    expander_label = meta["title"]
+                    if show_all or len(selected_professor_ids) > 1:
+                        expander_label += f"  —  {meta.get('professor_name', '')}"
+                    with st.expander(expander_label):
                         st.write(f"Authors: {meta['authors']}")
                         st.write(f"Source: {meta['source']}")
+                        if meta.get("professor_name"):
+                            st.write(f"Professor: {meta['professor_name']}")
+                        if meta.get("publication_date"):
+                            st.write(f"Published: {meta['publication_date']}")
+                        # Not every source gives a DOI -- arxiv and the
+                        # scholarly fallback never do -- so `link` is
+                        # whatever best URL was available (DOI > direct
+                        # PDF > source page), computed in
+                        # python_vector_store.py's make_link().
                         if meta.get("doi"):
                             doi = meta["doi"]
                             doi_url = doi if doi.startswith("http") else f"https://doi.org/{doi}"
                             st.markdown(f"[DOI: {doi}]({doi_url})")
-                        if meta.get("pdf_url"):
+                        elif meta.get("link"):
+                            st.markdown(f"[View Paper]({meta['link']})")
+                        if meta.get("pdf_url") and meta.get("pdf_url") != meta.get("link"):
                             st.markdown(f"[View PDF]({meta['pdf_url']})")
 
         chat_store.append_message(st.session_state.user_email, st.session_state.current_chat_id, "assistant", answer_text)
@@ -262,6 +381,10 @@ with tab_ask:
 with tab_browse:
     all_data = collection.get()
     papers = all_data["metadatas"]
+
+    # Restrict to the professor(s) chosen in the selector above.
+    if not show_all and selected_professor_ids:
+        papers = [p for p in papers if p.get("professor_id") in selected_professor_ids]
 
     col1, col2 = st.columns([1, 2])
     with col1:
@@ -284,6 +407,8 @@ with tab_browse:
 
     for paper in filtered:
         label = paper["title"]
+        if show_all or len(selected_professor_ids) > 1:
+            label += f"  —  {paper.get('professor_name', '')}"
         if paper.get("is_new_paper"):
             label += "  •  New"
         if paper.get("citation_alert"):
@@ -293,9 +418,62 @@ with tab_browse:
             st.write(f"Authors: {paper['authors']}")
             st.write(f"Venue: {paper.get('venue', '')}")
             st.write(f"Source: {paper['source']}")
+            if paper.get("professor_name"):
+                st.write(f"Professor: {paper['professor_name']}")
+            if paper.get("publication_date"):
+                st.write(f"Published: {paper['publication_date']}")
+            # Same DOI > link > pdf_url fallback as the Ask tab -- arxiv
+            # and scholarly-fallback papers have no DOI, so without this
+            # they'd show no link at all.
             if paper.get("doi"):
                 doi = paper["doi"]
                 doi_url = doi if doi.startswith("http") else f"https://doi.org/{doi}"
                 st.markdown(f"[DOI: {doi}]({doi_url})")
-            if paper.get("pdf_url"):
+            elif paper.get("link"):
+                st.markdown(f"[View Paper]({paper['link']})")
+            if paper.get("pdf_url") and paper.get("pdf_url") != paper.get("link"):
                 st.markdown(f"[View PDF]({paper['pdf_url']})")
+
+with tab_professors:
+    st.subheader("Add a Professor")
+    st.caption(
+        "Adding a professor here registers them for tracking. They'll be "
+        "fetched on the next scheduled run (or the next time code.py runs)."
+    )
+    with st.form("add_professor_form"):
+        prof_name = st.text_input("Professor Name")
+        prof_scholar_url = st.text_input("Google Scholar Profile URL (optional but recommended)")
+        if st.form_submit_button("Add & Track"):
+            if not prof_name.strip():
+                st.error("Enter a professor name.")
+            else:
+                _, was_duplicate = add_and_track_professor(
+                    st.session_state.user_email, prof_name, prof_scholar_url
+                )
+                if was_duplicate:
+                    st.success(
+                        f"{prof_name} is already being tracked in the system — "
+                        f"you're now subscribed to their existing profile, no re-fetching needed."
+                    )
+                else:
+                    st.success(f"Added and now tracking {prof_name}.")
+                st.rerun()
+
+    st.divider()
+
+    st.subheader("My Tracked Professors")
+    st.caption("You'll get citation/new-paper and CFP alert emails for everyone in this list.")
+
+    if not my_professors:
+        st.caption("You're not tracking any professors yet. Add one above.")
+    else:
+        for p in my_professors:
+            col1, col2 = st.columns([4, 1])
+            with col1:
+                st.write(f"**{p['name']}**")
+                if p.get("scholar_url"):
+                    st.caption(p["scholar_url"])
+            with col2:
+                if st.button("Remove", key=f"unsub_{p['id']}"):
+                    professors.unsubscribe(st.session_state.user_email, p["id"])
+                    st.rerun()

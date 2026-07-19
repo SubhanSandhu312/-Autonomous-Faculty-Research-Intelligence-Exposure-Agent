@@ -4,5 +4,11 @@
     "name": "Subhan Azhar",
     "password_hash": "b87d3682bd13639fd68f6ed963eeef1bde86fb778d7a87e57d1877068c5d3892",
     "salt": "788146de50c8fcd0e9fe4737d0d14e2f"
+  },
+  {
+    "email": "subhanazhar098@gmail.com",
+    "name": "Subhan Azhar",
+    "password_hash": "57a9b564accec2e576c578dc1a89491e0067e6b485851be3a1c82830e4893e5c",
+    "salt": "16c5bdbce2866abac5bc500ccf0fc053"
   }
 ]

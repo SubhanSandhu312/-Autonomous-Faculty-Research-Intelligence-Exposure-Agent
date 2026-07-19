@@ -1,44 +1,44 @@
 """
 cfp_alerts.py
 
-Module 4 — CFP (Call for Papers) Alerts.
+Module 4 -- CFP (Call for Papers) matching.
 
-There's no clean free API for conference/journal CFPs, so this keeps a
-small curated venue list (data/cfp_venues.json) with topic keywords and
-submission deadlines. Each run:
+WHY THIS CHANGED:
+code.py imports `get_matched_cfps` from this module, but the previous
+version of this file only exposed `trigger_cfp_alerts()` (which sent its
+own webhook per subscriber, read a single hardcoded data/professor.json,
+and duplicated the sending logic that n8n_alerts.py now handles with
+proper per-user bundling across multiple professors). That mismatch was
+the ImportError.
 
-  1. Loads the venue list.
-  2. Matches each venue's keywords against the researcher's
-     research_interests (pulled from professor.json's merged profile).
-  3. Flags venues whose deadline falls within CFP_ALERT_WINDOW_DAYS.
-  4. Skips venues already alerted on (tracked in
-     data/cfp_alerts_sent.json) so subscribers don't get the same
-     CFP email every run.
-  5. Sends one webhook POST per subscriber to the SAME n8n webhook
-     used for paper/citation alerts, tagged "alert_type": "cfp_alert"
-     so the n8n workflow can branch to a different AI Agent prompt.
+Rather than inventing a function with made-up behavior, this reconciles
+the two files along the lines the real architecture already uses:
 
-Call trigger_cfp_alerts() from code.py's main(), any time after the
-merged profile has been saved (it reads research_interests from
-professor.json).
+  - n8n_alerts.py now owns ALL webhook sending (one combined email per
+    user per run, across every professor they track). This file no
+    longer sends anything or knows about subscribers/webhooks.
+  - This file now owns MATCHING only: given one professor's profile
+    (for research_interests) and papers, return the CFPs relevant to
+    THAT professor with an upcoming deadline. code.py calls this once
+    per professor inside its main() loop and hands the result to
+    n8n_alerts.trigger_cfp_alerts() for bundling/sending.
 
-Edit data/cfp_venues.json with real venues and deadlines relevant to
-the researcher's field — the seeded file has placeholder examples.
+The original matching logic (find_matching_venues / find_upcoming_deadlines)
+is unchanged -- only the single-professor DATA_PATH reader and the
+webhook-sending code were removed, since both are superseded.
+
+Edit data/cfp_venues.json with real venues and deadlines relevant to your
+researchers' fields -- the seeded file has placeholder examples.
 """
 
 import json
 import os
 import datetime
-import requests
-from auth import get_all_subscribers
 
 _BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 VENUES_PATH = os.path.join(_BASE_DIR, "data", "cfp_venues.json")
 SENT_LOG_PATH = os.path.join(_BASE_DIR, "data", "cfp_alerts_sent.json")
-DATA_PATH = os.path.join(_BASE_DIR, "data", "professor.json")
 
-# Same webhook as n8n_alerts.py — the n8n workflow branches on alert_type.
-N8N_WEBHOOK_URL = "https://subhanazhar312.app.n8n.cloud/webhook/citation-alerts"
 CFP_ALERT_WINDOW_DAYS = 60
 
 
@@ -56,11 +56,6 @@ def _save_json(path, data):
     os.makedirs(os.path.dirname(path), exist_ok=True)
     with open(path, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2)
-
-
-def _load_research_interests():
-    data = _load_json(DATA_PATH, {})
-    return data.get("profile", {}).get("research_interests") or []
 
 
 def find_matching_venues(research_interests, venues):
@@ -89,51 +84,90 @@ def find_upcoming_deadlines(venues, window_days=CFP_ALERT_WINDOW_DAYS):
     return upcoming
 
 
-def trigger_cfp_alerts():
+def _matched_topics(research_interests, venue):
+    """Which of the venue's keywords actually matched this professor's
+    interests -- used for the 'matched_topics' list n8n_alerts.py's
+    payload expects per CFP entry."""
+    interests_lower = [i.lower() for i in research_interests]
+    matched = []
+    for kw in venue.get("keywords", []):
+        kw_lower = kw.lower()
+        if any(kw_lower in interest or interest in kw_lower for interest in interests_lower):
+            matched.append(kw)
+    return matched
+
+
+def get_upcoming_cfp_matches(profile, window_days=CFP_ALERT_WINDOW_DAYS):
+    """Read-only version of the matching, meant for the Streamlit UI.
+
+    Returns EVERY currently-matching, currently-upcoming CFP for this
+    professor's research_interests -- regardless of whether an alert
+    email has already gone out for it. (That de-dup only applies to
+    get_matched_cfps() below, which is for outbound emails; the UI should
+    keep showing a venue with a live deadline even after the one-time
+    email alert has already fired.)
+
+        [{"venue": ..., "deadline": ..., "days_left": ..., "link": ...,
+          "matched_topics": [...]}, ...]
+    """
     venues = _load_json(VENUES_PATH, [])
     if not venues:
-        print("No CFP venues configured (data/cfp_venues.json) — skipping CFP check.")
-        return
+        return []
 
-    research_interests = _load_research_interests()
+    research_interests = (profile or {}).get("research_interests") or []
+    if not research_interests:
+        return []
+
     matched = find_matching_venues(research_interests, venues)
-    upcoming = find_upcoming_deadlines(matched)
+    upcoming = find_upcoming_deadlines(matched, window_days)
 
-    already_sent = _load_json(SENT_LOG_PATH, [])
-    new_alerts = [v for v in upcoming if v["name"] not in already_sent]
-
-    if not new_alerts:
-        print("No new CFP alerts to send.")
-        return
-
-    subscribers = get_all_subscribers()
-    if not subscribers:
-        print("No subscribers registered — skipping CFP alert.")
-        return
-
-    cfp_matches = [
+    return [
         {
             "venue": v["name"],
             "deadline": v["deadline"],
             "days_left": v["days_left"],
             "link": v.get("link", ""),
-            "matched_topic": (v.get("keywords") or [""])[0],
+            "matched_topics": _matched_topics(research_interests, v),
         }
-        for v in new_alerts
+        for v in upcoming
     ]
 
-    for subscriber in subscribers:
-        payload = {
-            "recipients": subscriber["email"],
-            "recipient_name": subscriber["name"],
-            "alert_type": "cfp_alert",
-            "cfp_matches": cfp_matches,
-        }
-        try:
-            response = requests.post(N8N_WEBHOOK_URL, json=payload, timeout=15)
-            response.raise_for_status()
-            print(f"CFP alert webhook triggered for {subscriber['email']}")
-        except requests.RequestException as e:
-            print(f"Failed to trigger CFP alert webhook for {subscriber['email']}: {e}")
 
-    _save_json(SENT_LOG_PATH, already_sent + [v["name"] for v in new_alerts])
+def get_matched_cfps(profile, papers=None):
+    """Called once per professor, per run, from code.py's main() loop.
+
+    profile: that professor's merged profile dict (has research_interests).
+    papers: that professor's papers -- accepted for future use (e.g.
+        matching venue keywords against paper titles/abstracts too), not
+        currently used for matching.
+
+    Returns only the NEWLY-relevant CFPs for THIS professor (i.e. the ones
+    that haven't already triggered an email) -- this is the function
+    code.py uses to decide what goes in this run's alert email.
+
+    De-duplication (data/cfp_alerts_sent.json) is keyed on
+    "<professor_name>::<venue_name>", so the same venue can still surface
+    separately for a different professor, but won't repeat for the same
+    professor on the next run.
+    """
+    all_matches = get_upcoming_cfp_matches(profile)
+    if not all_matches:
+        return []
+
+    professor_name = (profile or {}).get("name") or "unknown"
+    already_sent = _load_json(SENT_LOG_PATH, [])
+    already_sent_set = set(already_sent)
+
+    new_alerts = []
+    newly_sent_keys = []
+    for match in all_matches:
+        key = f"{professor_name}::{match['venue']}"
+        if key in already_sent_set:
+            continue
+        new_alerts.append(match)
+        newly_sent_keys.append(key)
+
+    if newly_sent_keys:
+        _save_json(SENT_LOG_PATH, already_sent + newly_sent_keys)
+
+    return new_alerts
