@@ -1,2 +1,4 @@
 .env
 #n8n_alerts.py
+cfp_alerts.json
+cfp_alerts.py
