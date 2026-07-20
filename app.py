@@ -285,15 +285,18 @@ with tab_ask:
             end_year = st.number_input("To year", min_value=1950, max_value=current_year, value=current_year)
         year_filter = {"$and": [{"year": {"$gte": int(start_year)}}, {"year": {"$lte": int(end_year)}}]}
 
-    # Only add a professor clause when a specific subset (not "all") is
-    # selected — Chroma's `where` takes a single top-level operator, so
-    # year + professor filters get combined under one $and when both apply.
+    # Always scope to selected_professor_ids -- it's already correctly
+    # populated in BOTH branches above (the user's full own list when
+    # "All my professors" is chosen, or just the chosen subset otherwise).
+    # Skipping this when show_all was true used to mean NO professor
+    # filter at all, which pulled from the entire shared Chroma collection
+    # across every user in the app, not just this user's own professors --
+    # that was the actual bug behind seeing other users' professors.
     professor_filter = None
-    if not show_all:
-        if len(selected_professor_ids) == 1:
-            professor_filter = {"professor_id": selected_professor_ids[0]}
-        elif selected_professor_ids:
-            professor_filter = {"professor_id": {"$in": selected_professor_ids}}
+    if len(selected_professor_ids) == 1:
+        professor_filter = {"professor_id": selected_professor_ids[0]}
+    elif selected_professor_ids:
+        professor_filter = {"professor_id": {"$in": selected_professor_ids}}
 
     clauses = [c for c in (year_filter, professor_filter) if c]
     if len(clauses) == 0:
@@ -382,9 +385,10 @@ with tab_browse:
     all_data = collection.get()
     papers = all_data["metadatas"]
 
-    # Restrict to the professor(s) chosen in the selector above.
-    if not show_all and selected_professor_ids:
-        papers = [p for p in papers if p.get("professor_id") in selected_professor_ids]
+    # Always restrict to selected_professor_ids -- correctly scoped to
+    # this user's own professors in both the "All" and specific case (see
+    # the same fix and explanation in the Ask tab above).
+    papers = [p for p in papers if p.get("professor_id") in selected_professor_ids]
 
     col1, col2 = st.columns([1, 2])
     with col1:

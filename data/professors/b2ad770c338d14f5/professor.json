@@ -14,7 +14,7 @@
             "Mathematics"
         ],
         "last_updated": "2026-07-19",
-        "last_checked": "2026-07-19",
+        "last_checked": "2026-07-20",
         "_fingerprint": "389bbec6c63e49e07fbdc2af13adbfd5ea1d11d50d2d3299e76655bb21750f43"
     },
     "openalex": {
@@ -90,8 +90,8 @@
                     "https://openalex.org/W2104924585",
                     "https://openalex.org/W2107743791"
                 ],
-                "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_updated": "2026-07-20",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": true,
                 "_fingerprint": "cd573da239ed80b8fcf19701260be30a5314b7b2fde531c1f52993e00914e345"
@@ -144,7 +144,7 @@
                     "https://openalex.org/W2171009857"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "96fe7157d1c12938df37f228dd9e56aa7e9906e6329749296386d6207953a7ec"
@@ -209,7 +209,7 @@
                     "https://openalex.org/W2132339004"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "6bb0aee318f44c59e4f1b2ea7b678e5c211639b4dc4aebcbe270c9c552c26245"
@@ -274,7 +274,7 @@
                     "https://openalex.org/W2162800060"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "b63c25acbaccce868c805b84e9d1b5b4a3d9b94dce468652fae05c59768297b7"
@@ -350,7 +350,7 @@
                     "https://openalex.org/W2149600041"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "e6508248ffab5872628582043b41ff235ec441276bde2cee3c2bc7827256c796"
@@ -398,7 +398,7 @@
                     "https://openalex.org/W3151199439"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "8a9ac8971cf47cfc80a3c9cdd95026b700949ddc9e3af1af22f698961c727146"
@@ -478,7 +478,7 @@
                     "https://openalex.org/W2778310824"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "84655c389950cb39269f0a3cd2ca6a19bc41124fce4f3e470b1d3f10f08e2ea7"
@@ -540,7 +540,7 @@
                     "https://openalex.org/W2137234026"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "cd88bf4d9ed33ea1b0846f029e45e0ce911f2f0fe6278c7779a9caa5fe6d44b0"
@@ -586,7 +586,7 @@
                     "https://openalex.org/W2323067647"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "9d01738bcf7de4fd95a1def9cdb8295289b4aa0060cae91d476cd73f89a57d1f"
@@ -655,7 +655,7 @@
                     "https://openalex.org/W2153606381"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "9a2dcca1c5c8426667ab086f48cd5f5ba4d79302ccabb00006e9721dccd29e42"
@@ -706,7 +706,7 @@
                     "https://openalex.org/W2148603752"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "4e556dd97228d2bea40930f3f39804a03ffa1d73522e430fb206ca1bd9c99707"
@@ -774,7 +774,7 @@
                     "https://openalex.org/W2149956050"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "230f109f05d27629e7ca99cefc1d86b816c9599262e88255ad805215f4134e0f"
@@ -804,7 +804,7 @@
                     "https://openalex.org/W1499408472"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "5f8d97b00863f9587f08f2368d24b384d358f244d29ab7a40c72980c3b8b42ef"
@@ -882,7 +882,7 @@
                     "https://openalex.org/W2108598243"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "3c083bbe8b9c996d7ea7b10217415e7204a4dfe26aa33b53e8a90f407d176eb1"
@@ -947,7 +947,7 @@
                     "https://openalex.org/W2107229268"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "cd4553aab8e4cdc775f340260c591af00eb856e3bf6dea5557f7a365f2c5a3c4"
@@ -1005,7 +1005,7 @@
                     "https://openalex.org/W2113097540"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "c137b82ba3f013094d1a777154751600efa7e11b8758003e723daa27bad719c1"
@@ -1072,7 +1072,7 @@
                     "https://openalex.org/W2132339004"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "75429cc4209c3de58c315083ee277ab89e15a1109fd1e036535cefe74e9b5edc"
@@ -1137,7 +1137,7 @@
                     "https://openalex.org/W2120520381"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "de3570eea98dd87c4aabcf81aae918c8863f790502267191d25fcf69c4b27b7b"
@@ -1207,7 +1207,7 @@
                     "https://openalex.org/W2081580037"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "4d290aa857bfcee1ddaa3c0f84a979c6074b25fd5c02a590633860ec27bb0310"
@@ -1264,7 +1264,7 @@
                     "https://openalex.org/W2109415297"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "d589ec4fe9fea8c387e948b604a316dea38a50a26d47fc8d2ed8f84dd95288d6"
@@ -1321,7 +1321,7 @@
                     "https://openalex.org/W2963909185"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "1b5159cd0d7d273668ae50ced179f584b92b2ff91877312e9e2fbe7408a629e3"
@@ -1384,7 +1384,7 @@
                     "https://openalex.org/W2170213208"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "954201d686992a6bce3992663372b29d49f0cc3d4a277765da96e5cabe471ee0"
@@ -1464,8 +1464,8 @@
                     "https://openalex.org/W1571403844",
                     "https://openalex.org/W1578091864"
                 ],
-                "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_updated": "2026-07-20",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": true,
                 "_fingerprint": "2b9a7f7829340ac10fb9164a72cad99d3b50a7bc54cefb2431c71b6917e61d54"
@@ -1531,7 +1531,7 @@
                     "https://openalex.org/W2136922672"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "88c45f775bb8d2ed902b03247b2496573e5677eb38f7e0cc50c217f73c638987"
@@ -1597,7 +1597,7 @@
                     "https://openalex.org/W2335728318"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "f13f7926f5c3bfe56169089a2de16cb9d3b918cdf7f13c14be751150b0053af4"
@@ -1663,7 +1663,7 @@
                     "https://openalex.org/W2109586012"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "b59d0cc9c6686412bd26d35f7b787576fb642591525a4e39996b0b48b339ddb8"
@@ -1728,7 +1728,7 @@
                     "https://openalex.org/W2140833774"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "31a5609fda417a792559abd04419edc3b02887d1c799e7e9e7ca9e9a0e7e5492"
@@ -1807,7 +1807,7 @@
                     "https://openalex.org/W2108598243"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "4cfaf05af9be38e786eef2bc1c82a1e9d5ae6ac9269d2b8230312cbb6350ab13"
@@ -1870,7 +1870,7 @@
                     "https://openalex.org/W2161669948"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "261164bf1d356d8f304ef0cf8ebc92b2fc01806b034e08d07f1b119cb32d3a24"
@@ -1937,7 +1937,7 @@
                     "https://openalex.org/W1604803556"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "4b9021a3b0c91360d2a8c0a51f83249a01053fb1ef201ea25660200bbf414799"
@@ -2000,7 +2000,7 @@
                     "https://openalex.org/W1989191365"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "fdfe92553199886adb1b3026beebd33aa963759e484792c6bfdeb716674d0ec0"
@@ -2057,7 +2057,7 @@
                     "https://openalex.org/W1996625075"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "665f86d85629dc59717116c0ef7ebad52ac83e9bbd3aef130a351494f805acff"
@@ -2116,7 +2116,7 @@
                     "https://openalex.org/W2312609093"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "a408987fe0a10134004af3b18f3c0b56fb21c82ae430e51e69fe101ca9a3e0a3"
@@ -2170,7 +2170,7 @@
                     "https://openalex.org/W4285719527"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "ce1638870c1003271e15b1e18fc4c5ec8c9502953f58c6e6cf606b0fb9409168"
@@ -2231,7 +2231,7 @@
                     "https://openalex.org/W2134563198"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "0e6b42ea39b542cfc9a8afba0c933ddf265ac0f212688ddae95589176013d8db"
@@ -2293,7 +2293,7 @@
                     "https://openalex.org/W2120480077"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "6aa80a3009d17f6f569ab19e2faa3e9a16476208453b4fd2c1b847b7954b1f3c"
@@ -2328,7 +2328,7 @@
                 "references_count": 0,
                 "references": [],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "78edcccf70d58b9eeb5914fd2a1823bf2e2a40abe4c61bca191c6fbca0f19cac"
@@ -2394,7 +2394,7 @@
                     "https://openalex.org/W2025768430"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "1a3159d48ec26fb773662facc25791f658d16568b676f25541ea698150b660f6"
@@ -2451,7 +2451,7 @@
                     "https://openalex.org/W3022112205"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "24f0573fee423fc3dbeb2d5a61904f92e0d7384b5a05bb9c30fa82631c63de62"
@@ -2511,7 +2511,7 @@
                     "https://openalex.org/W2124372976"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "970bacbfbfa639e0e7a324a4cca7feb9f1176853ac7b720b85035ec74b112ea5"
@@ -2577,8 +2577,8 @@
                     "https://openalex.org/W2911283634",
                     "https://openalex.org/W2914656440"
                 ],
-                "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_updated": "2026-07-20",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": true,
                 "_fingerprint": "b06a86d2de5c5a62c81b631bf6786f84a028afa4322fd61fe621b2d23060494a"
@@ -2638,7 +2638,7 @@
                     "https://openalex.org/W2149194912"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "a777afa41a607191a7dadd9548c7e77c5c8d3a1960e9499826c70ff82b78ad94"
@@ -2703,7 +2703,7 @@
                     "https://openalex.org/W3118608800"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "46d9f0ac625fba8508ecbe424bdecd071deec7a4e915aeabd34504524218929f"
@@ -2766,7 +2766,7 @@
                     "https://openalex.org/W2143997830"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "e8f5849ebe12a15525249926fa4ab3c085e3394e4c773fdab9171c10814922f8"
@@ -2832,7 +2832,7 @@
                     "https://openalex.org/W2140262144"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "29febf278d5a5dd34b9f6626b43748b7e3d5557e024fe24be7dafce5aedff66c"
@@ -2914,7 +2914,7 @@
                     "https://openalex.org/W2507880633"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "6d82519311f426f3fea1e5f6b5d37cfa603c0600af36f15464a3e7e7653985a4"
@@ -2967,7 +2967,7 @@
                     "https://openalex.org/W2903718010"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "ad618355a185d7c3bf680530b68b7cc2c934cc9d8ff2f12f1b4671b54a13c5fb"
@@ -3018,7 +3018,7 @@
                     "https://openalex.org/W3094663703"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "0e7babc405e66f9ffae028e38da9c9afb8bf8258831cb22b6408f7a4c450c62a"
@@ -3078,7 +3078,7 @@
                     "https://openalex.org/W2139427956"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "cc2a5cad746f0d50b702d52e617a18c75c38ebd9f460d00c0c753a7eb2bd7352"
@@ -3147,7 +3147,7 @@
                     "https://openalex.org/W2731899572"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "6a34f912b2961b6afb702cc22f551d866a49ced82d413b03d0f86da78e8b7c7b"
@@ -3219,7 +3219,7 @@
                     "https://openalex.org/W2939788146"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "2724b4d898d1685270c2f39377418e03de39201fa04846dc7301736354f321c5"
@@ -3280,7 +3280,7 @@
                     "https://openalex.org/W2169282664"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "5d57326dc4966abf206d0238c0f26cd17f6a41183b16effbca1fe67d905ff807"
@@ -3339,7 +3339,7 @@
                     "https://openalex.org/W2798909945"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "8c1d02f94c61d8b0cd1fba1d5c2f235c036ddb05e7d693fc97ac1fe34701935b"
@@ -3398,7 +3398,7 @@
                     "https://openalex.org/W2166473218"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "da68691b0b359c7fbf6c0966b00b4dc0090020a00e072e5668e0f9d9342f3264"
@@ -3477,7 +3477,7 @@
                     "https://openalex.org/W1519386789"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "cd93a6da1c86946e1313ac95fdffd3df412ddb563d5a83008b82189e20d1c446"
@@ -3544,7 +3544,7 @@
                     "https://openalex.org/W3029645440"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "833e0b6b900401ef11f1b3cc183a3c2c5559b689b5c2164d110f6b142bb8ed2b"
@@ -3623,7 +3623,7 @@
                     "https://openalex.org/W2114511558"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "b1e3e6ec2dd65bff79b4b05347700e4a909a0cd4d63063544af25f8f84ad58f1"
@@ -3681,7 +3681,7 @@
                     "https://openalex.org/W2914656440"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "cb736943014c672423ec4ab2eec7f74f9bca2926777ae839cfcddd14bd065f6f"
@@ -3734,7 +3734,7 @@
                     "https://openalex.org/W6776565550"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "788098d86acae553fa39b409777c38345d442e20a681c9f40f24ed4343c2d8ee"
@@ -3809,7 +3809,7 @@
                     "https://openalex.org/W2109536938"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "e136f95ee3c8845462dc0f0057f19fea81c08904e02355741b78ac3f3526955e"
@@ -3870,7 +3870,7 @@
                     "https://openalex.org/W2914746235"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "46a071f0b5cad58f3edf79764942cc004cb0a1c0b4845d50f1af478c6ce384c1"
@@ -3941,7 +3941,7 @@
                     "https://openalex.org/W3188252230"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "f2270f9c5dd1acc8200e06b39607510ee0aeea4a1b5b55aea5097304876b2459"
@@ -4006,7 +4006,7 @@
                     "https://openalex.org/W2128158689"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "e25a2a2f3ed0606bc3698bace48ce46696407f3cb2c02b5c41d438c0e3344a64"
@@ -4070,7 +4070,7 @@
                     "https://openalex.org/W2939294015"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "076c03a963d33f6985a7c72ef77366ff7dab294d9479f7371bae770617614d5d"
@@ -4140,7 +4140,7 @@
                     "https://openalex.org/W2104924585"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "6523003b09a91cc886868f5708ea095268de57197a396229c0ada365c8e6c8a6"
@@ -4208,7 +4208,7 @@
                     "https://openalex.org/W2036945895"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "431060b2b0cad330664572bf9dc35981ce68469013ad2f4bee24c008c953e0d7"
@@ -4267,7 +4267,7 @@
                     "https://openalex.org/W2110798204"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "0d11282615cecb32bb2f90628fbef6c328fa99cf758cf4a29a24312cd85ecd02"
@@ -4339,7 +4339,7 @@
                     "https://openalex.org/W2582743722"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "aa79e4c8cb69260f254f7e847f53cd510067c38ba7b733f8cf08bafa9a68b261"
@@ -4404,7 +4404,7 @@
                     "https://openalex.org/W2118858186"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "01eaddef226f3b642a9a0422ac1f5de56bc8df877a80c1408cae1c559c399d2e"
@@ -4468,7 +4468,7 @@
                     "https://openalex.org/W2140780207"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "5b5f4fc0054a879b5c75e5a90c412be5ce1bba8bfca472bfe813790e0d24f6f2"
@@ -4528,7 +4528,7 @@
                     "https://openalex.org/W2121331909"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "5e85e233d35adabb027356ebb507b17ad1e4a77e63d0efcf51ba0f88770e86e7"
@@ -4592,7 +4592,7 @@
                     "https://openalex.org/W2169498096"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "2c9ca637fde376ce558de43bf368f5edc4d5776a464727fc369c5468fc14ba17"
@@ -4740,7 +4740,7 @@
                     "https://openalex.org/W2096166399"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "4899d7ca46e5bc4852ebbe1b4d792160c4713edc79ba572191d884bbeba879fd"
@@ -4799,7 +4799,7 @@
                     "https://openalex.org/W2116108870"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "c14ae0ffaee96d833dd65cdc05e2c77582d83abdb452f38fc69db34e26249a5d"
@@ -4867,7 +4867,7 @@
                     "https://openalex.org/W3097096317"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "6d61b19df25936a68846107c3d7cf83b56658108eb4fc4357cd22c223155a801"
@@ -4937,7 +4937,7 @@
                     "https://openalex.org/W2068055929"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "02f885e04cdb03c86b451887e1a997373bb1070aba108be6e05839c59c274eb0"
@@ -4997,7 +4997,7 @@
                     "https://openalex.org/W2296319761"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "645c0b8044269c53e532e3971c5e9aa9f1731d459fac22c674dcb638713e71a3"
@@ -5053,7 +5053,7 @@
                     "https://openalex.org/W2950974174"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "5beab6ca74ec9ef4aa99ec96baa0cbd8fb0ca05272b1181f2af6571dbba5af2b"
@@ -5118,7 +5118,7 @@
                     "https://openalex.org/W2148019133"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "86b59c22c453a5a3379aeaa645d390f094df08a356ad0f60bc99a12757f153a0"
@@ -5190,7 +5190,7 @@
                     "https://openalex.org/W2999645127"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "1ef472f94fe6cfb8f3e91b0a92c098c3f925e64fe6246d3a9203c5c7fd518a1b"
@@ -5251,7 +5251,7 @@
                     "https://openalex.org/W2218318129"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "d3eff3c94e6f25ca340e17419b42e65ae9498921ec4de154e467d1c7f26b2a51"
@@ -5312,7 +5312,7 @@
                     "https://openalex.org/W4408973064"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "3f61d543e3356bb623ef8f4e2ebd9353a4d959e5e81917b8ef2b8b031fe74f5a"
@@ -5362,7 +5362,7 @@
                     "https://openalex.org/W3118608800"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "a0dd99527e3fdbbd9d1f7dca7dc0409c4a903151952bfb3dc2e93ae39dd6b741"
@@ -5434,7 +5434,7 @@
                     "https://openalex.org/W2999618362"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "9cc04859652090f09c152716f8450c39c86a09e0ceb41aa1f8c4d09bc83d7578"
@@ -5499,7 +5499,7 @@
                     "https://openalex.org/W2630837129"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "82e64448aa6c2831ffe53c9bcbe28b5b9c8249aa2bb722050a88a1a94aa81c3a"
@@ -5542,7 +5542,7 @@
                     "https://openalex.org/W2296730655"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "d926202efbae53415fb1af81c849ab6ebbd0a1b3d7c932a792caee1121f1b54d"
@@ -5588,7 +5588,7 @@
                     "https://openalex.org/W2539864690"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "566ad00cc7d63d7f34114dbb334e7ea2e9a74b3aca4b89aeb52cabbeed80bb70"
@@ -5645,7 +5645,7 @@
                     "https://openalex.org/W2914656440"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "eebdf381f914c0d85485ec3257f13ccaa2b65baacfa2a5de5d57236c1764dd73"
@@ -5694,7 +5694,7 @@
                     "https://openalex.org/W2161521419"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "6e3df8227694a9b49703f37b50e05c015f40a1e163f7f9bf51f27bd5e600566f"
@@ -5731,7 +5731,7 @@
                 "references_count": 0,
                 "references": [],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "fbbeb76ae3098f4f4d87b08469b5ecec1fc9581be3aa849df074c74435c3e944"
@@ -5792,7 +5792,7 @@
                     "https://openalex.org/W2158211626"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "7dfcd4ec0c5c0796b5820d2f4a76e876dd45f39cc8843d9465c5ec7879e0099c"
@@ -5855,7 +5855,7 @@
                     "https://openalex.org/W2020837531"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "bfbfc40ecc15687c5b2031328a45faf27954967e12507baf0b78218a399e145f"
@@ -5921,7 +5921,7 @@
                     "https://openalex.org/W2106848320"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "4152291fd97360192b6904a906c0f8d4b335b14f3a8ae3f919d9626ee645f963"
@@ -5980,7 +5980,7 @@
                     "https://openalex.org/W2107171438"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "0efcc3efc5559511fde8a51a477dc99aeacb2a39f7c1c24b901d286347013673"
@@ -6022,7 +6022,7 @@
                 "references_count": 0,
                 "references": [],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "a8caea8ca166464551bf4df3bb69c4815a4a233fb2bc18ebdd591b584c7ff161"
@@ -6084,7 +6084,7 @@
                     "https://openalex.org/W2038433999"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "a282923bc144b486da9bb143a2dc1ff229ea0c3e13e986a8d5c8dbdb7a0e8e10"
@@ -6136,7 +6136,7 @@
                     "https://openalex.org/W2593976925"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "c9e81fa37046f64e66655e3e64a0a855fb1452ae02e88188ffe38489223d57db"
@@ -6191,7 +6191,7 @@
                     "https://openalex.org/W2184803328"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "ff6af02f40efe467a0d868f419aa44e0ceb2fd637f7c2f6f86152702e8f9d560"
@@ -6245,7 +6245,7 @@
                     "https://openalex.org/W2613678836"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "ccf7568ee8a93ddf963e974e1d1c02f2ce9c2c2543ab0d2185f362e74f041b8d"
@@ -6302,14 +6302,14 @@
                     "https://openalex.org/W2905812431"
                 ],
                 "last_updated": "2026-07-19",
-                "last_checked": "2026-07-19",
+                "last_checked": "2026-07-20",
                 "is_new_paper": false,
                 "citation_alert": false,
                 "_fingerprint": "bdc6ca0a5af06f9cd5be541e7e7f61bdeab3d76a859dc4aa31b5be883824cbd2"
             }
         ],
         "stats_last_updated": "2026-07-19",
-        "stats_last_checked": "2026-07-19",
+        "stats_last_checked": "2026-07-20",
         "_stats_fingerprint": "5cbc433c267740827a24569e26a7f2aa033ccecea593d378f2152ccd85eb57b8"
     },
     "semantic_scholar": {
@@ -6317,7 +6317,7 @@
         "hindex": 4,
         "papers": [],
         "stats_last_updated": "2026-07-19",
-        "stats_last_checked": "2026-07-19",
+        "stats_last_checked": "2026-07-20",
         "_stats_fingerprint": "791c5a45415f68ffa28019c6e74d11c76f8834e0a7d7d5f4db245a51bf457493"
     },
     "arxiv": [
@@ -6330,7 +6330,7 @@
             ],
             "link": "http://arxiv.org/abs/2505.23269v1",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "9024744c2d445aa55904020ff29a8e36d8706086ee9abc54d6a9f593ee839ccb"
@@ -6344,7 +6344,7 @@
             ],
             "link": "http://arxiv.org/abs/2510.01876v2",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "5153ad45df4b52866bddb96677181dc932369e07a954a1f37dade19e6244374c"
@@ -6360,7 +6360,7 @@
             ],
             "link": "http://arxiv.org/abs/2606.05091v1",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "04210c98057e262811bb2c9bf4e73df6501e8e7a137c4f57893e7cebc8a6eaff"
@@ -6375,7 +6375,7 @@
             ],
             "link": "http://arxiv.org/abs/2601.05706v1",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "2258a0150632f761b82c7d4d27cfd1294486272d7912b9e10bf69b2e5daeb676"
@@ -6390,7 +6390,7 @@
             ],
             "link": "http://arxiv.org/abs/2606.19606v1",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "7800b3acc3329b82dd98d95933e4d6640895a3f5ae6228601248842bdca66d7f"
@@ -6413,7 +6413,7 @@
             ],
             "link": "http://arxiv.org/abs/1812.00371v1",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "69a8777af44bb12cd893f960f18c4d3b661197fb0fb6279bf8d4ee4a9ca3d3c2"
@@ -6432,35 +6432,10 @@
             ],
             "link": "http://arxiv.org/abs/2404.17033v1",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "e9edc4a4f4e525307356c0b8d39e3ff0cb4ad74def21717f64f55c070760f65a"
-        },
-        {
-            "title": "Evaluating and Improving the Effectiveness of Synthetic Chest X-Rays for Medical Image Analysis",
-            "published": "2024-11-27T18:47:09Z",
-            "summary": "Purpose: To explore best-practice approaches for generating synthetic chest X-ray images and augmenting medical imaging datasets to optimize the performance of deep learning models in downstream tasks like classification and segmentation. Materials and Methods: We utilized a latent diffusion model to condition the generation of synthetic chest X-rays on text prompts and/or segmentation masks. We explored methods like using a proxy model and using radiologist feedback to improve the quality of synthetic data. These synthetic images were then generated from relevant disease information or geometrically transformed segmentation masks and added to ground truth training set images from the CheXpert, CANDID-PTX, SIIM, and RSNA Pneumonia datasets to measure improvements in classification and segmentation model performance on the test sets. F1 and Dice scores were used to evaluate classification and segmentation respectively. One-tailed t-tests with Bonferroni correction assessed the statistical significance of performance improvements with synthetic data. Results: Across all experiments, the synthetic data we generated resulted in a maximum mean classification F1 score improvement of 0.150453 (CI: 0.099108-0.201798; P=0.0031) compared to using only real data. For segmentation, the maximum Dice score improvement was 0.14575 (CI: 0.108267-0.183233; P=0.0064). Conclusion: Best practices for generating synthetic chest X-ray images for downstream tasks include conditioning on single-disease labels or geometrically transformed segmentation masks, as well as potentially using proxy modeling for fine-tuning such generations.",
-            "authors": [
-                "Eva Prakash",
-                "Jeya Maria Jose Valanarasu",
-                "Zhihong Chen",
-                "Eduardo Pontes Reis",
-                "Andrew Johnston",
-                "Anuj Pareek",
-                "Christian Bluethgen",
-                "Sergios Gatidis",
-                "Cameron Olsen",
-                "Akshay Chaudhari",
-                "Andrew Ng",
-                "Curtis Langlotz"
-            ],
-            "link": "http://arxiv.org/abs/2411.18602v2",
-            "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
-            "is_new_paper": false,
-            "citation_alert": false,
-            "_fingerprint": "9e266b6ad8f18463217da69b77febfd6b5edc5de53443277a74c921c71c0c197"
         },
         {
             "title": "DataPerf: Benchmarks for Data-Centric AI Development",
@@ -6515,10 +6490,35 @@
             ],
             "link": "http://arxiv.org/abs/2207.10062v4",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "4580ecdf51912de8637e0cfb2f41b4139e4ac7f482837ad211bfed08e55e89dd"
+        },
+        {
+            "title": "Evaluating and Improving the Effectiveness of Synthetic Chest X-Rays for Medical Image Analysis",
+            "published": "2024-11-27T18:47:09Z",
+            "summary": "Purpose: To explore best-practice approaches for generating synthetic chest X-ray images and augmenting medical imaging datasets to optimize the performance of deep learning models in downstream tasks like classification and segmentation. Materials and Methods: We utilized a latent diffusion model to condition the generation of synthetic chest X-rays on text prompts and/or segmentation masks. We explored methods like using a proxy model and using radiologist feedback to improve the quality of synthetic data. These synthetic images were then generated from relevant disease information or geometrically transformed segmentation masks and added to ground truth training set images from the CheXpert, CANDID-PTX, SIIM, and RSNA Pneumonia datasets to measure improvements in classification and segmentation model performance on the test sets. F1 and Dice scores were used to evaluate classification and segmentation respectively. One-tailed t-tests with Bonferroni correction assessed the statistical significance of performance improvements with synthetic data. Results: Across all experiments, the synthetic data we generated resulted in a maximum mean classification F1 score improvement of 0.150453 (CI: 0.099108-0.201798; P=0.0031) compared to using only real data. For segmentation, the maximum Dice score improvement was 0.14575 (CI: 0.108267-0.183233; P=0.0064). Conclusion: Best practices for generating synthetic chest X-ray images for downstream tasks include conditioning on single-disease labels or geometrically transformed segmentation masks, as well as potentially using proxy modeling for fine-tuning such generations.",
+            "authors": [
+                "Eva Prakash",
+                "Jeya Maria Jose Valanarasu",
+                "Zhihong Chen",
+                "Eduardo Pontes Reis",
+                "Andrew Johnston",
+                "Anuj Pareek",
+                "Christian Bluethgen",
+                "Sergios Gatidis",
+                "Cameron Olsen",
+                "Akshay Chaudhari",
+                "Andrew Ng",
+                "Curtis Langlotz"
+            ],
+            "link": "http://arxiv.org/abs/2411.18602v2",
+            "last_updated": "2026-07-19",
+            "last_checked": "2026-07-20",
+            "is_new_paper": false,
+            "citation_alert": false,
+            "_fingerprint": "9e266b6ad8f18463217da69b77febfd6b5edc5de53443277a74c921c71c0c197"
         },
         {
             "title": "How to Train Your CheXDragon: Training Chest X-Ray Models for Transfer to Novel Tasks and Healthcare Systems",
@@ -6535,7 +6535,7 @@
             ],
             "link": "http://arxiv.org/abs/2305.08017v1",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "c0048a6dbfed4ee439d278f69cd526318d89c09f4723f5b5d58d801859354641"
@@ -6550,7 +6550,7 @@
             ],
             "link": "http://arxiv.org/abs/1206.3959v2",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "7809bc0e4456c48fe98e2a1289076cb12d475f903d9dd69835db4f4ef3b5c863"
@@ -6597,7 +6597,7 @@
             ],
             "link": "http://arxiv.org/abs/1512.02595v1",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "31b3228d8bd12291b2148131819602fc03d1206c7be72b272700a9eac8512035"
@@ -6623,7 +6623,7 @@
             ],
             "link": "http://arxiv.org/abs/2311.09574v3",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "9f6f3d7a9c9b3f6c0e9b0239a037f8d54ecc0dccd09d20c62818c32baddcd79f"
@@ -6642,7 +6642,7 @@
             ],
             "link": "http://arxiv.org/abs/2404.13185v1",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "195a2c586520cec1bcc65ec607dc50dfb1425ac5c7dcb7555f66f2bdcd51fbf9"
@@ -6661,7 +6661,7 @@
             ],
             "link": "http://arxiv.org/abs/1806.08324v2",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "38496d0388016fc3da46a45750252faf0977edf4355d276686b9ed642cf94b83"
@@ -6680,7 +6680,7 @@
             ],
             "link": "http://arxiv.org/abs/1811.07774v2",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "17f1db377b30ed9e8fc775b5fd9d5d72e8ac7c4dd8c2bc2e3c645952f9d444f9"
@@ -6699,7 +6699,7 @@
             ],
             "link": "http://arxiv.org/abs/1711.06402v1",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "6f9f8612dfdeaf5a0a9754c4dee2bde1b3efc6f04810f4573859125c30e01116"
@@ -6717,7 +6717,7 @@
             ],
             "link": "http://arxiv.org/abs/1608.07323v2",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "0a77d6c0e88df9ea61fa91cac725a86fe428fa1e6a0ca84a23452ee3f2719dcd"
@@ -6740,7 +6740,7 @@
             ],
             "link": "http://arxiv.org/abs/2604.01728v1",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "490b3c909d7424f7e2b9d4c6252b0e890c0aac2c56e78b0457948348515c0fd2"
@@ -6795,7 +6795,7 @@
             ],
             "link": "http://arxiv.org/abs/2004.09754v2",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "657cf3e75d656ab8f8608e381b508502b849d6a85385a4f85d3ecbd4bfbc602b"
@@ -6815,7 +6815,7 @@
             ],
             "link": "http://arxiv.org/abs/1512.01872v1",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "fd27d5aed29ff186d8525321763d200b420d656c3d2239f4602cf1a01ba93544"
@@ -6838,7 +6838,7 @@
             ],
             "link": "http://arxiv.org/abs/1802.04336v1",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "6a805cb630eaf1564a3c13a875db972a97cde452d789d9736511f9d279331b3c"
@@ -6856,7 +6856,7 @@
             ],
             "link": "http://arxiv.org/abs/2005.03743v1",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "0d96d265e33d4516c2748b0241df545afca561efc6ee80661f7e0c7d14f55f4b"
@@ -6875,7 +6875,7 @@
             ],
             "link": "http://arxiv.org/abs/1307.2579v1",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "2d8c9c4fd8afc18b3d4fd2882a8c0c5350d94cd9422396985711b9489c4ce41e"
@@ -6891,7 +6891,7 @@
             ],
             "link": "http://arxiv.org/abs/1312.6885v1",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "5932d34861a8f5850d33b25b7abc7e7fba5d9734152c61ec0c05dc526e171dd5"
@@ -6907,7 +6907,7 @@
             ],
             "link": "http://arxiv.org/abs/0911.3117v2",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "b149765384c222e79b3a763e615cc17ea1ec02a62e70878e3a06453bc1d6a2c6"
@@ -6932,7 +6932,7 @@
             ],
             "link": "http://arxiv.org/abs/1702.07825v2",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "905a9d9f78723d18f709d30a7d5d01c6d2553ab25bef2593282bc1ca2857432a"
@@ -6955,7 +6955,7 @@
             ],
             "link": "http://arxiv.org/abs/2507.03829v1",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "3f8231eb88851b70287a408d21cf4445b55f41843cfb8dc666e1f8f0144d6726"
@@ -6977,7 +6977,7 @@
             ],
             "link": "http://arxiv.org/abs/2604.01344v1",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "4bb0447e8dc54a5a947284b132482eea7811a6c65cf908607800b629f7eb46ac"
@@ -7003,7 +7003,7 @@
             ],
             "link": "http://arxiv.org/abs/2011.07227v1",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "e714e63ee317baf39200dcf565e2142484dd8a70a70510310f73a4e5648e1a87"
@@ -7036,7 +7036,7 @@
             ],
             "link": "http://arxiv.org/abs/1911.07372v1",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "c22619877ae71559a7664cfbda3de9d5b8ede6a9ec6a97a7b907c2efccfc510a"
@@ -7055,7 +7055,7 @@
             ],
             "link": "http://arxiv.org/abs/2006.03680v5",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "ea067f95265057e25ec1bfd4ea06b955b0995bba8c96e63529eeb43f3d01ff44"
@@ -7073,7 +7073,7 @@
             ],
             "link": "http://arxiv.org/abs/2102.10484v2",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "a0d3cfda5fa4ea71214083a8ee8b31a00b3f444e585fd40731d6bb6c65737782"
@@ -7091,7 +7091,7 @@
             ],
             "link": "http://arxiv.org/abs/2105.02489v1",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "ce67a872094be5acb6a089f3dbdc98c4d35b0b1cd817efac48c26d7b667baaf8"
@@ -7110,7 +7110,7 @@
             ],
             "link": "http://arxiv.org/abs/2106.04452v2",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "f8d87aed2ae91d51dfb90ec29e029ddd45aa08ac7c45abde1d36e5f49ced3c86"
@@ -7129,7 +7129,7 @@
             ],
             "link": "http://arxiv.org/abs/2102.10663v2",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "37a8f36403995cfeee1b1de0402e80cec5a2ec971d5b0b9495b96ba2300eb50b"
@@ -7147,7 +7147,7 @@
             ],
             "link": "http://arxiv.org/abs/2103.04590v2",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "1ab067a9c5f17bc655b8ff3345702cee498c2da30e1840d0eca41d2eae2d766b"
@@ -7171,7 +7171,7 @@
             ],
             "link": "http://arxiv.org/abs/1412.5567v2",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "b4738850845f0c210ac9b903c514ee2134db601b099ece987d36afe51ba78ef9"
@@ -7189,7 +7189,7 @@
             ],
             "link": "http://arxiv.org/abs/1603.09727v1",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "6060c2caa03e0463df669fbc29cb3ebb272b43bf3bb2ec26fa7209be080148e6"
@@ -7210,7 +7210,7 @@
             ],
             "link": "http://arxiv.org/abs/2401.14486v1",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "2775b487091969c2b4188390402efc6d79a482f6f612acbeaec406455743b3c7"
@@ -7230,7 +7230,7 @@
             ],
             "link": "http://arxiv.org/abs/2311.17449v1",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "dd4b83b375147cf947b3ad0af0f9640d73ec7744e1643585511a92b8b3051f70"
@@ -7265,7 +7265,7 @@
             ],
             "link": "http://arxiv.org/abs/1906.05433v2",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "4c346b9874dd1ceb341c7223132e03e80832e0b93efe3e5a5756f3fa13b90b82"
@@ -7292,7 +7292,7 @@
             ],
             "link": "http://arxiv.org/abs/2508.17580v1",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "10bb287b71bb9c3b96e5207b2ad14c4122ededc2e2e747372193e5345a43a4f9"
@@ -7309,7 +7309,7 @@
             ],
             "link": "http://arxiv.org/abs/2010.05352v3",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "ae22c612a618a2145d5ea619a84766f2967089b4208979b2a518acdd0d6c3dc7"
@@ -7327,7 +7327,7 @@
             ],
             "link": "http://arxiv.org/abs/2102.08660v2",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "83f118061618a4ea1010c41e76cbfb7dd5913c4caf213179f135758495b24254"
@@ -7346,7 +7346,7 @@
             ],
             "link": "http://arxiv.org/abs/2103.09957v3",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "d3ec9603c96750e1ba2a9a447ec55de8b6f4f5f2366d0f553ce53621d03fbf35"
@@ -7371,7 +7371,7 @@
             ],
             "link": "http://arxiv.org/abs/2106.14463v3",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "5a7319d696f30026bfa3f53eca7631a46af3df7431135c5b91fbd59be9178510"
@@ -7392,7 +7392,7 @@
             ],
             "link": "http://arxiv.org/abs/2301.01842v1",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "c24bde3d34a29aa7903935a65f22b24b61f8a3c67de143e428fb33866cc86df1"
@@ -7410,7 +7410,7 @@
             ],
             "link": "http://arxiv.org/abs/2201.01449v1",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "d1cd11b1ae08a1cb083c0348e04e353057c4001469b4482e81903fda01b6c307"
@@ -7429,7 +7429,7 @@
             ],
             "link": "http://arxiv.org/abs/2405.09798v2",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "33809a8d27d07534a9081a6e61e5fac6dc29a8f9d24b01156f13b1416d87a1cc"
@@ -7446,7 +7446,7 @@
             ],
             "link": "http://arxiv.org/abs/1301.3618v2",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "767e940b85951361e367a237e8d66dde903685ab5debb76be2543c399f942e48"
@@ -7463,7 +7463,7 @@
             ],
             "link": "http://arxiv.org/abs/1408.2873v2",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "f6cc1a79fbc808477004c10582059831b3109286d01a7b8989ee7e3ea9b4a083"
@@ -7480,7 +7480,7 @@
             ],
             "link": "http://arxiv.org/abs/1206.5241v1",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "70b74bbe7516c3e834ce252e4941cc4263e18525a6c9f1f3981d7310303c79fb"
@@ -7506,7 +7506,7 @@
             ],
             "link": "http://arxiv.org/abs/1504.01716v3",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "1e2d97d5863474ebe8e81f8895148a0f82c7e2014ced190c272f9dd7d53b4bcc"
@@ -7526,7 +7526,7 @@
             ],
             "link": "http://arxiv.org/abs/2108.01764v1",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "ee971fbf052ce978929f1b661f69383f38af01c68b9eed8ed9b2c4b8806c1af0"
@@ -7545,7 +7545,7 @@
             ],
             "link": "http://arxiv.org/abs/2208.13027v2",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "c4bf48dbe994aec976f2d41ea2e3f16e85fb4dbd9e2d71abe7ced10882f5f9ba"
@@ -7561,7 +7561,7 @@
             ],
             "link": "http://arxiv.org/abs/1207.1366v1",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "e7ab87e360d42a3d91dd909a80ef42a2943a24c586e61e844a9ac8d760927778"
@@ -7577,7 +7577,7 @@
             ],
             "link": "http://arxiv.org/abs/1302.1552v1",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "4b0fbc189c95e00b3919d2b87ba453704acf9c055b368075377d539bf63e7143"
@@ -7597,7 +7597,7 @@
             ],
             "link": "http://arxiv.org/abs/1406.7806v2",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "1b054e39f2671c532e070fd124c83707302ad5f0e7f3951294c4e5d40843dea0"
@@ -7620,7 +7620,7 @@
             ],
             "link": "http://arxiv.org/abs/2010.04715v2",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "316b3de202b136dfcfdc903ea43973ed466fdcc858d3844ee7afde87641c3f97"
@@ -7639,7 +7639,7 @@
             ],
             "link": "http://arxiv.org/abs/2010.15269v2",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "4c52c5737875c7d867936b0e57670ca9e29868267063cbe6c63a93c116b340c4"
@@ -7662,7 +7662,7 @@
             ],
             "link": "http://arxiv.org/abs/2011.05479v1",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "f24b7faeba671b60cda312464df00b45a79b83b0b53506af796976720fe748b0"
@@ -7681,7 +7681,7 @@
             ],
             "link": "http://arxiv.org/abs/2011.06129v1",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "57563507b72f027480d536d94b56fa75136687f00f75ae1c6145e0d4f708c425"
@@ -7704,7 +7704,7 @@
             ],
             "link": "http://arxiv.org/abs/2102.11467v2",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "87e4aa626f4b7a452c407df9bfd422dd6c56c4b2e211e316146234d35ff34f51"
@@ -7721,7 +7721,7 @@
             ],
             "link": "http://arxiv.org/abs/2104.00793v3",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "16f3793782c22558283cadbc59332a673b52b83611b9f8c10e8d51bc91a96ded"
@@ -7740,7 +7740,7 @@
             ],
             "link": "http://arxiv.org/abs/2103.14339v1",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "b2e1779618feae4b3bb2ef6d9caf8233da545a09ec8e9d955515f4834c11aa7b"
@@ -7758,7 +7758,7 @@
             ],
             "link": "http://arxiv.org/abs/1707.01836v1",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "2a1afc31f1b02a09d3f9a1f35070e9c669f94c5e021628bb20a2c946ce5fe587"
@@ -7778,7 +7778,7 @@
             ],
             "link": "http://arxiv.org/abs/1703.02573v1",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "25c7e26052ef57c1bf477e52f26f1654f8ca4bc97a8648ef4ae77d234bbf8af7"
@@ -7805,7 +7805,7 @@
             ],
             "link": "http://arxiv.org/abs/1712.06957v4",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "207ced0c96394925108cf2b3d852c878568998057d84346892eb3959b8a7ec85"
@@ -7824,7 +7824,7 @@
             ],
             "link": "http://arxiv.org/abs/1301.3666v2",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "a352c1efdf9107f0a677833a7286bb21ce33c45c1e7b54fedeb511c91ff22d39"
@@ -7844,7 +7844,7 @@
             ],
             "link": "http://arxiv.org/abs/2312.02199v1",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "75c8ce68109aa316ae5157de55a4eb8b8458838a5d59393d3e2f94c69369af23"
@@ -7867,7 +7867,7 @@
             ],
             "link": "http://arxiv.org/abs/2207.11166v2",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "9054c9eb75761a492f36696b544558c601e12633767f1f1efff1eee2ccc18421"
@@ -7888,7 +7888,7 @@
             ],
             "link": "http://arxiv.org/abs/1112.6209v5",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "ab19eb30220fc90ccca2ec2b6dd9720f8bde6eb0ca9c8752abb669031f52dc98"
@@ -7906,7 +7906,7 @@
             ],
             "link": "http://arxiv.org/abs/2002.02917v2",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "22dcb1e025b2093525760ea20c1f828377787a013f07caf4ba7b7e39bb66bcdf"
@@ -7927,7 +7927,7 @@
             ],
             "link": "http://arxiv.org/abs/2002.11379v2",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "26cc0a650fdbdb12af1f7b0bf859fb713e3ef59a1a53d7e002f682ec7de8f3de"
@@ -7947,7 +7947,7 @@
             ],
             "link": "http://arxiv.org/abs/1910.03225v4",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "e59cfead80a4f37d3d36b5c32f168ebe3f746459174a33b8defa7eac0d7316ee"
@@ -7966,7 +7966,7 @@
             ],
             "link": "http://arxiv.org/abs/2004.09167v3",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "94019f3c667f05c4ea1c7a53164c2034f3d090bc8fafd19a1057fddde9a7238c"
@@ -7987,7 +7987,7 @@
             ],
             "link": "http://arxiv.org/abs/2511.00383v2",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "a6fd6e70dabd9533a9827db52e9c63c4ff6e10aeaf4fee60a8e067885c1abd4a"
@@ -8009,7 +8009,7 @@
             ],
             "link": "http://arxiv.org/abs/2512.02268v1",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "fe52b6b7cb1e4773c7e012d1f419a03ecd03faa2852015abaca497574cda8e5b"
@@ -8030,7 +8030,7 @@
             ],
             "link": "http://arxiv.org/abs/2009.08123v3",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "7956ecb05f6c9299902c6a61c74208938afb3384e99f30eebfa5effc34658771"
@@ -8063,7 +8063,7 @@
             ],
             "link": "http://arxiv.org/abs/1901.07031v1",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "caaba4c0cc9b8e9023849fd40e9f9ac34cd22f53af96eefd6c8edf663e8eea00"
@@ -8082,7 +8082,7 @@
             ],
             "link": "http://arxiv.org/abs/2312.02200v1",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "57467a603c4d75c4c7551311aa221054a4023cf6abafb4def77207e3662de5d1"
@@ -8100,7 +8100,7 @@
             ],
             "link": "http://arxiv.org/abs/2101.06871v2",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "fe348a3afb211f7c0cd047152f08b6f41167068836f38f3da648a0190e0c8a27"
@@ -8115,7 +8115,7 @@
             ],
             "link": "http://arxiv.org/abs/1301.3878v1",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "c0644fe9593641c7339cc1e719b9737748197e32e121722b8d7d86cb7603c1c2"
@@ -8140,7 +8140,7 @@
             ],
             "link": "http://arxiv.org/abs/1711.05225v3",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "4e07473a3d186f52e39774d127ab76926cd8bc7baa39633aa892474d573c77fc"
@@ -8160,7 +8160,7 @@
             ],
             "link": "http://arxiv.org/abs/2501.14654v2",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "ba1ca9924373c9ba4f821b71946640a291d29e2e234eff245942ca96db16ce99"
@@ -8186,7 +8186,7 @@
             ],
             "link": "http://arxiv.org/abs/2007.06199v2",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "df1c588ed645ae99b86837947ab8b2cc443039eb3ba1be58e825367a52ed1ffb"
@@ -8204,7 +8204,7 @@
             ],
             "link": "http://arxiv.org/abs/2406.19585v1",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "432af06ceecf12bce759f752b5716d2f3488fe919419299710d002111bddd3c1"
@@ -8226,7 +8226,7 @@
             ],
             "link": "http://arxiv.org/abs/2606.12860v1",
             "last_updated": "2026-07-19",
-            "last_checked": "2026-07-19",
+            "last_checked": "2026-07-20",
             "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "13ac19e19887291a7fa7bb55df17890699c5341c47818c75c466562bf6899158"

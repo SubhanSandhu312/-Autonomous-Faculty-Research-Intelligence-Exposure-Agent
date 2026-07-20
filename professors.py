@@ -1,16 +1,21 @@
 """
 professors.py
 
-Manages two things:
-1. A global professor registry -- every professor ANY user has ever added
-   (data/professors.json). Two users adding the same professor (matched by
-   Google Scholar URL) share one registry entry, so code.py only fetches
-   and processes each unique professor once per run, no matter how many
-   users track them.
-2. Per-user subscriptions -- which professors each user has chosen to
-   track (data/user_professors.json).
+Manages the GLOBAL professor registry only -- every professor ANY user
+has ever added (data/professors.json). Two users adding the same
+professor (matched by Google Scholar URL) share one registry entry, so
+code.py only fetches and processes each unique professor once per run, no
+matter how many users track them.
 
-Each professor also gets its own data directory
+WHO tracks WHICH professors is no longer stored here. That used to live
+in a separate data/user_professors.json file, which could drift out of
+sync with users.json and was the root cause of users seeing each other's
+professors mixed together. Per-user subscriptions now live directly
+inside each user's own record in users.json (see auth.py) -- this module
+just delegates to auth.py for all of that, so there is exactly ONE place
+that says "this user tracks these professors".
+
+Each professor still gets its own data directory
 (data/professors/<professor_id>/) holding that professor's own
 professor.json system-of-record, completely separate from every other
 professor's notification/citation history.
@@ -21,9 +26,10 @@ import os
 import hashlib
 import datetime
 
+import auth
+
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 PROFESSORS_PATH = os.path.join(BASE_DIR, "data", "professors.json")
-USER_PROFESSORS_PATH = os.path.join(BASE_DIR, "data", "user_professors.json")
 
 
 def _load_json(path):
@@ -53,7 +59,9 @@ def make_professor_id(name, scholar_url=""):
 
 def add_professor(name, scholar_url=""):
     """Adds a professor to the global registry if not already present
-    (matched by Scholar URL/name). Returns the professor_id either way."""
+    (matched by Scholar URL/name). Returns the professor_id either way.
+    This ONLY touches the shared registry -- it does not subscribe
+    anyone to anything. Call subscribe() separately for that."""
     professors = _load_json(PROFESSORS_PATH)
     professor_id = make_professor_id(name, scholar_url)
 
@@ -88,36 +96,32 @@ def get_professor_data_dir(professor_id):
     return path
 
 
+# --- Per-user subscriptions -- delegated straight to auth.py, which reads
+# and writes each user's OWN "professors" list inside their OWN record in
+# users.json. Nothing here reads or writes a separate subscriptions file. ---
+
 def subscribe(user_email, professor_id):
-    subs = _load_json(USER_PROFESSORS_PATH)
-    user_email = user_email.strip().lower()
-    ids = subs.setdefault(user_email, [])
-    if professor_id not in ids:
-        ids.append(professor_id)
-        _save_json(USER_PROFESSORS_PATH, subs)
+    auth.add_professor_to_user(user_email, professor_id)
 
 
 def unsubscribe(user_email, professor_id):
-    subs = _load_json(USER_PROFESSORS_PATH)
-    user_email = user_email.strip().lower()
-    if user_email in subs and professor_id in subs[user_email]:
-        subs[user_email].remove(professor_id)
-        _save_json(USER_PROFESSORS_PATH, subs)
+    auth.remove_professor_from_user(user_email, professor_id)
 
 
 def get_user_professor_ids(user_email):
-    subs = _load_json(USER_PROFESSORS_PATH)
-    return subs.get(user_email.strip().lower(), [])
+    return auth.get_user_professor_ids(user_email)
 
 
 def get_user_professors(user_email):
-    """Full professor dicts this user is tracking."""
+    """Full professor dicts THIS user is tracking -- filtered strictly by
+    THEIR OWN ids from auth.get_user_professor_ids(), never anyone
+    else's."""
     ids = set(get_user_professor_ids(user_email))
     return [p for p in get_all_professors() if p["id"] in ids]
 
 
 def get_subscribers_for_professor(professor_id):
     """Every user email tracking this professor -- used to know who should
-    be notified when this professor's data changes."""
-    subs = _load_json(USER_PROFESSORS_PATH)
-    return [email for email, ids in subs.items() if professor_id in ids]
+    be notified when this professor's data changes. Reads straight from
+    each user's own record via auth.py."""
+    return auth.get_subscribers_for_professor(professor_id)
