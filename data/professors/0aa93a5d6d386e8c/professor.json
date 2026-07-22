@@ -13,12 +13,12 @@
             "Machine learning",
             "Mathematics"
         ],
-        "last_updated": "2026-07-20",
-        "last_checked": "2026-07-20",
+        "last_updated": "2026-07-22",
+        "last_checked": "2026-07-22",
         "_fingerprint": "005612b3485057b16e0fbcedcc8197cd441161e4494c43ef2936484982b5d85a"
     },
     "openalex": {
-        "citations": 9094,
+        "citations": 9099,
         "hindex": 51,
         "works_count": 273,
         "papers": [
@@ -76,8 +76,8 @@
                     "https://openalex.org/W2570685808",
                     "https://openalex.org/W2580360036"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "743323026cfb6593a9a5cc039f089a336f6d0b6e152f659e5108328af7bca111"
@@ -86,16 +86,16 @@
                 "title": "A survey of the vision transformers and their CNN-transformer based variants",
                 "year": 2023,
                 "publication_date": "2023-10-04",
-                "citations": 384,
+                "citations": 385,
                 "doi": "https://doi.org/10.1007/s10462-023-10595-0",
                 "venue": "Artificial Intelligence Review",
                 "authors": [
                     "Asifullah Khan",
-                    "Zunaira Rauf",
+                    "Asifullah Khan",
                     "Zunaira Rauf",
                     "Anabia Sohail",
-                    "Hifsa Asif",
-                    "Aqsa Asif",
+                    "Abdul Rehman Khan",
+                    "Abdul Rehman Khan",
                     "Hifsa Asif",
                     "Aqsa Asif",
                     "Umair Farooq"
@@ -143,11 +143,11 @@
                     "https://openalex.org/W3125832420",
                     "https://openalex.org/W3136416617"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
-                "_fingerprint": "0f3465b50df877148c097aab940632e00e36e3e78097a2fe677a9fcfd69f301e"
+                "_fingerprint": "c3d097a714fe8964fa16efe554321ca6c56be3f75b67590f65e00146c98af838"
             },
             {
                 "title": "Wind power prediction using deep neural network based meta regression and transfer learning",
@@ -203,8 +203,8 @@
                     "https://openalex.org/W2044735270",
                     "https://openalex.org/W2051086873"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "fd16818416da195c38d1416546b67866c8e286ed78e6c69620d2075e8f0d3166"
@@ -263,8 +263,8 @@
                     "https://openalex.org/W1976316108",
                     "https://openalex.org/W1977572230"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "ccb73523c11da43af46a7623acacdeaad3969880e26569194bf0f6ab7d1db2b6"
@@ -328,8 +328,8 @@
                     "https://openalex.org/W2024572834",
                     "https://openalex.org/W2039306928"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "358f8f81fc7256f22ffe311a73b6b75005eb061530a1535b192c0fdead335c8a"
@@ -394,8 +394,8 @@
                     "https://openalex.org/W2012686113",
                     "https://openalex.org/W2018235493"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "e30b4bb928684bba1d1eafcc8a170e62301f02e266be88d7ea478dbd9e5efc24"
@@ -450,8 +450,8 @@
                     "https://openalex.org/W2033154814",
                     "https://openalex.org/W2040010062"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "0a1099036c3486b71077588decbb4072e52c4f907cf7de09f6378dfb8ecf9211"
@@ -512,8 +512,8 @@
                     "https://openalex.org/W2003613304",
                     "https://openalex.org/W2010818132"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "cca515630a856deccdd806283dc17c44490db817ecd19cf4b7d058340a143d18"
@@ -522,7 +522,7 @@
                 "title": "A New Deep Hybrid Boosted and Ensemble Learning-Based Brain Tumor Analysis Using MRI",
                 "year": 2022,
                 "publication_date": "2022-04-01",
-                "citations": 146,
+                "citations": 147,
                 "doi": "https://doi.org/10.3390/s22072726",
                 "venue": "Sensors",
                 "authors": [
@@ -585,17 +585,17 @@
                     "https://openalex.org/W2592929672",
                     "https://openalex.org/W2620760558"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
-                "_fingerprint": "02e9eb8c6b19d4e4d9bb70e7b9184a20ef14ac981a3b427b23826b4c1b85a411"
+                "_fingerprint": "7d623a192c74c3bb3f3d64d18e102cd721173d0adffd86b2eeedb152a40c9f50"
             },
             {
                 "title": "Churn prediction in telecom using Random Forest and PSO based data balancing in combination with various feature selection strategies",
                 "year": 2012,
                 "publication_date": "2012-09-25",
-                "citations": 137,
+                "citations": 138,
                 "doi": "https://doi.org/10.1016/j.compeleceng.2012.09.001",
                 "venue": "Computers & Electrical Engineering",
                 "authors": [
@@ -642,11 +642,11 @@
                     "https://openalex.org/W2128965734",
                     "https://openalex.org/W2129114758"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
-                "_fingerprint": "f65809fcc618a7b66f97e61d0c442b1c488b10eae417b76f9c05f1aa488c9dfb"
+                "_fingerprint": "36cdff072725adc818f530ab1577d9add2e3ca5e3181cfd6d029e7cfb48918e3"
             },
             {
                 "title": "Analysis of dengue infection based on Raman spectroscopy and support vector machine (SVM)",
@@ -706,8 +706,8 @@
                     "https://openalex.org/W2139212933",
                     "https://openalex.org/W2152220525"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "7084fd60e915d3ccc283ca971ec48e1236429e54ecc10098b9306aed1e9a2d86"
@@ -779,8 +779,8 @@
                     "https://openalex.org/W2102645811",
                     "https://openalex.org/W2107300816"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "0b2383ec67e090008fb53facd14b83abe3446d173dd249621c37b5745b18268c"
@@ -838,8 +838,8 @@
                     "https://openalex.org/W2616881109",
                     "https://openalex.org/W2618999197"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "197931611740705c4219c492745ddf79659184df80527cbec9a3894415e31605"
@@ -896,8 +896,8 @@
                     "https://openalex.org/W2516333753",
                     "https://openalex.org/W2549139847"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "969c7e438e323443cca6993d57d10ab43458d82fc1236fdf583c377e27edf9de"
@@ -956,8 +956,8 @@
                     "https://openalex.org/W2194775991",
                     "https://openalex.org/W2292078218"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "5d0b39d3ac9e453af395db47bf1e0fb3c06f5c5dcc4dbbb149090b43002034c1"
@@ -1030,8 +1030,8 @@
                     "https://openalex.org/W2096393612",
                     "https://openalex.org/W2124569930"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "c5e72e21752fa1c0dd3373dc12740d819ec9c389b4834b3198d028b172ce0301"
@@ -1093,76 +1093,11 @@
                     "https://openalex.org/W2001358823",
                     "https://openalex.org/W2003304826"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "6311226870f864363f834ffe35727076fafd2d01501677012cd87b4eddd51d5d"
-            },
-            {
-                "title": "Genetic algorithm and difference expansion based reversible watermarking for relational databases",
-                "year": 2013,
-                "publication_date": "2013-06-28",
-                "citations": 98,
-                "doi": "https://doi.org/10.1016/j.jss.2013.06.023",
-                "venue": "Journal of Systems and Software",
-                "authors": [
-                    "Khurram Jawad",
-                    "Asifullah Khan"
-                ],
-                "abstract": null,
-                "fields_of_study": [
-                    "Watermark",
-                    "Distortion (music)",
-                    "Digital watermarking",
-                    "Tuple",
-                    "Algorithm",
-                    "Computer science",
-                    "Sorting",
-                    "Data mining",
-                    "Cardinality (data modeling)",
-                    "Genetic algorithm",
-                    "Image (mathematics)",
-                    "Theoretical computer science",
-                    "Artificial intelligence",
-                    "Pattern recognition (psychology)",
-                    "Mathematics",
-                    "Machine learning",
-                    "Bandwidth (computing)",
-                    "Discrete mathematics",
-                    "Amplifier",
-                    "Computer network"
-                ],
-                "pdf_url": null,
-                "link": "https://openalex.org/W2132843320",
-                "references_count": 42,
-                "references": [
-                    "https://openalex.org/W1568204688",
-                    "https://openalex.org/W1591113207",
-                    "https://openalex.org/W1607341691",
-                    "https://openalex.org/W1898883277",
-                    "https://openalex.org/W1968258381",
-                    "https://openalex.org/W1985230776",
-                    "https://openalex.org/W1991329811",
-                    "https://openalex.org/W1993997797",
-                    "https://openalex.org/W1996177050",
-                    "https://openalex.org/W1996360405",
-                    "https://openalex.org/W2001432802",
-                    "https://openalex.org/W2003090405",
-                    "https://openalex.org/W2010751615",
-                    "https://openalex.org/W2024572834",
-                    "https://openalex.org/W2032188627",
-                    "https://openalex.org/W2039690308",
-                    "https://openalex.org/W2044504812",
-                    "https://openalex.org/W2060108852",
-                    "https://openalex.org/W2065342853",
-                    "https://openalex.org/W2078271453"
-                ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
-                "is_new_paper": true,
-                "citation_alert": false,
-                "_fingerprint": "9ed9c07d8038513e327856c15e6a86b91920657484e2035d82619864fc5228ac"
             },
             {
                 "title": "MemHyb: Predicting membrane protein types by hybridizing SAAC and PSSM",
@@ -1219,8 +1154,8 @@
                     "https://openalex.org/W1996177050",
                     "https://openalex.org/W2001028520"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "3b74c13405401bb13386c198a59f614d84fc1d9f884c085896c5c8d2dd34796b"
@@ -1267,8 +1202,8 @@
                 "link": "https://openalex.org/W2077022308",
                 "references_count": 0,
                 "references": [],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "2ed2c32dce604192c94f16f782dba93e2ce421ad23cc2307be88bdaa89fbf305"
@@ -1277,7 +1212,7 @@
                 "title": "A Survey of the Recent Trends in Deep Learning Based Malware Detection",
                 "year": 2022,
                 "publication_date": "2022-09-28",
-                "citations": 94,
+                "citations": 95,
                 "doi": "https://doi.org/10.3390/jcp2040041",
                 "venue": "Journal of Cybersecurity and Privacy",
                 "authors": [
@@ -1328,11 +1263,11 @@
                     "https://openalex.org/W2016975161",
                     "https://openalex.org/W2039427951"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
-                "_fingerprint": "0c2e532b06e6ca36f2ccff3b25840ce01f1038e67138bc1117fb138eb5bcc73d"
+                "_fingerprint": "f382b13ad0123e1211f26bca9cdfa468fd5e02bb793434a3f30c676ecdc6cfc2"
             },
             {
                 "title": "Automated colon cancer detection using hybrid of novel geometric features and some traditional features",
@@ -1387,8 +1322,8 @@
                     "https://openalex.org/W2079385922",
                     "https://openalex.org/W2084185625"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "9d189da20aa71c49065c982c8b07e425ce31342d9d225399b8aa172c7d1bfdfc"
@@ -1455,8 +1390,8 @@
                     "https://openalex.org/W2809515324",
                     "https://openalex.org/W2901743512"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "d3a2a7028f85b5087febdad32d33279f553286e05683d8d00bc3053d6c0ce63b"
@@ -1520,8 +1455,8 @@
                     "https://openalex.org/W2083436148",
                     "https://openalex.org/W2099940443"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "f0933adeb66fdc5fb1ba4fa57af7ec3134c30aa23e03ef31f681aa5c4ec5698a"
@@ -1585,8 +1520,8 @@
                     "https://openalex.org/W3024340288",
                     "https://openalex.org/W3035366542"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "b413bc473844608c2136849406881d661a6dd31aaaa1f101a5e3a285e417d5c4"
@@ -1652,8 +1587,8 @@
                     "https://openalex.org/W2082310090",
                     "https://openalex.org/W2096326441"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "6815e4409c0221aa78369b6560ec0cd77fbb179f39731dac34925d7e9393f409"
@@ -1714,8 +1649,8 @@
                     "https://openalex.org/W2208105918",
                     "https://openalex.org/W2282032575"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "9c3ecebf576be963d018905e613dc65a0cb99b616bc0625e149226550dd878a1"
@@ -1785,8 +1720,8 @@
                     "https://openalex.org/W3015141576",
                     "https://openalex.org/W3017011257"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "81beb720350d4ca0296e4f160154f4823e65593d82dd5cb8d3059efd1f9ac0bc"
@@ -1855,8 +1790,8 @@
                     "https://openalex.org/W2910121883",
                     "https://openalex.org/W2914010220"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "615cf5688ae4fd333cc43d99016e2994b813ba727b3a28aeadc6bfcba7d71fec"
@@ -1912,8 +1847,8 @@
                     "https://openalex.org/W2789755511",
                     "https://openalex.org/W2789758093"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "0690cea9b3fe2d50ef3c4058222cbb3c01d161e307982bf94173f2bfa2a8195e"
@@ -1969,8 +1904,8 @@
                     "https://openalex.org/W3012189167",
                     "https://openalex.org/W3012809680"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "1748ca4afae4c4878fe3b9fda1f974acd1d767b2af1da08888df52b53a477e56"
@@ -2027,8 +1962,8 @@
                     "https://openalex.org/W2784113120",
                     "https://openalex.org/W2787931603"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "df8f3a54231c771f94b8f6ff4ad56735eeae3900ecd27643009a8acf142745b8"
@@ -2097,8 +2032,8 @@
                     "https://openalex.org/W3001118548",
                     "https://openalex.org/W3007497549"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "b63d2ff6908a9a9ec72f7b37c896f79320404496cb26b9221294425b97b43097"
@@ -2156,8 +2091,8 @@
                     "https://openalex.org/W2085640111",
                     "https://openalex.org/W2091656054"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "aebb81945c35615d3710f304970b6a70f40a94d921915fbedefb16ebc94a466c"
@@ -2219,8 +2154,8 @@
                     "https://openalex.org/W2902302694",
                     "https://openalex.org/W2910122460"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "39d4f8c1bff4d46a71643e4650e7e5322c04d7eb3a983ce4ca767f0be85d913e"
@@ -2286,8 +2221,8 @@
                     "https://openalex.org/W2512479688",
                     "https://openalex.org/W2794842204"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "c130a85d7217281cefa2e31478d7d47d8f17efd26d04f1a9c439e8237b8d8938"
@@ -2345,8 +2280,8 @@
                     "https://openalex.org/W2828862258",
                     "https://openalex.org/W2884436604"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "a7ad91e799b99d21537c7debeb0ec4f581dc77b9742d38190daa439d9ea69525"
@@ -2408,75 +2343,11 @@
                     "https://openalex.org/W2524241275",
                     "https://openalex.org/W2549139847"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "96dd9ae167cde4eb550140139fd0a568021734b6eff1bd949d9fb1802693496a"
-            },
-            {
-                "title": "Robust information gain based fuzzy c-means clustering and classification of carotid artery ultrasound images",
-                "year": 2013,
-                "publication_date": "2013-10-24",
-                "citations": 40,
-                "doi": "https://doi.org/10.1016/j.cmpb.2013.10.012",
-                "venue": "Computer Methods and Programs in Biomedicine",
-                "authors": [
-                    "Mehdi Hassan",
-                    "Asmatullah Chaudhry",
-                    "Asifullah Khan",
-                    "Muhammad Aksam Iftikhar"
-                ],
-                "abstract": null,
-                "fields_of_study": [
-                    "Artificial intelligence",
-                    "Computer science",
-                    "Segmentation",
-                    "Cluster analysis",
-                    "Computer vision",
-                    "Pattern recognition (psychology)",
-                    "Image segmentation",
-                    "Speckle noise",
-                    "Noise (video)",
-                    "Medical imaging",
-                    "Feature (linguistics)",
-                    "Centroid",
-                    "Fuzzy logic",
-                    "Speckle pattern",
-                    "Image (mathematics)",
-                    "Philosophy",
-                    "Linguistics"
-                ],
-                "pdf_url": null,
-                "link": "https://openalex.org/W2121326143",
-                "references_count": 43,
-                "references": [
-                    "https://openalex.org/W1482635442",
-                    "https://openalex.org/W1505077723",
-                    "https://openalex.org/W1538608181",
-                    "https://openalex.org/W1612175259",
-                    "https://openalex.org/W1635923105",
-                    "https://openalex.org/W1694483944",
-                    "https://openalex.org/W1964168965",
-                    "https://openalex.org/W1965779866",
-                    "https://openalex.org/W1973880112",
-                    "https://openalex.org/W1974361517",
-                    "https://openalex.org/W1984657950",
-                    "https://openalex.org/W1989565687",
-                    "https://openalex.org/W1989617702",
-                    "https://openalex.org/W1992147426",
-                    "https://openalex.org/W1992213841",
-                    "https://openalex.org/W1995875735",
-                    "https://openalex.org/W1997344757",
-                    "https://openalex.org/W1999308177",
-                    "https://openalex.org/W2026520636",
-                    "https://openalex.org/W2048864972"
-                ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
-                "is_new_paper": true,
-                "citation_alert": false,
-                "_fingerprint": "a8dadc2f4dc7d08f4f1982a0be99d4c7611fcbf3607fbbd876c7fbbf456e64e0"
             },
             {
                 "title": "A two-stage stacked ensemble intrusion detection system using five base classifiers and MLP with optimal feature selection",
@@ -2534,8 +2405,8 @@
                     "https://openalex.org/W2152442131",
                     "https://openalex.org/W2155632266"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "f7c5bc8709fda4e494f6af0dc381757c21bc95271e04b61c338b9ab153fd6288"
@@ -2599,70 +2470,11 @@
                     "https://openalex.org/W2036731871",
                     "https://openalex.org/W2042235688"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "ac20d4426bff212f6d79be1b1ed53bcebb2cdf028ab57c834d6ade9496d681ff"
-            },
-            {
-                "title": "Autonomous Drone Swarm Navigation and Multitarget Tracking With Island Policy-Based Optimization Framework",
-                "year": 2022,
-                "publication_date": "2022-01-01",
-                "citations": 30,
-                "doi": "https://doi.org/10.1109/access.2022.3202208",
-                "venue": "IEEE Access",
-                "authors": [
-                    "Suleman Qamar",
-                    "Saddam Hussain Khan",
-                    "Muhammad Arif Arshad",
-                    "Maryam Qamar",
-                    "Jeonghwan Gwak",
-                    "Asifullah Khan"
-                ],
-                "abstract": "Swarm intelligence has been applied to replicate numerous natural processes and relatively simple species to achieve excellent performance in a variety of disciplines. An autonomous approach employing deep reinforcement learning is presented in this study for swarm navigation. In this approach, complex 3D environments with static and dynamic obstacles and resistive forces such as linear drag, angular drag, and gravity are modeled to track multiple dynamic targets. In this regard, a novel island policy optimization model is introduced to tackle multiple dynamic targets simultaneously and thus make the swarm more dynamic. Moreover, new reward functions for robust swarm formation and target tracking are devised to learn complex swarm behaviors. Since the number of agents is not fixed and has only the partial observance of the environment, swarm formation and navigation become challenging. In this regard, the proposed strategy consists of four main components to tackle the aforementioned challenges: 1) Island policy-based optimization framework with multiple targets tracking 2) Novel reward functions for multiple dynamic target tracking 3) Improved policy and critic-based framework for the dynamic swarm management 4) Memory. The dynamic swarm management phase translates basic sensory input to high-level commands and thus enhances swarm navigation and decentralized setup while maintaining the swarm&#x2019;s size fluctuations. While in the island model, the swarm can split into individual sub-swarms according to the number of targets, thus allowing it to track multiple targets that are far apart. Also, when multiple targets come close to each other, these sub-swarms have the ability to rejoin and thus form a single swarm surrounding all the targets. Customized state-of-the-art policy-based deep reinforcement learning neuro-architectures are employed to achieve policy optimization. The results show that the proposed strategy enhances swarm navigation and can track multiple static and dynamic targets in complex environments.",
-                "fields_of_study": [
-                    "Swarm behaviour",
-                    "Computer science",
-                    "Swarm intelligence",
-                    "Swarm robotics",
-                    "Drone",
-                    "Artificial intelligence",
-                    "Particle swarm optimization",
-                    "Machine learning",
-                    "Biology",
-                    "Genetics"
-                ],
-                "pdf_url": "https://ieeexplore.ieee.org/ielx7/6287639/6514899/09868790.pdf",
-                "link": "https://openalex.org/W4293371141",
-                "references_count": 70,
-                "references": [
-                    "https://openalex.org/W32403112",
-                    "https://openalex.org/W155231534",
-                    "https://openalex.org/W2031817855",
-                    "https://openalex.org/W2064675550",
-                    "https://openalex.org/W2145339207",
-                    "https://openalex.org/W2161481732",
-                    "https://openalex.org/W2343678873",
-                    "https://openalex.org/W2564801040",
-                    "https://openalex.org/W2588790649",
-                    "https://openalex.org/W2593949166",
-                    "https://openalex.org/W2736601468",
-                    "https://openalex.org/W2754517384",
-                    "https://openalex.org/W2777482433",
-                    "https://openalex.org/W2782846763",
-                    "https://openalex.org/W2790742319",
-                    "https://openalex.org/W2791153118",
-                    "https://openalex.org/W2798189842",
-                    "https://openalex.org/W2799899844",
-                    "https://openalex.org/W2805526072",
-                    "https://openalex.org/W2883532348"
-                ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
-                "is_new_paper": true,
-                "citation_alert": false,
-                "_fingerprint": "e2a0c9b1abca0c3b4552db8a7b75a9ed5f45b7de471a3e374344add8d8802986"
             },
             {
                 "title": "Dependence of critical heat flux in vertical flow systems on dimensional and dimensionless parameters using machine learning",
@@ -2717,8 +2529,8 @@
                     "https://openalex.org/W2010020054",
                     "https://openalex.org/W2010662087"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "35eb28165973637936f250831585cc4b8f92e49d0082d9faea1427daab722275"
@@ -2800,145 +2612,76 @@
                     "https://openalex.org/W2974825848",
                     "https://openalex.org/W2994026422"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "f35e88fdb1ebb1ac5f7811a0c4af757f5f0605042347c6560aaf6a8b5e58a946"
             },
             {
-                "title": "DC-AAE: Dual channel adversarial autoencoder with multitask learning for KL-grade classification in knee radiographs",
-                "year": 2023,
-                "publication_date": "2023-10-13",
-                "citations": 16,
-                "doi": "https://doi.org/10.1016/j.compbiomed.2023.107570",
-                "venue": "Computers in Biology and Medicine",
+                "title": "Genetic algorithm and difference expansion based reversible watermarking for relational databases",
+                "year": 2013,
+                "publication_date": "2013-06-28",
+                "citations": 98,
+                "doi": "https://doi.org/10.1016/j.jss.2013.06.023",
+                "venue": "Journal of Systems and Software",
                 "authors": [
-                    "Muhammad Umar Farooq",
-                    "Zahid Ullah",
-                    "Asifullah Khan",
-                    "Jeonghwan Gwak"
+                    "Khurram Jawad",
+                    "Asifullah Khan"
                 ],
                 "abstract": null,
                 "fields_of_study": [
-                    "Autoencoder",
+                    "Watermark",
+                    "Distortion (music)",
+                    "Digital watermarking",
+                    "Tuple",
+                    "Algorithm",
                     "Computer science",
+                    "Sorting",
+                    "Data mining",
+                    "Cardinality (data modeling)",
+                    "Genetic algorithm",
+                    "Image (mathematics)",
+                    "Theoretical computer science",
                     "Artificial intelligence",
-                    "Machine learning",
-                    "Task (project management)",
-                    "Multi-task learning",
-                    "Unsupervised learning",
-                    "Deep learning",
-                    "Supervised learning",
                     "Pattern recognition (psychology)",
-                    "Exploit",
-                    "Channel (broadcasting)",
-                    "Artificial neural network",
-                    "Computer security",
-                    "Computer network",
-                    "Management",
-                    "Economics"
+                    "Mathematics",
+                    "Machine learning",
+                    "Bandwidth (computing)",
+                    "Discrete mathematics",
+                    "Amplifier",
+                    "Computer network"
                 ],
                 "pdf_url": null,
-                "link": "https://openalex.org/W4387618999",
-                "references_count": 76,
-                "references": [
-                    "https://openalex.org/W1937032878",
-                    "https://openalex.org/W1967057044",
-                    "https://openalex.org/W1972552638",
-                    "https://openalex.org/W1973366725",
-                    "https://openalex.org/W1985338246",
-                    "https://openalex.org/W2015065202",
-                    "https://openalex.org/W2026123588",
-                    "https://openalex.org/W2049737684",
-                    "https://openalex.org/W2107965868",
-                    "https://openalex.org/W2135119721",
-                    "https://openalex.org/W2138481135",
-                    "https://openalex.org/W2140513563",
-                    "https://openalex.org/W2149128484",
-                    "https://openalex.org/W2159988341",
-                    "https://openalex.org/W2165879419",
-                    "https://openalex.org/W2273468036",
-                    "https://openalex.org/W2274971583",
-                    "https://openalex.org/W2518546450",
-                    "https://openalex.org/W2584503597",
-                    "https://openalex.org/W2598979078"
-                ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
-                "is_new_paper": true,
-                "citation_alert": false,
-                "_fingerprint": "2b1aa3fb050a2f8b45a94fa2b662f6c20d8b6ba486196bc5cfd149b1230a0c76"
-            },
-            {
-                "title": "Data-driven strategies for drug repurposing: insights, recommendations, and case studies",
-                "year": 2025,
-                "publication_date": "2025-11-01",
-                "citations": 5,
-                "doi": "https://doi.org/10.1093/bib/bbaf625",
-                "venue": "Briefings in Bioinformatics",
-                "authors": [
-                    "Susanna Savander",
-                    "Nurettin Nusret Curabaz",
-                    "Amna Mumtaz Abbasi",
-                    "Asifullah Khan",
-                    "Khalid Saeed",
-                    "Ziaurrehman Tanoli"
-                ],
-                "abstract": "Drug discovery is a complex, time-intensive, and costly process, often requiring more than a decade and substantial financial investment to bring a single therapeutic to market. Drug repurposing, the systematic identification of new indications for existing approved drugs, offers a cost-effective and expedited alternative to traditional pipelines, with the potential to address unmet clinical needs. In this study, we present a comparative analysis of drug-target interaction data from three extensively curated resources: ChEMBL, BindingDB, and GtoPdb, evaluating their release histories, curation methodologies, and coverage of approved and investigational compounds and targets. To facilitate therapeutic interpretation, we manually classified ChEMBL targets into 12 high-level biological families and mapped 817 clinically approved drug indications into 28 broader therapeutic groups. This structured framework enabled a systematic profiling of physicochemical properties among approved drugs across therapeutic categories. Our analyses revealed associations between physicochemical characteristics and therapeutic groups, providing practical guidance for indication-specific compound prioritization and refining the repurposing studies. We also examined cross-indication drug approvals to identify areas with high repurposing potential. Finally, we implemented a pathway-based computational pipeline to predict repositioning opportunities for FDA-approved drugs across 10 major cancer types, demonstrating its adaptability to other disease contexts. Overall, this work consolidates drug-target data and computational repurposing into a data-driven framework that advances drug discovery and translational applications.",
-                "fields_of_study": [
-                    "Drug repositioning",
-                    "Repurposing",
-                    "Approved drug",
-                    "Drug",
-                    "Drug discovery",
-                    "Medicine",
-                    "chEMBL",
-                    "Identification (biology)",
-                    "Profiling (computer programming)",
-                    "Prioritization",
-                    "Computer science",
-                    "Precision medicine",
-                    "Drug development",
-                    "Drug-drug interaction",
-                    "Data science",
-                    "Risk analysis (engineering)",
-                    "MEDLINE",
-                    "Pharmacology",
-                    "Computational biology",
-                    "Drug approval",
-                    "Intensive care medicine"
-                ],
-                "pdf_url": "https://academic.oup.com/bib/article-pdf/26/6/bbaf625/65490400/bbaf625.pdf",
-                "link": "https://openalex.org/W4416738354",
+                "link": "https://openalex.org/W2132843320",
                 "references_count": 42,
                 "references": [
-                    "https://openalex.org/W100903417",
-                    "https://openalex.org/W129917815",
-                    "https://openalex.org/W1490655572",
-                    "https://openalex.org/W1500036797",
-                    "https://openalex.org/W1545078134",
-                    "https://openalex.org/W1596051841",
-                    "https://openalex.org/W1971513938",
-                    "https://openalex.org/W1988178556",
-                    "https://openalex.org/W1995930366",
-                    "https://openalex.org/W2062533676",
-                    "https://openalex.org/W2129370330",
-                    "https://openalex.org/W2263739890",
-                    "https://openalex.org/W2559588208",
-                    "https://openalex.org/W2612467560",
-                    "https://openalex.org/W2890507936",
-                    "https://openalex.org/W3006508031",
-                    "https://openalex.org/W3009999522",
-                    "https://openalex.org/W3047987484",
-                    "https://openalex.org/W3128618129",
-                    "https://openalex.org/W3136988847"
+                    "https://openalex.org/W1568204688",
+                    "https://openalex.org/W1591113207",
+                    "https://openalex.org/W1607341691",
+                    "https://openalex.org/W1898883277",
+                    "https://openalex.org/W1968258381",
+                    "https://openalex.org/W1985230776",
+                    "https://openalex.org/W1991329811",
+                    "https://openalex.org/W1993997797",
+                    "https://openalex.org/W1996177050",
+                    "https://openalex.org/W1996360405",
+                    "https://openalex.org/W2001432802",
+                    "https://openalex.org/W2003090405",
+                    "https://openalex.org/W2010751615",
+                    "https://openalex.org/W2024572834",
+                    "https://openalex.org/W2032188627",
+                    "https://openalex.org/W2039690308",
+                    "https://openalex.org/W2044504812",
+                    "https://openalex.org/W2060108852",
+                    "https://openalex.org/W2065342853",
+                    "https://openalex.org/W2078271453"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
-                "_fingerprint": "188492fcc446522e228913f5d2e20aa9a8c78bdbb0d14c33f2587376758075df"
+                "_fingerprint": "9ed9c07d8038513e327856c15e6a86b91920657484e2035d82619864fc5228ac"
             },
             {
                 "title": "Lattice constant prediction of cubic and monoclinic perovskites using neural networks and support vector regression",
@@ -3003,8 +2746,8 @@
                     "https://openalex.org/W1997759851",
                     "https://openalex.org/W2001143592"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "64f1065c62571e6a881a8c3fba868668ad985320d13e9a38ed335b498188f2ce"
@@ -3061,8 +2804,8 @@
                     "https://openalex.org/W2018235493",
                     "https://openalex.org/W2029904979"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "4b6dac1885aa6fcb9cc569b84ac19ab94f216caa0483d4a3dcb2d2a0de45d41d"
@@ -3127,8 +2870,8 @@
                     "https://openalex.org/W2124332809",
                     "https://openalex.org/W2124776405"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "af203b3acbf7ad1ad3bc45fd5f76f3e6eaec05115d2f18c348634cbe03fcf672"
@@ -3194,8 +2937,8 @@
                     "https://openalex.org/W2501522636",
                     "https://openalex.org/W6676758702"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "8761c7126a1d53ae8c3ac678696d857c4986a3bde187295bf3998d2d38d0c989"
@@ -3204,7 +2947,7 @@
                 "title": "Intelligent churn prediction in telecom: employing mRMR feature selection and RotBoost based ensemble classification",
                 "year": 2013,
                 "publication_date": "2013-04-20",
-                "citations": 73,
+                "citations": 74,
                 "doi": "https://doi.org/10.1007/s10489-013-0440-x",
                 "venue": "Applied Intelligence",
                 "authors": [
@@ -3249,11 +2992,11 @@
                     "https://openalex.org/W2063499201",
                     "https://openalex.org/W2066358695"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
-                "_fingerprint": "c63a5cc89101548afc3b93e64ffffbf023bb059a6a611c536a55362a08ea2ec9"
+                "_fingerprint": "b3f9e6c19f0b98e5738e32131b65084e2159d57cea9e6dd508f3d4b99072c042"
             },
             {
                 "title": "Machine Learning based short term wind power prediction using a hybrid learning model",
@@ -3313,8 +3056,8 @@
                     "https://openalex.org/W2079233970",
                     "https://openalex.org/W2093604575"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "40738956f095a5d5a859d67cd17604112655d5260195998df7cf4c5f22c84477"
@@ -3378,8 +3121,8 @@
                     "https://openalex.org/W2112622021",
                     "https://openalex.org/W2121036560"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "0535dbdc0a9b3b2203b8d2259d30dd47fdc6e9b1c0e933f3b7d5a6adb0c43ad9"
@@ -3445,8 +3188,8 @@
                     "https://openalex.org/W2539458076",
                     "https://openalex.org/W2799061466"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "faba85ee6e2fedaf2766d360d515ea7c7206e8bcbef7867faedd33b5bb4fe758"
@@ -3511,8 +3254,8 @@
                     "https://openalex.org/W2014421517",
                     "https://openalex.org/W2024254802"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "ca84f6168987c7cd1e21bfe58bcbf5c5c11249996e0d24d4e63816884198b538"
@@ -3566,8 +3309,8 @@
                     "https://openalex.org/W2061133004",
                     "https://openalex.org/W2066579873"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "a05c59b3dcc7d49b248a51b808c9f236ef0680beb9739d60f87d94ff406d060e"
@@ -3634,8 +3377,8 @@
                     "https://openalex.org/W2085257608",
                     "https://openalex.org/W2097745317"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "e24bd901b38818cd111958b01913aa312c03021cc57ee7dba6bbc1762eb7d74c"
@@ -3700,8 +3443,8 @@
                     "https://openalex.org/W2399847652",
                     "https://openalex.org/W2518241141"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "c4ff2eb06e4b5f14bb3ef5f57cf8a4a30cb41459ec4caf289fafd44ed659bd29"
@@ -3763,8 +3506,8 @@
                     "https://openalex.org/W2103164234",
                     "https://openalex.org/W2110293524"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "424cc89e2c66a6665ef7ffff459aff1a726e3dd9fdf545ac76b28d416bf18cc8"
@@ -3822,8 +3565,8 @@
                     "https://openalex.org/W2035451412",
                     "https://openalex.org/W2036248751"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "23044488d36b2ab66dfe9645a9bc2a2566f8681905d94321ce862ec05003b375"
@@ -3882,8 +3625,8 @@
                     "https://openalex.org/W1999591184",
                     "https://openalex.org/W2008162067"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "734d585623d7844576a5c160d22a34997d8dac128a8c4bb00f06617b24bc5404"
@@ -3948,8 +3691,8 @@
                     "https://openalex.org/W2078936307",
                     "https://openalex.org/W2080064604"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "9a0bc543531a55bf38f8ebe4404e1209241c42faab4f49b1235739a165918fe0"
@@ -4021,8 +3764,8 @@
                     "https://openalex.org/W2055048467",
                     "https://openalex.org/W2060047145"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "d0922d0017579fbee3dab036bc9417d42cbb7431000b9d7aa2d6032e7f56744c"
@@ -4084,8 +3827,8 @@
                     "https://openalex.org/W2139212933",
                     "https://openalex.org/W2156909104"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "96523edb3be2b077e1e6421b6f75cc3131ccf31f76babb6423c3600a66e6a5e2"
@@ -4140,8 +3883,8 @@
                     "https://openalex.org/W2026666393",
                     "https://openalex.org/W2033468519"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "6996e3c8b140ec4e1fdaf136829582137ecd295af91f660bf031ee7409459913"
@@ -4198,8 +3941,8 @@
                     "https://openalex.org/W2032980774",
                     "https://openalex.org/W2041993724"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "79a25749eb4a5b2380c2653db079e6c4ec1e1b418015d2c18ff7ce73f661a2db"
@@ -4267,8 +4010,8 @@
                     "https://openalex.org/W3024300243",
                     "https://openalex.org/W3028523516"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "3af3b6718501feb73746a0cf975119f3326152bb38bd81a2e6a53d007fcceb8e"
@@ -4335,8 +4078,8 @@
                     "https://openalex.org/W2077862952",
                     "https://openalex.org/W2097944430"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "18bd13b320a73abbacc88397d8080626821408491240b0942fe8ba2f2937f51a"
@@ -4389,8 +4132,8 @@
                     "https://openalex.org/W2605850958",
                     "https://openalex.org/W2607075141"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "96d6e5aaa560d948fddfb083767c151dc95367eb220c200f5e690cc25004d4cb"
@@ -4455,11 +4198,75 @@
                     "https://openalex.org/W2024572834",
                     "https://openalex.org/W2024767324"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "158ac9ad8ab249caaac3f246ea637d8a6a099170cb70dc8edb27d938c98c7ab0"
+            },
+            {
+                "title": "Robust information gain based fuzzy c-means clustering and classification of carotid artery ultrasound images",
+                "year": 2013,
+                "publication_date": "2013-10-24",
+                "citations": 40,
+                "doi": "https://doi.org/10.1016/j.cmpb.2013.10.012",
+                "venue": "Computer Methods and Programs in Biomedicine",
+                "authors": [
+                    "Mehdi Hassan",
+                    "Asmatullah Chaudhry",
+                    "Asifullah Khan",
+                    "Muhammad Aksam Iftikhar"
+                ],
+                "abstract": null,
+                "fields_of_study": [
+                    "Artificial intelligence",
+                    "Computer science",
+                    "Segmentation",
+                    "Cluster analysis",
+                    "Computer vision",
+                    "Pattern recognition (psychology)",
+                    "Image segmentation",
+                    "Speckle noise",
+                    "Noise (video)",
+                    "Medical imaging",
+                    "Feature (linguistics)",
+                    "Centroid",
+                    "Fuzzy logic",
+                    "Speckle pattern",
+                    "Image (mathematics)",
+                    "Philosophy",
+                    "Linguistics"
+                ],
+                "pdf_url": null,
+                "link": "https://openalex.org/W2121326143",
+                "references_count": 43,
+                "references": [
+                    "https://openalex.org/W1482635442",
+                    "https://openalex.org/W1505077723",
+                    "https://openalex.org/W1538608181",
+                    "https://openalex.org/W1612175259",
+                    "https://openalex.org/W1635923105",
+                    "https://openalex.org/W1694483944",
+                    "https://openalex.org/W1964168965",
+                    "https://openalex.org/W1965779866",
+                    "https://openalex.org/W1973880112",
+                    "https://openalex.org/W1974361517",
+                    "https://openalex.org/W1984657950",
+                    "https://openalex.org/W1989565687",
+                    "https://openalex.org/W1989617702",
+                    "https://openalex.org/W1992147426",
+                    "https://openalex.org/W1992213841",
+                    "https://openalex.org/W1995875735",
+                    "https://openalex.org/W1997344757",
+                    "https://openalex.org/W1999308177",
+                    "https://openalex.org/W2026520636",
+                    "https://openalex.org/W2048864972"
+                ],
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
+                "is_new_paper": true,
+                "citation_alert": false,
+                "_fingerprint": "a8dadc2f4dc7d08f4f1982a0be99d4c7611fcbf3607fbbd876c7fbbf456e64e0"
             },
             {
                 "title": "Protein subcellular localization of fluorescence imagery using spatial and transform domain features",
@@ -4523,8 +4330,8 @@
                     "https://openalex.org/W2120764346",
                     "https://openalex.org/W2131081720"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "be960c974c336b205e6d0cb5d38cff726949cbae0862b2a216b6f53371ce1941"
@@ -4588,8 +4395,8 @@
                     "https://openalex.org/W2900633536",
                     "https://openalex.org/W2910121883"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "f874f9549aeca7a8d029147da6026c0eba5b2fbfac56f01e83a11d02dd71ae03"
@@ -4652,8 +4459,8 @@
                     "https://openalex.org/W1997996819",
                     "https://openalex.org/W1998133078"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "7775b1dd8384179325d43b9eaca7e655e131a0e33b181477e6baafa5fa88f658"
@@ -4711,8 +4518,8 @@
                     "https://openalex.org/W2014436019",
                     "https://openalex.org/W2022266309"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "c4cd98f619c2dc7fcf1e7cb3beb968f0d54901d5f3509075adffadf0e1d4d458"
@@ -4771,8 +4578,8 @@
                     "https://openalex.org/W2122598626",
                     "https://openalex.org/W2129523948"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "70403796245e76d95ca0beb5cc1aeff20a5f3ec52f213b840af4ce060b60c611"
@@ -4836,8 +4643,8 @@
                     "https://openalex.org/W2498764365",
                     "https://openalex.org/W2621114611"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "d76bb19145a4e369547ed5b671b59ba0c3ac334f5d467693ccfe49c5d85ac3d7"
@@ -4883,8 +4690,8 @@
                     "https://openalex.org/W2043265719",
                     "https://openalex.org/W2043509863"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "c2ce2127b4e6e0ee2b196872ff11bc31225c3b0e86a5c046a9d4de83dfc3b73c"
@@ -4947,8 +4754,8 @@
                     "https://openalex.org/W2024572834",
                     "https://openalex.org/W2024767324"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "82e86fb00b4243bb4fe14007b7daeac5d325194cbb6e5e860882b76bea770b32"
@@ -5018,8 +4825,8 @@
                     "https://openalex.org/W2106787323",
                     "https://openalex.org/W2111247797"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "7be6dd892123718e6ab04036bae29640f267d85f33ad434a292568a91b2b5874"
@@ -5083,11 +4890,70 @@
                     "https://openalex.org/W2061237839",
                     "https://openalex.org/W2066481368"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "d6454e0f69c99f5862d78aac03da0b9a29f2476a883868b7ae92e518fd89ae06"
+            },
+            {
+                "title": "Autonomous Drone Swarm Navigation and Multitarget Tracking With Island Policy-Based Optimization Framework",
+                "year": 2022,
+                "publication_date": "2022-01-01",
+                "citations": 30,
+                "doi": "https://doi.org/10.1109/access.2022.3202208",
+                "venue": "IEEE Access",
+                "authors": [
+                    "Suleman Qamar",
+                    "Saddam Hussain Khan",
+                    "Muhammad Arif Arshad",
+                    "Maryam Qamar",
+                    "Jeonghwan Gwak",
+                    "Asifullah Khan"
+                ],
+                "abstract": "Swarm intelligence has been applied to replicate numerous natural processes and relatively simple species to achieve excellent performance in a variety of disciplines. An autonomous approach employing deep reinforcement learning is presented in this study for swarm navigation. In this approach, complex 3D environments with static and dynamic obstacles and resistive forces such as linear drag, angular drag, and gravity are modeled to track multiple dynamic targets. In this regard, a novel island policy optimization model is introduced to tackle multiple dynamic targets simultaneously and thus make the swarm more dynamic. Moreover, new reward functions for robust swarm formation and target tracking are devised to learn complex swarm behaviors. Since the number of agents is not fixed and has only the partial observance of the environment, swarm formation and navigation become challenging. In this regard, the proposed strategy consists of four main components to tackle the aforementioned challenges: 1) Island policy-based optimization framework with multiple targets tracking 2) Novel reward functions for multiple dynamic target tracking 3) Improved policy and critic-based framework for the dynamic swarm management 4) Memory. The dynamic swarm management phase translates basic sensory input to high-level commands and thus enhances swarm navigation and decentralized setup while maintaining the swarm&#x2019;s size fluctuations. While in the island model, the swarm can split into individual sub-swarms according to the number of targets, thus allowing it to track multiple targets that are far apart. Also, when multiple targets come close to each other, these sub-swarms have the ability to rejoin and thus form a single swarm surrounding all the targets. Customized state-of-the-art policy-based deep reinforcement learning neuro-architectures are employed to achieve policy optimization. The results show that the proposed strategy enhances swarm navigation and can track multiple static and dynamic targets in complex environments.",
+                "fields_of_study": [
+                    "Swarm behaviour",
+                    "Computer science",
+                    "Swarm intelligence",
+                    "Swarm robotics",
+                    "Drone",
+                    "Artificial intelligence",
+                    "Particle swarm optimization",
+                    "Machine learning",
+                    "Biology",
+                    "Genetics"
+                ],
+                "pdf_url": "https://ieeexplore.ieee.org/ielx7/6287639/6514899/09868790.pdf",
+                "link": "https://openalex.org/W4293371141",
+                "references_count": 70,
+                "references": [
+                    "https://openalex.org/W32403112",
+                    "https://openalex.org/W155231534",
+                    "https://openalex.org/W2031817855",
+                    "https://openalex.org/W2064675550",
+                    "https://openalex.org/W2145339207",
+                    "https://openalex.org/W2161481732",
+                    "https://openalex.org/W2343678873",
+                    "https://openalex.org/W2564801040",
+                    "https://openalex.org/W2588790649",
+                    "https://openalex.org/W2593949166",
+                    "https://openalex.org/W2736601468",
+                    "https://openalex.org/W2754517384",
+                    "https://openalex.org/W2777482433",
+                    "https://openalex.org/W2782846763",
+                    "https://openalex.org/W2790742319",
+                    "https://openalex.org/W2791153118",
+                    "https://openalex.org/W2798189842",
+                    "https://openalex.org/W2799899844",
+                    "https://openalex.org/W2805526072",
+                    "https://openalex.org/W2883532348"
+                ],
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
+                "is_new_paper": true,
+                "citation_alert": false,
+                "_fingerprint": "e2a0c9b1abca0c3b4552db8a7b75a9ed5f45b7de471a3e374344add8d8802986"
             },
             {
                 "title": "Segmentation of shoulder muscle MRI using a new Region and Edge based Deep Auto-Encoder",
@@ -5142,8 +5008,8 @@
                     "https://openalex.org/W2514211653",
                     "https://openalex.org/W2561721030"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "71412a7257b5c9c0ed8e052f7c44ff035915288d86616cf545fb0768d92d1997"
@@ -5204,8 +5070,8 @@
                     "https://openalex.org/W2207671224",
                     "https://openalex.org/W4210400672"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "a20565a24b1f1e8e6f6e582ac4bb0fcfc717dd42004543fc5ae82c158036ee36"
@@ -5259,8 +5125,8 @@
                     "https://openalex.org/W2132384171",
                     "https://openalex.org/W2133036275"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "d6b80eeae51de6f5ecc01892ed047e11f3ad8db1928a2a3cb0842adff70987fb"
@@ -5323,8 +5189,8 @@
                     "https://openalex.org/W2914010220",
                     "https://openalex.org/W2914601524"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "2b233edb1b4e090a11347056db6469477a2a1914145a941a2b23d502e43828b2"
@@ -5381,8 +5247,8 @@
                     "https://openalex.org/W2603838310",
                     "https://openalex.org/W2942537621"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "4c75d95d00282d19ee07245b83663ee2eb3fcfe49a288f6c0f63813a2109cf50"
@@ -5451,8 +5317,8 @@
                     "https://openalex.org/W2487175822",
                     "https://openalex.org/W2511969992"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "9997f65de71187e0e22a4bffeac65c9e3c3abdde357e1141cfda554cc62d03b3"
@@ -5516,8 +5382,8 @@
                     "https://openalex.org/W2883567318",
                     "https://openalex.org/W2884585870"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "2826d3b8a8843310b278c467d4baf1f829c97652c31c80a0c53bfd2263174f79"
@@ -5574,8 +5440,8 @@
                     "https://openalex.org/W2061717114",
                     "https://openalex.org/W2079450984"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "ad986382503c57e42fbc454dac326b4559710ff9e94c69fe22072521fc519d2b"
@@ -5635,8 +5501,8 @@
                     "https://openalex.org/W2023294425",
                     "https://openalex.org/W2024767324"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "04df7ce9d023486c459b5bb876cc87b54e64c19d66c6f09292cbc0bdfccd613b"
@@ -5676,11 +5542,75 @@
                 "link": "https://openalex.org/W4241938708",
                 "references_count": 0,
                 "references": [],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "ce663164c91fffa5d5d9c059fac3fb10acdb449c175e5a6e8fb57d3b55ea7fcb"
+            },
+            {
+                "title": "DC-AAE: Dual channel adversarial autoencoder with multitask learning for KL-grade classification in knee radiographs",
+                "year": 2023,
+                "publication_date": "2023-10-13",
+                "citations": 16,
+                "doi": "https://doi.org/10.1016/j.compbiomed.2023.107570",
+                "venue": "Computers in Biology and Medicine",
+                "authors": [
+                    "Muhammad Umar Farooq",
+                    "Zahid Ullah",
+                    "Asifullah Khan",
+                    "Jeonghwan Gwak"
+                ],
+                "abstract": null,
+                "fields_of_study": [
+                    "Autoencoder",
+                    "Computer science",
+                    "Artificial intelligence",
+                    "Machine learning",
+                    "Task (project management)",
+                    "Multi-task learning",
+                    "Unsupervised learning",
+                    "Deep learning",
+                    "Supervised learning",
+                    "Pattern recognition (psychology)",
+                    "Exploit",
+                    "Channel (broadcasting)",
+                    "Artificial neural network",
+                    "Computer security",
+                    "Computer network",
+                    "Management",
+                    "Economics"
+                ],
+                "pdf_url": null,
+                "link": "https://openalex.org/W4387618999",
+                "references_count": 76,
+                "references": [
+                    "https://openalex.org/W1937032878",
+                    "https://openalex.org/W1967057044",
+                    "https://openalex.org/W1972552638",
+                    "https://openalex.org/W1973366725",
+                    "https://openalex.org/W1985338246",
+                    "https://openalex.org/W2015065202",
+                    "https://openalex.org/W2026123588",
+                    "https://openalex.org/W2049737684",
+                    "https://openalex.org/W2107965868",
+                    "https://openalex.org/W2135119721",
+                    "https://openalex.org/W2138481135",
+                    "https://openalex.org/W2140513563",
+                    "https://openalex.org/W2149128484",
+                    "https://openalex.org/W2159988341",
+                    "https://openalex.org/W2165879419",
+                    "https://openalex.org/W2273468036",
+                    "https://openalex.org/W2274971583",
+                    "https://openalex.org/W2518546450",
+                    "https://openalex.org/W2584503597",
+                    "https://openalex.org/W2598979078"
+                ],
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
+                "is_new_paper": true,
+                "citation_alert": false,
+                "_fingerprint": "2b1aa3fb050a2f8b45a94fa2b662f6c20d8b6ba486196bc5cfd149b1230a0c76"
             },
             {
                 "title": "Design and Performance Analysis of an Anti-Malware System Based on Generative Adversarial Network Framework",
@@ -5734,8 +5664,8 @@
                     "https://openalex.org/W2247776437",
                     "https://openalex.org/W2482374127"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "3d0200ef46dd1e320f9a4eb704e8bb347b898fd8b86617d0025583c4b925c58c"
@@ -5750,7 +5680,7 @@
                 "authors": [
                     "Zunaira Rauf",
                     "Abdul Rehman Khan",
-                    "Anabia Sohail",
+                    "Abdul Rehman Khan",
                     "Anabia Sohail",
                     "Hani Alquhayz",
                     "Jeonghwan Gwak",
@@ -5798,11 +5728,11 @@
                     "https://openalex.org/W2993564273",
                     "https://openalex.org/W3016536541"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
-                "_fingerprint": "209fafbcd8cc8e7d5d856b0f47d1f18db83c868c53fc13fa9680cdc6e513c25c"
+                "_fingerprint": "c1fa14cb8f4462009b16b00e038e787141c9bcea996497bb145b2bf9858453e8"
             },
             {
                 "title": "Enhancing accuracy of prediction of critical heat flux in Circular channels by ensemble of deep sparse autoencoders and deep neural Networks",
@@ -5857,8 +5787,8 @@
                     "https://openalex.org/W2010662087",
                     "https://openalex.org/W2015246244"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "33daa98e1b9c90d7feff8f9bc0d628656583b981678234352f94f00914838ad0"
@@ -5914,11 +5844,81 @@
                     "https://openalex.org/W2069243709",
                     "https://openalex.org/W2074025142"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "e0aaaabde7c3004f9b6320590cb5e24646fde479b6581de7b328944b8aae7424"
+            },
+            {
+                "title": "Data-driven strategies for drug repurposing: insights, recommendations, and case studies",
+                "year": 2025,
+                "publication_date": "2025-11-01",
+                "citations": 5,
+                "doi": "https://doi.org/10.1093/bib/bbaf625",
+                "venue": "Briefings in Bioinformatics",
+                "authors": [
+                    "Susanna Savander",
+                    "Nurettin Nusret Curabaz",
+                    "Amna Mumtaz Abbasi",
+                    "Asifullah Khan",
+                    "Khalid Saeed",
+                    "Ziaurrehman Tanoli"
+                ],
+                "abstract": "Drug discovery is a complex, time-intensive, and costly process, often requiring more than a decade and substantial financial investment to bring a single therapeutic to market. Drug repurposing, the systematic identification of new indications for existing approved drugs, offers a cost-effective and expedited alternative to traditional pipelines, with the potential to address unmet clinical needs. In this study, we present a comparative analysis of drug-target interaction data from three extensively curated resources: ChEMBL, BindingDB, and GtoPdb, evaluating their release histories, curation methodologies, and coverage of approved and investigational compounds and targets. To facilitate therapeutic interpretation, we manually classified ChEMBL targets into 12 high-level biological families and mapped 817 clinically approved drug indications into 28 broader therapeutic groups. This structured framework enabled a systematic profiling of physicochemical properties among approved drugs across therapeutic categories. Our analyses revealed associations between physicochemical characteristics and therapeutic groups, providing practical guidance for indication-specific compound prioritization and refining the repurposing studies. We also examined cross-indication drug approvals to identify areas with high repurposing potential. Finally, we implemented a pathway-based computational pipeline to predict repositioning opportunities for FDA-approved drugs across 10 major cancer types, demonstrating its adaptability to other disease contexts. Overall, this work consolidates drug-target data and computational repurposing into a data-driven framework that advances drug discovery and translational applications.",
+                "fields_of_study": [
+                    "Drug repositioning",
+                    "Repurposing",
+                    "Approved drug",
+                    "Drug",
+                    "Drug discovery",
+                    "Medicine",
+                    "chEMBL",
+                    "Identification (biology)",
+                    "Profiling (computer programming)",
+                    "Prioritization",
+                    "Computer science",
+                    "Precision medicine",
+                    "Drug development",
+                    "Drug-drug interaction",
+                    "Data science",
+                    "Risk analysis (engineering)",
+                    "MEDLINE",
+                    "Pharmacology",
+                    "Computational biology",
+                    "Drug approval",
+                    "Intensive care medicine"
+                ],
+                "pdf_url": "https://academic.oup.com/bib/article-pdf/26/6/bbaf625/65490400/bbaf625.pdf",
+                "link": "https://openalex.org/W4416738354",
+                "references_count": 42,
+                "references": [
+                    "https://openalex.org/W100903417",
+                    "https://openalex.org/W129917815",
+                    "https://openalex.org/W1490655572",
+                    "https://openalex.org/W1500036797",
+                    "https://openalex.org/W1545078134",
+                    "https://openalex.org/W1596051841",
+                    "https://openalex.org/W1971513938",
+                    "https://openalex.org/W1988178556",
+                    "https://openalex.org/W1995930366",
+                    "https://openalex.org/W2062533676",
+                    "https://openalex.org/W2129370330",
+                    "https://openalex.org/W2263739890",
+                    "https://openalex.org/W2559588208",
+                    "https://openalex.org/W2612467560",
+                    "https://openalex.org/W2890507936",
+                    "https://openalex.org/W3006508031",
+                    "https://openalex.org/W3009999522",
+                    "https://openalex.org/W3047987484",
+                    "https://openalex.org/W3128618129",
+                    "https://openalex.org/W3136988847"
+                ],
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
+                "is_new_paper": true,
+                "citation_alert": false,
+                "_fingerprint": "188492fcc446522e228913f5d2e20aa9a8c78bdbb0d14c33f2587376758075df"
             },
             {
                 "title": "Combination and optimization of classifiers in gender classification using genetic programming",
@@ -5957,8 +5957,8 @@
                     "https://openalex.org/W2165138238",
                     "https://openalex.org/W2943413894"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "585e13eb0cb7e925b6c9c7fb7736eb7c0118056a47d4ba2877b08bc915de1401"
@@ -6020,8 +6020,8 @@
                     "https://openalex.org/W2111233787",
                     "https://openalex.org/W2112076978"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "ebaf2fdcc4e0f7d730a13c7f14569a675428bc68eeefbdd524ae0d9f44cc8cd7"
@@ -6084,8 +6084,8 @@
                     "https://openalex.org/W2027448315",
                     "https://openalex.org/W2049991017"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "7a9b71a43752e9b34690e41d51cc9f9c5a726e75994ad3ff8591dbb7c0721ddb"
@@ -6148,8 +6148,8 @@
                     "https://openalex.org/W2039224564",
                     "https://openalex.org/W2049871528"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "ab3f0fa6bbbc0f9b74ba6c6175c27c3ea6c5128928160b530e6f5acdff0719b6"
@@ -6207,8 +6207,8 @@
                     "https://openalex.org/W2024572834",
                     "https://openalex.org/W2026650804"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "193ef6119fc0f3c9a389de1e0b875e80f8beb78de029fd82a844309a8fc0b478"
@@ -6266,110 +6266,26 @@
                     "https://openalex.org/W2133059825",
                     "https://openalex.org/W2153635508"
                 ],
-                "last_updated": "2026-07-20",
-                "last_checked": "2026-07-20",
+                "last_updated": "2026-07-22",
+                "last_checked": "2026-07-22",
                 "is_new_paper": true,
                 "citation_alert": false,
                 "_fingerprint": "982c11fc5a0e37b5bea4aff394d3a948a7eeab9d56d4b198ac78bf4e8061506e"
             }
         ],
-        "stats_last_updated": "2026-07-20",
-        "stats_last_checked": "2026-07-20",
-        "_stats_fingerprint": "8c0462768f13a40308367de7cfe774d6b528d8ae6d57db37b3b6f08623f84ca3"
+        "stats_last_updated": "2026-07-22",
+        "stats_last_checked": "2026-07-22",
+        "_stats_fingerprint": "706264334e006be45f471afca2a5a3821a7151c065de4b3508cdea0fa78bdcc0"
     },
-    "semantic_scholar": null,
+    "semantic_scholar": {
+        "citations": 5,
+        "hindex": 1,
+        "papers": [],
+        "stats_last_updated": "2026-07-22",
+        "stats_last_checked": "2026-07-22",
+        "_stats_fingerprint": "39c2f9d2dcc6ea16d744e42b5825374ba3d33265b39ac2c4e6229f2467be242f"
+    },
     "arxiv": [
-        {
-            "title": "Malware Classification Using Deep Boosted Learning",
-            "published": "2021-07-08T17:53:33Z",
-            "summary": "Malicious activities in cyberspace have gone further than simply hacking machines and spreading viruses. It has become a challenge for a nations survival and hence has evolved to cyber warfare. Malware is a key component of cyber-crime, and its analysis is the first line of defence against attack. This work proposes a novel deep boosted hybrid learning-based malware classification framework and named as Deep boosted Feature Space-based Malware classification (DFS-MC). In the proposed framework, the discrimination power is enhanced by fusing the feature spaces of the best performing customized CNN architectures models and its discrimination by an SVM for classification. The discrimination capacity of the proposed classification framework is assessed by comparing it against the standard customized CNNs. The customized CNN models are implemented in two ways: softmax classifier and deep hybrid learning-based malware classification. In the hybrid learning, Deep features are extracted from customized CNN architectures and fed into the conventional machine learning classifier to improve the classification performance. We also introduced the concept of transfer learning in a customized CNN architecture based malware classification framework through fine-tuning. The performance of the proposed malware classification approaches are validated on the MalImg malware dataset using the hold-out cross-validation technique. Experimental comparisons were conducted by employing innovative, customized CNN, trained from scratch and fine-tuning the customized CNN using transfer learning. The proposed classification framework DFS-MC showed improved results, Accuracy: 98.61%, F-score: 0.96, Precision: 0.96, and Recall: 0.96.",
-            "authors": [
-                "Muhammad Asam",
-                "Saddam Hussain Khan",
-                "Tauseef Jamal",
-                "Umme Zahoora",
-                "Asifullah Khan"
-            ],
-            "link": "http://arxiv.org/abs/2107.04008v1",
-            "last_updated": "2026-07-20",
-            "last_checked": "2026-07-20",
-            "is_new_paper": true,
-            "citation_alert": false,
-            "_fingerprint": "e72c2a8e36dd5155d98bd2d9e3fddf46a7502b12fbadebbc909233341d5d1b48"
-        },
-        {
-            "title": "A New Channel Boosted Convolutional Neural Network using Transfer Learning",
-            "published": "2018-04-23T16:02:35Z",
-            "summary": "We present a novel architectural enhancement of Channel Boosting in a deep convolutional neural network (CNN). This idea of Channel Boosting exploits both the channel dimension of CNN (learning from multiple input channels) and Transfer learning (TL). TL is utilized at two different stages; channel generation and channel exploitation. In the proposed methodology, a deep CNN is boosted by various channels available through TL from already trained Deep Neural Networks, in addition to its original channel. The deep architecture of CNN then exploits the original and boosted channels down the stream for learning discriminative patterns. Churn prediction in telecom is a challenging task due to the high dimensionality and imbalanced nature of the data. Therefore, churn prediction data is used to evaluate the performance of the proposed Channel Boosted CNN (CB CNN). In the first phase, informative discriminative features are being extracted using a stacked autoencoder, and then in the second phase, these features are combined with the original features to form Channel Boosted images. Finally, the knowledge gained by a pretrained CNN is exploited by employing TL. The results are promising and show the ability of the Channel Boosting concept in learning complex classification problems by discerning even minute differences in churners and nonchurners. The proposed work validates the concept observed from the evolution of recent CNN architectures that the innovative restructuring of a CNN architecture may increase the networks representative capacity.",
-            "authors": [
-                "Asifullah Khan",
-                "Anabia Sohail",
-                "Amna Ali"
-            ],
-            "link": "http://arxiv.org/abs/1804.08528v5",
-            "last_updated": "2026-07-20",
-            "last_checked": "2026-07-20",
-            "is_new_paper": true,
-            "citation_alert": false,
-            "_fingerprint": "61adc5ab79f463bd47402a1c5391520ffee4c6384a3ea22eab5c821eeff9f7c3"
-        },
-        {
-            "title": "Deep Neural Networks based Meta-Learning for Network Intrusion Detection",
-            "published": "2023-02-18T18:00:05Z",
-            "summary": "The digitization of different components of industry and inter-connectivity among indigenous networks have increased the risk of network attacks. Designing an intrusion detection system to ensure security of the industrial ecosystem is difficult as network traffic encompasses various attack types, including new and evolving ones with minor changes. The data used to construct a predictive model for computer networks has a skewed class distribution and limited representation of attack types, which differ from real network traffic. These limitations result in dataset shift, negatively impacting the machine learning models' predictive abilities and reducing the detection rate against novel attacks. To address the challenges, we propose a novel deep neural network based Meta-Learning framework; INformation FUsion and Stacking Ensemble (INFUSE) for network intrusion detection. First, a hybrid feature space is created by integrating decision and feature spaces. Five different classifiers are utilized to generate a pool of decision spaces. The feature space is then enriched through a deep sparse autoencoder that learns the semantic relationships between attacks. Finally, the deep Meta-Learner acts as an ensemble combiner to analyze the hybrid feature space and make a final decision. Our evaluation on stringent benchmark datasets and comparison to existing techniques showed the effectiveness of INFUSE with an F-Score of 0.91, Accuracy of 91.6%, and Recall of 0.94 on the Test+ dataset, and an F-Score of 0.91, Accuracy of 85.6%, and Recall of 0.87 on the stringent Test-21 dataset. These promising results indicate the strong generalization capability and the potential to detect network attacks.",
-            "authors": [
-                "Anabia Sohail",
-                "Bibi Ayisha",
-                "Irfan Hameed",
-                "Muhammad Mohsin Zafar",
-                "Hani Alquhayz",
-                "Asifullah Khan"
-            ],
-            "link": "http://arxiv.org/abs/2302.09394v2",
-            "last_updated": "2026-07-20",
-            "last_checked": "2026-07-20",
-            "is_new_paper": true,
-            "citation_alert": false,
-            "_fingerprint": "6d9569cd234346f31463d6fd74b2b901dab3f9812fa00b5a053bc0d468fd7556"
-        },
-        {
-            "title": "Multimodal Multi-Agent Ransomware Analysis Using AutoGen",
-            "published": "2026-01-28T08:02:37Z",
-            "summary": "Ransomware has become one of the most serious cybersecurity threats causing major financial losses and operational disruptions worldwide.Traditional detection methods such as static analysis, heuristic scanning and behavioral analysis often fall short when used alone. To address these limitations, this paper presents multimodal multi agent ransomware analysis framework designed for ransomware classification. Proposed multimodal multiagent architecture combines information from static, dynamic and network sources. Each data type is handled by specialized agent that uses auto encoder based feature extraction. These representations are then integrated through a fusion agent. After that fused representation are used by transformer based classifier. It identifies the specific ransomware family. The agents interact through an interagent feedback mechanism that iteratively refines feature representations by suppressing low confidence information. The framework was evaluated on large scale datasets containing thousands of ransomware and benign samples. Multiple experiments were conducted on ransomware dataset. It outperforms single modality and nonadaptive fusion baseline achieving improvement of up to 0.936 in Macro-F1 for family classification and reducing calibration error. Over 100 epochs, the agentic feedback loop displays a stable monotonic convergence leading to over +0.75 absolute improvement in terms of agent quality and a final composite score of around 0.88 without fine tuning of the language models. Zeroday ransomware detection remains family dependent on polymorphism and modality disruptions. Confidence aware abstention enables reliable real world deployment by favoring conservativeand trustworthy decisions over forced classification. The findings indicate that proposed approach provides a practical andeffective path toward improving real world ransomware defense systems.",
-            "authors": [
-                "Asifullah Khan",
-                "Aimen Wadood",
-                "Mubashar Iqbal",
-                "Umme Zahoora"
-            ],
-            "link": "http://arxiv.org/abs/2601.20346v2",
-            "last_updated": "2026-07-20",
-            "last_checked": "2026-07-20",
-            "is_new_paper": true,
-            "citation_alert": false,
-            "_fingerprint": "7dea5c81c6b1f294b38bc274478668bb0af20837e68ebd2afea735c7946b0bfe"
-        },
-        {
-            "title": "Advances in LLMs with Focus on Reasoning, Adaptability, Efficiency and Ethics",
-            "published": "2025-06-14T05:55:19Z",
-            "summary": "This survey paper outlines the key developments in the field of Large Language Models (LLMs), including enhancements to their reasoning skills, adaptability to various tasks, increased computational efficiency, and the ability to make ethical decisions. The techniques that have been most effective in bridging the gap between human and machine communications include the Chain-of-Thought prompting, Instruction Tuning, and Reinforcement Learning from Human Feedback. The improvements in multimodal learning and few-shot or zero-shot techniques have further empowered LLMs to handle complex jobs with minor input. A significant focus is placed on efficiency, detailing scaling strategies, optimization techniques, and the influential Mixture-of-Experts (MoE) architecture, which strategically routes inputs to specialized subnetworks to boost predictive accuracy, while optimizing resource allocation. This survey also offers a broader perspective on recent advancements in LLMs, going beyond isolated aspects such as model architecture or ethical concerns. Additionally, it explores the role of LLMs in Agentic AI and their use as Autonomous Decision-Making Systems, and categorizes emerging methods that enhance LLM reasoning, efficiency, and ethical alignment. The survey also identifies underexplored areas such as interpretability, cross-modal integration, and sustainability. While significant advancements have been made in LLMs, challenges such as high computational costs, biases, and ethical risks remain. Overcoming these requires a focus on bias mitigation, transparent decision-making, and explicit ethical guidelines. Future research will generally focus on enhancing the model's ability to handle multiple inputs, thereby making it more intelligent, safe, and reliable.",
-            "authors": [
-                "Asifullah Khan",
-                "Muhammad Zaeem Khan",
-                "Aleesha Zainab",
-                "Saleha Jamshed",
-                "Sadia Ahmad",
-                "Kaynat Khatib",
-                "Faria Bibi",
-                "Abdul Rehman"
-            ],
-            "link": "http://arxiv.org/abs/2506.12365v4",
-            "last_updated": "2026-07-20",
-            "last_checked": "2026-07-20",
-            "is_new_paper": true,
-            "citation_alert": false,
-            "_fingerprint": "ba8bab0bccd3c97fa16f8d49a9e9f70b7be3da1402d744f6eabb2f9b5c406ea9"
-        },
         {
             "title": "Deep Object Detection based Mitosis Analysis in Breast Cancer Histopathological Images",
             "published": "2020-03-17T00:51:16Z",
@@ -6383,9 +6299,9 @@
                 "Saranjam Khan"
             ],
             "link": "http://arxiv.org/abs/2003.08803v1",
-            "last_updated": "2026-07-20",
-            "last_checked": "2026-07-20",
-            "is_new_paper": true,
+            "last_updated": "2026-07-22",
+            "last_checked": "2026-07-22",
+            "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "4b7f16e9880d34566bbeb25436d96d3d16582c7fe13874faa0d0f12a9a20152d"
         },
@@ -6400,9 +6316,9 @@
                 "Muhammad Waleed Khan"
             ],
             "link": "http://arxiv.org/abs/2010.08201v1",
-            "last_updated": "2026-07-20",
-            "last_checked": "2026-07-20",
-            "is_new_paper": true,
+            "last_updated": "2026-07-22",
+            "last_checked": "2026-07-22",
+            "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "d2f3894ade0a58690988892ca6212ba92749bcf5a8fe86f0d33934e0554f19a5"
         },
@@ -6418,9 +6334,9 @@
                 "Asifullah Khan"
             ],
             "link": "http://arxiv.org/abs/1910.00286v2",
-            "last_updated": "2026-07-20",
-            "last_checked": "2026-07-20",
-            "is_new_paper": true,
+            "last_updated": "2026-07-22",
+            "last_checked": "2026-07-22",
+            "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "3017f60eecb32123eab34be5800f26cdce0daf1f1ef5fa01f859b9ab58cb92cd"
         },
@@ -6433,9 +6349,9 @@
                 "Asifullah Khan"
             ],
             "link": "http://arxiv.org/abs/1810.12611v2",
-            "last_updated": "2026-07-20",
-            "last_checked": "2026-07-20",
-            "is_new_paper": true,
+            "last_updated": "2026-07-22",
+            "last_checked": "2026-07-22",
+            "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "c34428282e579d05e78658b9827818612c4b79c07317e29d4c1e2a322b0ee1f7"
         },
@@ -6451,9 +6367,9 @@
                 "Anwar Majid Mirza"
             ],
             "link": "http://arxiv.org/abs/1910.10958v3",
-            "last_updated": "2026-07-20",
-            "last_checked": "2026-07-20",
-            "is_new_paper": true,
+            "last_updated": "2026-07-22",
+            "last_checked": "2026-07-22",
+            "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "a0575d241d0b5a3615a159464bf22285cc0b117079bfa1d44cb489fbe559b91d"
         },
@@ -6480,9 +6396,9 @@
                 "Jeonghwan Gwak"
             ],
             "link": "http://arxiv.org/abs/2312.00634v2",
-            "last_updated": "2026-07-20",
-            "last_checked": "2026-07-20",
-            "is_new_paper": true,
+            "last_updated": "2026-07-22",
+            "last_checked": "2026-07-22",
+            "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "5fe6d1b0c1a55bfb76fa881e613f1e91080c0f17173e928161823433f4539d79"
         },
@@ -6499,9 +6415,9 @@
                 "Jeonghwan Gwak"
             ],
             "link": "http://arxiv.org/abs/2305.09211v3",
-            "last_updated": "2026-07-20",
-            "last_checked": "2026-07-20",
-            "is_new_paper": true,
+            "last_updated": "2026-07-22",
+            "last_checked": "2026-07-22",
+            "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "1842ef8b4b2a79b61c130ef7aea67d13386a1c6c86be5770cd13bb2ba632f9b7"
         },
@@ -6520,9 +6436,9 @@
                 "Nasir Majid Mirza"
             ],
             "link": "http://arxiv.org/abs/2406.06638v2",
-            "last_updated": "2026-07-20",
-            "last_checked": "2026-07-20",
-            "is_new_paper": true,
+            "last_updated": "2026-07-22",
+            "last_checked": "2026-07-22",
+            "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "5e04be89dc912299684cc8ae892597b2574034cd588f13b213471bd5c5f839cd"
         },
@@ -6538,9 +6454,9 @@
                 "Hamna Asif"
             ],
             "link": "http://arxiv.org/abs/2503.11101v5",
-            "last_updated": "2026-07-20",
-            "last_checked": "2026-07-20",
-            "is_new_paper": true,
+            "last_updated": "2026-07-22",
+            "last_checked": "2026-07-22",
+            "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "f7e9af7f1c6a0effde6b5b9b3cb985afff2d5e7051486ce769f3f10e9d73541b"
         },
@@ -6553,9 +6469,9 @@
                 "Asifullah Khan"
             ],
             "link": "http://arxiv.org/abs/2305.08396v5",
-            "last_updated": "2026-07-20",
-            "last_checked": "2026-07-20",
-            "is_new_paper": true,
+            "last_updated": "2026-07-22",
+            "last_checked": "2026-07-22",
+            "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "5d0e16a62446521b2ad703909767ffd20f48df6f2b40e97e9181ff42a607da0b"
         },
@@ -6571,9 +6487,9 @@
                 "Asifullah Khan"
             ],
             "link": "http://arxiv.org/abs/2202.06253v1",
-            "last_updated": "2026-07-20",
-            "last_checked": "2026-07-20",
-            "is_new_paper": true,
+            "last_updated": "2026-07-22",
+            "last_checked": "2026-07-22",
+            "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "5d7782fe41fe78c45971269a8511ffaebaaa14ba1a4ed1a788fa8d19387763f2"
         },
@@ -6587,9 +6503,9 @@
                 "Asifullah Khan"
             ],
             "link": "http://arxiv.org/abs/2012.05073v2",
-            "last_updated": "2026-07-20",
-            "last_checked": "2026-07-20",
-            "is_new_paper": true,
+            "last_updated": "2026-07-22",
+            "last_checked": "2026-07-22",
+            "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "95895f1e8866f14731b4b9b77dce95867a5b5361fda434dd632ea2a39f3dbdbe"
         },
@@ -6607,9 +6523,9 @@
                 "Umair Farooq"
             ],
             "link": "http://arxiv.org/abs/2305.09880v4",
-            "last_updated": "2026-07-20",
-            "last_checked": "2026-07-20",
-            "is_new_paper": true,
+            "last_updated": "2026-07-22",
+            "last_checked": "2026-07-22",
+            "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "1055e14abcb47c2c1bbae2d29a58f297db8c863870db31604ebf7c55b103a701"
         },
@@ -6624,11 +6540,102 @@
                 "Asifullah Khan"
             ],
             "link": "http://arxiv.org/abs/2506.11475v2",
-            "last_updated": "2026-07-20",
-            "last_checked": "2026-07-20",
-            "is_new_paper": true,
+            "last_updated": "2026-07-22",
+            "last_checked": "2026-07-22",
+            "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "e8ede6b01d9992abb903b8dd6108537e7fdc1dbe6ff93d8ea4ea7bf6671ff6d2"
+        },
+        {
+            "title": "Malware Classification Using Deep Boosted Learning",
+            "published": "2021-07-08T17:53:33Z",
+            "summary": "Malicious activities in cyberspace have gone further than simply hacking machines and spreading viruses. It has become a challenge for a nations survival and hence has evolved to cyber warfare. Malware is a key component of cyber-crime, and its analysis is the first line of defence against attack. This work proposes a novel deep boosted hybrid learning-based malware classification framework and named as Deep boosted Feature Space-based Malware classification (DFS-MC). In the proposed framework, the discrimination power is enhanced by fusing the feature spaces of the best performing customized CNN architectures models and its discrimination by an SVM for classification. The discrimination capacity of the proposed classification framework is assessed by comparing it against the standard customized CNNs. The customized CNN models are implemented in two ways: softmax classifier and deep hybrid learning-based malware classification. In the hybrid learning, Deep features are extracted from customized CNN architectures and fed into the conventional machine learning classifier to improve the classification performance. We also introduced the concept of transfer learning in a customized CNN architecture based malware classification framework through fine-tuning. The performance of the proposed malware classification approaches are validated on the MalImg malware dataset using the hold-out cross-validation technique. Experimental comparisons were conducted by employing innovative, customized CNN, trained from scratch and fine-tuning the customized CNN using transfer learning. The proposed classification framework DFS-MC showed improved results, Accuracy: 98.61%, F-score: 0.96, Precision: 0.96, and Recall: 0.96.",
+            "authors": [
+                "Muhammad Asam",
+                "Saddam Hussain Khan",
+                "Tauseef Jamal",
+                "Umme Zahoora",
+                "Asifullah Khan"
+            ],
+            "link": "http://arxiv.org/abs/2107.04008v1",
+            "last_updated": "2026-07-22",
+            "last_checked": "2026-07-22",
+            "is_new_paper": false,
+            "citation_alert": false,
+            "_fingerprint": "e72c2a8e36dd5155d98bd2d9e3fddf46a7502b12fbadebbc909233341d5d1b48"
+        },
+        {
+            "title": "A New Channel Boosted Convolutional Neural Network using Transfer Learning",
+            "published": "2018-04-23T16:02:35Z",
+            "summary": "We present a novel architectural enhancement of Channel Boosting in a deep convolutional neural network (CNN). This idea of Channel Boosting exploits both the channel dimension of CNN (learning from multiple input channels) and Transfer learning (TL). TL is utilized at two different stages; channel generation and channel exploitation. In the proposed methodology, a deep CNN is boosted by various channels available through TL from already trained Deep Neural Networks, in addition to its original channel. The deep architecture of CNN then exploits the original and boosted channels down the stream for learning discriminative patterns. Churn prediction in telecom is a challenging task due to the high dimensionality and imbalanced nature of the data. Therefore, churn prediction data is used to evaluate the performance of the proposed Channel Boosted CNN (CB CNN). In the first phase, informative discriminative features are being extracted using a stacked autoencoder, and then in the second phase, these features are combined with the original features to form Channel Boosted images. Finally, the knowledge gained by a pretrained CNN is exploited by employing TL. The results are promising and show the ability of the Channel Boosting concept in learning complex classification problems by discerning even minute differences in churners and nonchurners. The proposed work validates the concept observed from the evolution of recent CNN architectures that the innovative restructuring of a CNN architecture may increase the networks representative capacity.",
+            "authors": [
+                "Asifullah Khan",
+                "Anabia Sohail",
+                "Amna Ali"
+            ],
+            "link": "http://arxiv.org/abs/1804.08528v5",
+            "last_updated": "2026-07-22",
+            "last_checked": "2026-07-22",
+            "is_new_paper": false,
+            "citation_alert": false,
+            "_fingerprint": "61adc5ab79f463bd47402a1c5391520ffee4c6384a3ea22eab5c821eeff9f7c3"
+        },
+        {
+            "title": "Deep Neural Networks based Meta-Learning for Network Intrusion Detection",
+            "published": "2023-02-18T18:00:05Z",
+            "summary": "The digitization of different components of industry and inter-connectivity among indigenous networks have increased the risk of network attacks. Designing an intrusion detection system to ensure security of the industrial ecosystem is difficult as network traffic encompasses various attack types, including new and evolving ones with minor changes. The data used to construct a predictive model for computer networks has a skewed class distribution and limited representation of attack types, which differ from real network traffic. These limitations result in dataset shift, negatively impacting the machine learning models' predictive abilities and reducing the detection rate against novel attacks. To address the challenges, we propose a novel deep neural network based Meta-Learning framework; INformation FUsion and Stacking Ensemble (INFUSE) for network intrusion detection. First, a hybrid feature space is created by integrating decision and feature spaces. Five different classifiers are utilized to generate a pool of decision spaces. The feature space is then enriched through a deep sparse autoencoder that learns the semantic relationships between attacks. Finally, the deep Meta-Learner acts as an ensemble combiner to analyze the hybrid feature space and make a final decision. Our evaluation on stringent benchmark datasets and comparison to existing techniques showed the effectiveness of INFUSE with an F-Score of 0.91, Accuracy of 91.6%, and Recall of 0.94 on the Test+ dataset, and an F-Score of 0.91, Accuracy of 85.6%, and Recall of 0.87 on the stringent Test-21 dataset. These promising results indicate the strong generalization capability and the potential to detect network attacks.",
+            "authors": [
+                "Anabia Sohail",
+                "Bibi Ayisha",
+                "Irfan Hameed",
+                "Muhammad Mohsin Zafar",
+                "Hani Alquhayz",
+                "Asifullah Khan"
+            ],
+            "link": "http://arxiv.org/abs/2302.09394v2",
+            "last_updated": "2026-07-22",
+            "last_checked": "2026-07-22",
+            "is_new_paper": false,
+            "citation_alert": false,
+            "_fingerprint": "6d9569cd234346f31463d6fd74b2b901dab3f9812fa00b5a053bc0d468fd7556"
+        },
+        {
+            "title": "Advances in LLMs with Focus on Reasoning, Adaptability, Efficiency and Ethics",
+            "published": "2025-06-14T05:55:19Z",
+            "summary": "This survey paper outlines the key developments in the field of Large Language Models (LLMs), including enhancements to their reasoning skills, adaptability to various tasks, increased computational efficiency, and the ability to make ethical decisions. The techniques that have been most effective in bridging the gap between human and machine communications include the Chain-of-Thought prompting, Instruction Tuning, and Reinforcement Learning from Human Feedback. The improvements in multimodal learning and few-shot or zero-shot techniques have further empowered LLMs to handle complex jobs with minor input. A significant focus is placed on efficiency, detailing scaling strategies, optimization techniques, and the influential Mixture-of-Experts (MoE) architecture, which strategically routes inputs to specialized subnetworks to boost predictive accuracy, while optimizing resource allocation. This survey also offers a broader perspective on recent advancements in LLMs, going beyond isolated aspects such as model architecture or ethical concerns. Additionally, it explores the role of LLMs in Agentic AI and their use as Autonomous Decision-Making Systems, and categorizes emerging methods that enhance LLM reasoning, efficiency, and ethical alignment. The survey also identifies underexplored areas such as interpretability, cross-modal integration, and sustainability. While significant advancements have been made in LLMs, challenges such as high computational costs, biases, and ethical risks remain. Overcoming these requires a focus on bias mitigation, transparent decision-making, and explicit ethical guidelines. Future research will generally focus on enhancing the model's ability to handle multiple inputs, thereby making it more intelligent, safe, and reliable.",
+            "authors": [
+                "Asifullah Khan",
+                "Muhammad Zaeem Khan",
+                "Aleesha Zainab",
+                "Saleha Jamshed",
+                "Sadia Ahmad",
+                "Kaynat Khatib",
+                "Faria Bibi",
+                "Abdul Rehman"
+            ],
+            "link": "http://arxiv.org/abs/2506.12365v4",
+            "last_updated": "2026-07-22",
+            "last_checked": "2026-07-22",
+            "is_new_paper": false,
+            "citation_alert": false,
+            "_fingerprint": "ba8bab0bccd3c97fa16f8d49a9e9f70b7be3da1402d744f6eabb2f9b5c406ea9"
+        },
+        {
+            "title": "Multimodal Multi-Agent Ransomware Analysis Using AutoGen",
+            "published": "2026-01-28T08:02:37Z",
+            "summary": "Ransomware has become one of the most serious cybersecurity threats causing major financial losses and operational disruptions worldwide.Traditional detection methods such as static analysis, heuristic scanning and behavioral analysis often fall short when used alone. To address these limitations, this paper presents multimodal multi agent ransomware analysis framework designed for ransomware classification. Proposed multimodal multiagent architecture combines information from static, dynamic and network sources. Each data type is handled by specialized agent that uses auto encoder based feature extraction. These representations are then integrated through a fusion agent. After that fused representation are used by transformer based classifier. It identifies the specific ransomware family. The agents interact through an interagent feedback mechanism that iteratively refines feature representations by suppressing low confidence information. The framework was evaluated on large scale datasets containing thousands of ransomware and benign samples. Multiple experiments were conducted on ransomware dataset. It outperforms single modality and nonadaptive fusion baseline achieving improvement of up to 0.936 in Macro-F1 for family classification and reducing calibration error. Over 100 epochs, the agentic feedback loop displays a stable monotonic convergence leading to over +0.75 absolute improvement in terms of agent quality and a final composite score of around 0.88 without fine tuning of the language models. Zeroday ransomware detection remains family dependent on polymorphism and modality disruptions. Confidence aware abstention enables reliable real world deployment by favoring conservativeand trustworthy decisions over forced classification. The findings indicate that proposed approach provides a practical andeffective path toward improving real world ransomware defense systems.",
+            "authors": [
+                "Asifullah Khan",
+                "Aimen Wadood",
+                "Mubashar Iqbal",
+                "Umme Zahoora"
+            ],
+            "link": "http://arxiv.org/abs/2601.20346v2",
+            "last_updated": "2026-07-22",
+            "last_checked": "2026-07-22",
+            "is_new_paper": false,
+            "citation_alert": false,
+            "_fingerprint": "7dea5c81c6b1f294b38bc274478668bb0af20837e68ebd2afea735c7946b0bfe"
         },
         {
             "title": "A Recent Survey on the Applications of Genetic Programming in Image Processing",
@@ -6642,9 +6649,9 @@
                 "Muhammad Yousaf Hamza"
             ],
             "link": "http://arxiv.org/abs/1901.07387v3",
-            "last_updated": "2026-07-20",
-            "last_checked": "2026-07-20",
-            "is_new_paper": true,
+            "last_updated": "2026-07-22",
+            "last_checked": "2026-07-22",
+            "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "f363686742a7acf2b3c461f5baa17488fe1e1518150fa7dabd0e3a5d1214d365"
         },
@@ -6659,9 +6666,9 @@
                 "Ahmad Raza"
             ],
             "link": "http://arxiv.org/abs/1807.11682v1",
-            "last_updated": "2026-07-20",
-            "last_checked": "2026-07-20",
-            "is_new_paper": true,
+            "last_updated": "2026-07-22",
+            "last_checked": "2026-07-22",
+            "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "69d0d603a963e15db71972ab1f24f57dbc02b0f1dbba11fb586e1d7ad42fd41e"
         },
@@ -6676,9 +6683,9 @@
                 "Yeon Soo Lee"
             ],
             "link": "http://arxiv.org/abs/2009.08864v1",
-            "last_updated": "2026-07-20",
-            "last_checked": "2026-07-20",
-            "is_new_paper": true,
+            "last_updated": "2026-07-22",
+            "last_checked": "2026-07-22",
+            "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "0aa854dde2b880e71fca86a192bfbebda10962bba69d8a0bdaf78c8dca18cd8c"
         },
@@ -6695,9 +6702,9 @@
                 "Yeon Soo Lee"
             ],
             "link": "http://arxiv.org/abs/1901.06091v2",
-            "last_updated": "2026-07-20",
-            "last_checked": "2026-07-20",
-            "is_new_paper": true,
+            "last_updated": "2026-07-22",
+            "last_checked": "2026-07-22",
+            "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "b1bde2c17911dfb6afaead45c80d9d0b12d8ddf139cfa7343095046ceede0aa6"
         },
@@ -6713,9 +6720,9 @@
                 "Woong Kyo jeong"
             ],
             "link": "http://arxiv.org/abs/2108.11720v1",
-            "last_updated": "2026-07-20",
-            "last_checked": "2026-07-20",
-            "is_new_paper": true,
+            "last_updated": "2026-07-22",
+            "last_checked": "2026-07-22",
+            "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "068eff7ef1420ebc60108563a6ccb65f8e2e89a871bc5d7a3c0adebd744be59e"
         },
@@ -6740,9 +6747,9 @@
                 "Naeem Akhter"
             ],
             "link": "http://arxiv.org/abs/2408.17059v6",
-            "last_updated": "2026-07-20",
-            "last_checked": "2026-07-20",
-            "is_new_paper": true,
+            "last_updated": "2026-07-22",
+            "last_checked": "2026-07-22",
+            "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "656c75b13f4f71f606c9d8d89f852bba407ab8a3bc94f969606995a03beb72f6"
         },
@@ -6757,9 +6764,9 @@
                 "Aqsa Saeed Qureshi"
             ],
             "link": "http://arxiv.org/abs/1901.06032v7",
-            "last_updated": "2026-07-20",
-            "last_checked": "2026-07-20",
-            "is_new_paper": true,
+            "last_updated": "2026-07-22",
+            "last_checked": "2026-07-22",
+            "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "0d19cbe5abd89de8eb2c812e9a9587d1e2eb856f5aea20a497cad84683a812e1"
         },
@@ -6776,9 +6783,9 @@
                 "Muhammad Waleed Khan"
             ],
             "link": "http://arxiv.org/abs/2202.06372v2",
-            "last_updated": "2026-07-20",
-            "last_checked": "2026-07-20",
-            "is_new_paper": true,
+            "last_updated": "2026-07-22",
+            "last_checked": "2026-07-22",
+            "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "000ba6c9619c1df29e7c8607ee8828b4ed76055a0698e6bd4e5e57e6658c161a"
         },
@@ -6792,9 +6799,9 @@
                 "Muhammad Waleed Khan"
             ],
             "link": "http://arxiv.org/abs/2002.12592v2",
-            "last_updated": "2026-07-20",
-            "last_checked": "2026-07-20",
-            "is_new_paper": true,
+            "last_updated": "2026-07-22",
+            "last_checked": "2026-07-22",
+            "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "d4b0056d279db17bdac95cebcebecc17a2a14fd05306b6db9a03303ab7786448"
         },
@@ -6808,9 +6815,9 @@
                 "Asifullah Khan"
             ],
             "link": "http://arxiv.org/abs/2407.19186v1",
-            "last_updated": "2026-07-20",
-            "last_checked": "2026-07-20",
-            "is_new_paper": true,
+            "last_updated": "2026-07-22",
+            "last_checked": "2026-07-22",
+            "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "8477282ee8ee8f15bda91235eaeb14925fb06634e42f91d3881411461a1a20ea"
         },
@@ -6825,9 +6832,9 @@
                 "Asifullah Khan"
             ],
             "link": "http://arxiv.org/abs/2506.13116v2",
-            "last_updated": "2026-07-20",
-            "last_checked": "2026-07-20",
-            "is_new_paper": true,
+            "last_updated": "2026-07-22",
+            "last_checked": "2026-07-22",
+            "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "fe10c52561281f5761bb6fd0d981c718b34412daf9f58e1caeda216ec8904460"
         },
@@ -6842,9 +6849,9 @@
                 "Asifullah Khan"
             ],
             "link": "http://arxiv.org/abs/2202.04121v1",
-            "last_updated": "2026-07-20",
-            "last_checked": "2026-07-20",
-            "is_new_paper": true,
+            "last_updated": "2026-07-22",
+            "last_checked": "2026-07-22",
+            "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "02c8a9b957816fe98c17da9e351567ceb40578ba47f1aa98ba728ab8b4b25d7d"
         },
@@ -6860,27 +6867,11 @@
                 "Nadeem Shaukat"
             ],
             "link": "http://arxiv.org/abs/2506.15562v2",
-            "last_updated": "2026-07-20",
-            "last_checked": "2026-07-20",
-            "is_new_paper": true,
+            "last_updated": "2026-07-22",
+            "last_checked": "2026-07-22",
+            "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "9b2c2627a30e4b4ec11399e5114d44e430dcf4cf0b28bde1e8f5e6255cf81a31"
-        },
-        {
-            "title": "FANCA: In-Silico deleterious mutation analysis for early prediction of leukemia",
-            "published": "2021-07-19T05:54:08Z",
-            "summary": "As a novel biomarker from the Fanconi anemia complementation group (FANC) family, FANCA is antigens to Leukemia cancer. The overexpression of FANCA has predicted the second most common cancer in the world that is responsible for cancer-related deaths. Non-synonymous SNPs are an essential group of SNPs that lead to alterations in encoded polypeptides. Changes in the amino acid sequences of gene products lead to Leukemia. First, we study individual SNPs in the coding region of FANCA and computational tools like PROVEAN, PolyPhen2, MuPro, and PANTHER to compute deleterious mutation scores. The three-dimensional structural and functional prediction conducted using I-TASSER. Further, the predicted structure refined using the GlaxyWeb tool. In the study, the proteomic data has been retrieved from the UniProtKB. The coding region of the dataset contains 100 non-synonymous single nucleotide polymorphisms (nsSNPs), and 24 missense SNPs have been determined as deleterious by all analyses. In this work, six well-known computational tools were employed to study Leukemia-associated nsSNPs. It is inferred that these nsSNPs could play their role in the up-regulation of FANCA, which further leads to provoke leukemia advancement. The current research would benefit researchers and practitioners in handling cancer-associated diseases related to FANCA. The proposed study would also help to develop precision medicine in the field of drug discovery.",
-            "authors": [
-                "Madiha Hameed",
-                "Abdul Majiid",
-                "Asifullah Khan"
-            ],
-            "link": "http://arxiv.org/abs/2107.09056v2",
-            "last_updated": "2026-07-20",
-            "last_checked": "2026-07-20",
-            "is_new_paper": true,
-            "citation_alert": false,
-            "_fingerprint": "f9a3ebc21a41974b2bab08798438c1e8b15bde639ac9af98fff619927c2faa99"
         },
         {
             "title": "Traffic Management of Autonomous Vehicles using Policy Based Deep Reinforcement Learning and Intelligent Routing",
@@ -6894,9 +6885,9 @@
                 "Omair Shafiq"
             ],
             "link": "http://arxiv.org/abs/2206.14608v1",
-            "last_updated": "2026-07-20",
-            "last_checked": "2026-07-20",
-            "is_new_paper": true,
+            "last_updated": "2026-07-22",
+            "last_checked": "2026-07-22",
+            "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "a18b1a73e0eef70c323b6a5b2ee57bd5fa5de9aee9913d0583ff09c8a5472d03"
         },
@@ -6911,11 +6902,27 @@
                 "Asifullah Khan"
             ],
             "link": "http://arxiv.org/abs/2201.05373v2",
-            "last_updated": "2026-07-20",
-            "last_checked": "2026-07-20",
-            "is_new_paper": true,
+            "last_updated": "2026-07-22",
+            "last_checked": "2026-07-22",
+            "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "e50e679a9157da70dc5002e41b32f59b32141e0e0294e59997d6087eadbad16f"
+        },
+        {
+            "title": "FANCA: In-Silico deleterious mutation analysis for early prediction of leukemia",
+            "published": "2021-07-19T05:54:08Z",
+            "summary": "As a novel biomarker from the Fanconi anemia complementation group (FANC) family, FANCA is antigens to Leukemia cancer. The overexpression of FANCA has predicted the second most common cancer in the world that is responsible for cancer-related deaths. Non-synonymous SNPs are an essential group of SNPs that lead to alterations in encoded polypeptides. Changes in the amino acid sequences of gene products lead to Leukemia. First, we study individual SNPs in the coding region of FANCA and computational tools like PROVEAN, PolyPhen2, MuPro, and PANTHER to compute deleterious mutation scores. The three-dimensional structural and functional prediction conducted using I-TASSER. Further, the predicted structure refined using the GlaxyWeb tool. In the study, the proteomic data has been retrieved from the UniProtKB. The coding region of the dataset contains 100 non-synonymous single nucleotide polymorphisms (nsSNPs), and 24 missense SNPs have been determined as deleterious by all analyses. In this work, six well-known computational tools were employed to study Leukemia-associated nsSNPs. It is inferred that these nsSNPs could play their role in the up-regulation of FANCA, which further leads to provoke leukemia advancement. The current research would benefit researchers and practitioners in handling cancer-associated diseases related to FANCA. The proposed study would also help to develop precision medicine in the field of drug discovery.",
+            "authors": [
+                "Madiha Hameed",
+                "Abdul Majiid",
+                "Asifullah Khan"
+            ],
+            "link": "http://arxiv.org/abs/2107.09056v2",
+            "last_updated": "2026-07-22",
+            "last_checked": "2026-07-22",
+            "is_new_paper": false,
+            "citation_alert": false,
+            "_fingerprint": "f9a3ebc21a41974b2bab08798438c1e8b15bde639ac9af98fff619927c2faa99"
         },
         {
             "title": "Early Risk Prediction of Chronic Myeloid Leukemia with Protein Sequences using Machine Learning-based Meta-Ensemble",
@@ -6929,9 +6936,9 @@
                 "Asifullah Khan"
             ],
             "link": "http://arxiv.org/abs/2302.04200v1",
-            "last_updated": "2026-07-20",
-            "last_checked": "2026-07-20",
-            "is_new_paper": true,
+            "last_updated": "2026-07-22",
+            "last_checked": "2026-07-22",
+            "is_new_paper": false,
             "citation_alert": false,
             "_fingerprint": "4a8f3947396041302f8053635a0d851091d64889f0b7cc56d2c8954dab49e6f4"
         }
@@ -6951,7 +6958,7 @@
             "source": "openalex",
             "title": "A survey of the vision transformers and their CNN-transformer based variants",
             "year": 2023,
-            "citations": 384
+            "citations": 385
         },
         {
             "type": "new_paper",
@@ -7000,14 +7007,14 @@
             "source": "openalex",
             "title": "A New Deep Hybrid Boosted and Ensemble Learning-Based Brain Tumor Analysis Using MRI",
             "year": 2022,
-            "citations": 146
+            "citations": 147
         },
         {
             "type": "new_paper",
             "source": "openalex",
             "title": "Churn prediction in telecom using Random Forest and PSO based data balancing in combination with various feature selection strategies",
             "year": 2012,
-            "citations": 137
+            "citations": 138
         },
         {
             "type": "new_paper",
@@ -7061,13 +7068,6 @@
         {
             "type": "new_paper",
             "source": "openalex",
-            "title": "Genetic algorithm and difference expansion based reversible watermarking for relational databases",
-            "year": 2013,
-            "citations": 98
-        },
-        {
-            "type": "new_paper",
-            "source": "openalex",
             "title": "MemHyb: Predicting membrane protein types by hybridizing SAAC and PSSM",
             "year": 2011,
             "citations": 96
@@ -7084,7 +7084,7 @@
             "source": "openalex",
             "title": "A Survey of the Recent Trends in Deep Learning Based Malware Detection",
             "year": 2022,
-            "citations": 94
+            "citations": 95
         },
         {
             "type": "new_paper",
@@ -7208,13 +7208,6 @@
         {
             "type": "new_paper",
             "source": "openalex",
-            "title": "Robust information gain based fuzzy c-means clustering and classification of carotid artery ultrasound images",
-            "year": 2013,
-            "citations": 40
-        },
-        {
-            "type": "new_paper",
-            "source": "openalex",
             "title": "A two-stage stacked ensemble intrusion detection system using five base classifiers and MLP with optimal feature selection",
             "year": 2022,
             "citations": 36
@@ -7225,13 +7218,6 @@
             "title": "Comparison of Standalone and Hybrid Machine Learning Models for Prediction of Critical Heat Flux in Vertical Tubes",
             "year": 2023,
             "citations": 31
-        },
-        {
-            "type": "new_paper",
-            "source": "openalex",
-            "title": "Autonomous Drone Swarm Navigation and Multitarget Tracking With Island Policy-Based Optimization Framework",
-            "year": 2022,
-            "citations": 30
         },
         {
             "type": "new_paper",
@@ -7250,16 +7236,9 @@
         {
             "type": "new_paper",
             "source": "openalex",
-            "title": "DC-AAE: Dual channel adversarial autoencoder with multitask learning for KL-grade classification in knee radiographs",
-            "year": 2023,
-            "citations": 16
-        },
-        {
-            "type": "new_paper",
-            "source": "openalex",
-            "title": "Data-driven strategies for drug repurposing: insights, recommendations, and case studies",
-            "year": 2025,
-            "citations": 5
+            "title": "Genetic algorithm and difference expansion based reversible watermarking for relational databases",
+            "year": 2013,
+            "citations": 98
         },
         {
             "type": "new_paper",
@@ -7294,7 +7273,7 @@
             "source": "openalex",
             "title": "Intelligent churn prediction in telecom: employing mRMR feature selection and RotBoost based ensemble classification",
             "year": 2013,
-            "citations": 73
+            "citations": 74
         },
         {
             "type": "new_paper",
@@ -7432,6 +7411,13 @@
         {
             "type": "new_paper",
             "source": "openalex",
+            "title": "Robust information gain based fuzzy c-means clustering and classification of carotid artery ultrasound images",
+            "year": 2013,
+            "citations": 40
+        },
+        {
+            "type": "new_paper",
+            "source": "openalex",
             "title": "Protein subcellular localization of fluorescence imagery using spatial and transform domain features",
             "year": 2011,
             "citations": 40
@@ -7498,6 +7484,13 @@
             "title": "Adaptive transfer learning in deep neural networks: Wind power prediction using knowledge transfer from region to region and between different task domains",
             "year": 2019,
             "citations": 32
+        },
+        {
+            "type": "new_paper",
+            "source": "openalex",
+            "title": "Autonomous Drone Swarm Navigation and Multitarget Tracking With Island Policy-Based Optimization Framework",
+            "year": 2022,
+            "citations": 30
         },
         {
             "type": "new_paper",
@@ -7572,6 +7565,13 @@
         {
             "type": "new_paper",
             "source": "openalex",
+            "title": "DC-AAE: Dual channel adversarial autoencoder with multitask learning for KL-grade classification in knee radiographs",
+            "year": 2023,
+            "citations": 16
+        },
+        {
+            "type": "new_paper",
+            "source": "openalex",
             "title": "Design and Performance Analysis of an Anti-Malware System Based on Generative Adversarial Network Framework",
             "year": 2024,
             "citations": 15
@@ -7594,6 +7594,13 @@
             "type": "new_paper",
             "source": "openalex",
             "title": "Data driven analysis of particulate systems for development of reliable model to determine drag coefficient of non-spherical particles",
+            "year": 2025,
+            "citations": 5
+        },
+        {
+            "type": "new_paper",
+            "source": "openalex",
+            "title": "Data-driven strategies for drug repurposing: insights, recommendations, and case studies",
             "year": 2025,
             "citations": 5
         },
@@ -7638,258 +7645,6 @@
             "title": "Automatic Active Contour-Based Segmentation and Classification of Carotid Artery Ultrasound Images",
             "year": 2013,
             "citations": 33
-        },
-        {
-            "type": "new_paper",
-            "source": "arxiv",
-            "title": "Malware Classification Using Deep Boosted Learning",
-            "year": null,
-            "citations": null
-        },
-        {
-            "type": "new_paper",
-            "source": "arxiv",
-            "title": "A New Channel Boosted Convolutional Neural Network using Transfer Learning",
-            "year": null,
-            "citations": null
-        },
-        {
-            "type": "new_paper",
-            "source": "arxiv",
-            "title": "Deep Neural Networks based Meta-Learning for Network Intrusion Detection",
-            "year": null,
-            "citations": null
-        },
-        {
-            "type": "new_paper",
-            "source": "arxiv",
-            "title": "Multimodal Multi-Agent Ransomware Analysis Using AutoGen",
-            "year": null,
-            "citations": null
-        },
-        {
-            "type": "new_paper",
-            "source": "arxiv",
-            "title": "Advances in LLMs with Focus on Reasoning, Adaptability, Efficiency and Ethics",
-            "year": null,
-            "citations": null
-        },
-        {
-            "type": "new_paper",
-            "source": "arxiv",
-            "title": "Deep Object Detection based Mitosis Analysis in Breast Cancer Histopathological Images",
-            "year": null,
-            "citations": null
-        },
-        {
-            "type": "new_paper",
-            "source": "arxiv",
-            "title": "Extracting Signals of Higgs Boson From Background Noise Using Deep Neural Networks",
-            "year": null,
-            "citations": null
-        },
-        {
-            "type": "new_paper",
-            "source": "arxiv",
-            "title": "Ransomware Analysis using Feature Engineering and Deep Neural Networks",
-            "year": null,
-            "citations": null
-        },
-        {
-            "type": "new_paper",
-            "source": "arxiv",
-            "title": "Adaptive Transfer Learning in Deep Neural Networks: Wind Power Prediction using Knowledge Transfer from Region to Region and Between Different Task Domains",
-            "year": null,
-            "citations": null
-        },
-        {
-            "type": "new_paper",
-            "source": "arxiv",
-            "title": "Malware Classification using Deep Learning based Feature Extraction and Wrapper based Feature Selection Technique",
-            "year": null,
-            "citations": null
-        },
-        {
-            "type": "new_paper",
-            "source": "arxiv",
-            "title": "A Recent Survey of Vision Transformers for Medical Image Segmentation",
-            "year": null,
-            "citations": null
-        },
-        {
-            "type": "new_paper",
-            "source": "arxiv",
-            "title": "CB-HVTNet: A channel-boosted hybrid vision transformer network for lymphocyte assessment in histopathological images",
-            "year": null,
-            "citations": null
-        },
-        {
-            "type": "new_paper",
-            "source": "arxiv",
-            "title": "Particle Multi-Axis Transformer for Jet Tagging",
-            "year": null,
-            "citations": null
-        },
-        {
-            "type": "new_paper",
-            "source": "arxiv",
-            "title": "A Survey on Self-supervised Contrastive Learning for Multimodal Text-Image Analysis",
-            "year": null,
-            "citations": null
-        },
-        {
-            "type": "new_paper",
-            "source": "arxiv",
-            "title": "MaxViT-UNet: Multi-Axis Attention for Medical Image Segmentation",
-            "year": null,
-            "citations": null
-        },
-        {
-            "type": "new_paper",
-            "source": "arxiv",
-            "title": "Autonomous Drone Swarm Navigation and Multi-target Tracking in 3D Environments with Dynamic Obstacles",
-            "year": null,
-            "citations": null
-        },
-        {
-            "type": "new_paper",
-            "source": "arxiv",
-            "title": "COVID-19 Detection in Chest X-Ray Images using a New Channel Boosted CNN",
-            "year": null,
-            "citations": null
-        },
-        {
-            "type": "new_paper",
-            "source": "arxiv",
-            "title": "A survey of the Vision Transformers and their CNN-Transformer based Variants",
-            "year": null,
-            "citations": null
-        },
-        {
-            "type": "new_paper",
-            "source": "arxiv",
-            "title": "AutoGen Driven Multi Agent Framework for Iterative Crime Data Analysis and Prediction",
-            "year": null,
-            "citations": null
-        },
-        {
-            "type": "new_paper",
-            "source": "arxiv",
-            "title": "A Recent Survey on the Applications of Genetic Programming in Image Processing",
-            "year": null,
-            "citations": null
-        },
-        {
-            "type": "new_paper",
-            "source": "arxiv",
-            "title": "Deep Belief Networks Based Feature Generation and Regression for Predicting Wind Power",
-            "year": null,
-            "citations": null
-        },
-        {
-            "type": "new_paper",
-            "source": "arxiv",
-            "title": "Classification and Region Analysis of COVID-19 Infection using Lung CT Images and Deep Convolutional Neural Networks",
-            "year": null,
-            "citations": null
-        },
-        {
-            "type": "new_paper",
-            "source": "arxiv",
-            "title": "Transfer Learning and Meta Classification Based Deep Churn Prediction System for Telecom Industry",
-            "year": null,
-            "citations": null
-        },
-        {
-            "type": "new_paper",
-            "source": "arxiv",
-            "title": "Segmentation of Shoulder Muscle MRI Using a New Region and Edge based Deep Auto-Encoder",
-            "year": null,
-            "citations": null
-        },
-        {
-            "type": "new_paper",
-            "source": "arxiv",
-            "title": "A Survey of the Self Supervised Learning Mechanisms for Vision Transformers",
-            "year": null,
-            "citations": null
-        },
-        {
-            "type": "new_paper",
-            "source": "arxiv",
-            "title": "A Survey of the Recent Architectures of Deep Convolutional Neural Networks",
-            "year": null,
-            "citations": null
-        },
-        {
-            "type": "new_paper",
-            "source": "arxiv",
-            "title": "A Survey of Deep Learning Techniques for the Analysis of COVID-19 and their usability for Detecting Omicron",
-            "year": null,
-            "citations": null
-        },
-        {
-            "type": "new_paper",
-            "source": "arxiv",
-            "title": "Wind Speed Prediction using Deep Ensemble Learning with a Jet-like Architecture",
-            "year": null,
-            "citations": null
-        },
-        {
-            "type": "new_paper",
-            "source": "arxiv",
-            "title": "Channel Boosted CNN-Transformer-based Multi-Level and Multi-Scale Nuclei Segmentation",
-            "year": null,
-            "citations": null
-        },
-        {
-            "type": "new_paper",
-            "source": "arxiv",
-            "title": "Crime Hotspot Prediction Using Deep Graph Convolutional Networks",
-            "year": null,
-            "citations": null
-        },
-        {
-            "type": "new_paper",
-            "source": "arxiv",
-            "title": "IoT Malware Detection Architecture using a Novel Channel Boosted and Squeezed CNN",
-            "year": null,
-            "citations": null
-        },
-        {
-            "type": "new_paper",
-            "source": "arxiv",
-            "title": "Automated MRI Tumor Segmentation using hybrid U-Net with Transformer and Efficient Attention",
-            "year": null,
-            "citations": null
-        },
-        {
-            "type": "new_paper",
-            "source": "arxiv",
-            "title": "FANCA: In-Silico deleterious mutation analysis for early prediction of leukemia",
-            "year": null,
-            "citations": null
-        },
-        {
-            "type": "new_paper",
-            "source": "arxiv",
-            "title": "Traffic Management of Autonomous Vehicles using Policy Based Deep Reinforcement Learning and Intelligent Routing",
-            "year": null,
-            "citations": null
-        },
-        {
-            "type": "new_paper",
-            "source": "arxiv",
-            "title": "A New Deep Hybrid Boosted and Ensemble Learning-based Brain Tumor Analysis using MRI",
-            "year": null,
-            "citations": null
-        },
-        {
-            "type": "new_paper",
-            "source": "arxiv",
-            "title": "Early Risk Prediction of Chronic Myeloid Leukemia with Protein Sequences using Machine Learning-based Meta-Ensemble",
-            "year": null,
-            "citations": null
         }
     ]
 }

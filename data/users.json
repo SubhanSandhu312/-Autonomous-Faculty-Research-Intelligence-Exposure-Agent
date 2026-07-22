@@ -1,0 +1,11 @@
+[
+  {
+    "email": "subhanazhar098@gmail.com",
+    "name": "Subhan Azhar",
+    "password_hash": "c0b06dcb2b37fb3e793f22f02113755eaebe21eaf90270a456aa2e78c19273d9",
+    "salt": "84199e8bcd8ae112152393d00b8a0108",
+    "professors": [
+      "0aa93a5d6d386e8c"
+    ]
+  }
+]

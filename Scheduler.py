@@ -10,13 +10,15 @@ import auth
 
 RUN_DAY = "monday"
 RUN_TIME = "09:00"
-TEST_MODE_INTERVAL_MINUTES = 2
+TEST_MODE_INTERVAL_MINUTES = None
 RUN_IMMEDIATELY_ON_START = True
+RUN_MODE = "monthly"  # "test", "weekly", or "monthly"
+MONTHLY_DAY_OF_MONTH = 1  # 1-28 recommended, to be safe for all months
 LOG_PATH = "scheduler.log"
 DATA_PATH = "data/professor.json"
 
 # Replace with the "Production URL" shown on your n8n Webhook node.
-N8N_WEBHOOK_URL = "https://subhanazhar312.app.n8n.cloud/webhook-test/citation-alerts"
+# N8N_WEBHOOK_URL = "https://subhanazhar312.app.n8n.cloud/webhook-test/citation-alerts"
 
 
 def log(message):
@@ -96,23 +98,50 @@ def run_pipeline():
         send_notification("Research Agent - Run Failed", "The weekly update failed. Check scheduler.log for details.")
 
 
-if TEST_MODE_INTERVAL_MINUTES:
+def monthly_job_wrapper():
+    """schedule.every().day.at() fires daily; only actually run on the target date."""
+    if datetime.datetime.now().day == MONTHLY_DAY_OF_MONTH:
+        run_pipeline()
+
+
+def get_next_run_display():
+    """job.next_run only reflects the daily check job in monthly mode,
+    so compute the real next run date for accurate logging."""
+    if RUN_MODE == "monthly":
+        now = datetime.datetime.now()
+        run_hour, run_minute = map(int, RUN_TIME.split(":"))
+        candidate = now.replace(day=MONTHLY_DAY_OF_MONTH, hour=run_hour,
+                                 minute=run_minute, second=0, microsecond=0)
+        if candidate <= now:
+            if now.month == 12:
+                candidate = candidate.replace(year=now.year + 1, month=1)
+            else:
+                candidate = candidate.replace(month=now.month + 1)
+        return candidate
+    return job.next_run
+
+
+if RUN_MODE == "test":
     job = schedule.every(TEST_MODE_INTERVAL_MINUTES).minutes.do(run_pipeline)
     log(f"TEST MODE: running every {TEST_MODE_INTERVAL_MINUTES} minute(s).")
-else:
+elif RUN_MODE == "monthly":
+    job = schedule.every().day.at(RUN_TIME).do(monthly_job_wrapper)
+    log(f"Scheduler started. Will run on day {MONTHLY_DAY_OF_MONTH} of each month at {RUN_TIME}.")
+else:  # "weekly"
     job = getattr(schedule.every(), RUN_DAY).at(RUN_TIME).do(run_pipeline)
     log(f"Scheduler started. Will run every {RUN_DAY} at {RUN_TIME}.")
 
-log(f"Next scheduled run: {job.next_run}")
+log(f"Next scheduled run: {get_next_run_display()}")
 
 if RUN_IMMEDIATELY_ON_START:
     run_pipeline()
 
-last_logged_next_run = job.next_run
+last_logged_next_run = get_next_run_display()
 
 while True:
     schedule.run_pending()
-    if job.next_run != last_logged_next_run:
-        log(f"Next scheduled run: {job.next_run}")
-        last_logged_next_run = job.next_run
+    current_next_run = get_next_run_display()
+    if current_next_run != last_logged_next_run:
+        log(f"Next scheduled run: {current_next_run}")
+        last_logged_next_run = current_next_run
     time.sleep(60)

@@ -9,7 +9,11 @@ from scholarly import scholarly
 from dotenv import load_dotenv
 
 from python_vector_store import build_collection, query_publications
-from n8n_alerts import trigger_n8n_alerts, trigger_cfp_alerts
+# from n8n_alerts import trigger_n8n_alerts, trigger_cfp_alerts
+# from email_alerts import send_citation_update_emails, send_cfp_alert_emails
+import email_alerts
+import auth
+
 from cfp_alerts import get_matched_cfps
 import professors
 
@@ -667,9 +671,25 @@ def main():
                     "cfps": matched_cfps,
                 })
 
-    trigger_n8n_alerts(user_citation_bundles)
-    trigger_cfp_alerts(user_cfp_bundles)
+    # trigger_n8n_alerts(user_citation_bundles)
+    # trigger_cfp_alerts(user_cfp_bundles)
 
+    names = {s["email"]: s["name"] for s in auth.get_all_subscribers()}
+    email_alerts.send_citation_update_emails(user_citation_bundles, names)
+    email_alerts.send_cfp_alert_emails(user_cfp_bundles, names)
+ 
+    # Everyone who tracks at least one professor but got nothing in
+    # EITHER bundle above -- gated inside send_no_update_emails() by the
+    # NOTIFY_ON_NO_UPDATES flag in email_alerts.py.
+    all_subscribed_emails = set()
+    for pid in results_by_professor:
+        all_subscribed_emails.update(professors.get_subscribers_for_professor(pid))
+ 
+    users_with_no_updates = [
+        email for email in all_subscribed_emails
+        if email not in user_citation_bundles and email not in user_cfp_bundles
+    ]
+    email_alerts.send_no_update_emails(users_with_no_updates, names)
     print("All professors processed.")
 
     print("Updating ChromaDB...")
